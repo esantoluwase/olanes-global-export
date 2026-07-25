@@ -1,18 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cashew Nuts | OLANES GLOBAL EXPORT LTD</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Premium Nigerian Cashew Nuts | OLANES GLOBAL EXPORT LTD
+    </title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f5;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: white;
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #063b2a;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .nav-logo img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #063b2a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            color: #c79a21;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            min-height: 550px;
+
+            background:
+                linear-gradient(
+                    rgba(3, 45, 31, 0.78),
+                    rgba(3, 45, 31, 0.78)
+                ),
+                url("IMG-20260725-WA0017.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            padding: 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            padding: 14px 25px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .quote-button {
+            background: #c79a21;
+            color: white;
+        }
+
+        .quote-button:hover {
+            background: #a77f16;
+        }
+
+        .whatsapp-button {
+            background: #25D366;
+            color: white;
+        }
+
+        .whatsapp-button:hover {
+            background: #1da851;
+        }
+
+
+        /* MAIN */
+
+        .container {
+            max-width: 1150px;
+            margin: auto;
+            padding: 70px 25px;
+        }
+
+
+        /* PRODUCT INTRO */
+
+        .product-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(0,0,0,0.15);
+        }
+
+        .product-content h2 {
+            color: #063b2a;
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+
+        .product-content p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+
+        /* HIGHLIGHTS */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .highlight {
+            background: white;
+            padding: 18px;
+            border-left: 4px solid #c79a21;
+            border-radius: 7px;
+        }
+
+        .highlight strong {
+            display: block;
+            color: #063b2a;
+            margin-bottom: 5px;
+        }
+
+
+        /* GALLERY */
+
+        .gallery-section {
+            margin-top: 70px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #063b2a;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.1);
+        }
+
+
+        /* CTA */
+
+        .cta {
+            margin-top: 70px;
+            background: #063b2a;
+            color: white;
+            text-align: center;
+            padding: 60px 25px;
+            border-radius: 15px;
+        }
+
+        .cta h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            color: #dce8e2;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #04251b;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 70px;
+        }
+
+        footer img {
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: #c8d3ce;
+            margin: 5px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .product-intro {
+                grid-template-columns: 1fr;
+            }
+
+            .product-image img {
+                height: 400px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 350px;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .product-content h2 {
+                font-size: 30px;
+            }
+
+            .section-title h2 {
+                font-size: 28px;
+            }
+
+            .cta h2 {
+                font-size: 28px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <h1>Premium Nigerian Cashew Nuts</h1>
 
-    <p>OLANES GLOBAL EXPORT LTD</p>
+<!-- NAVIGATION -->
 
-    <p>Premium Nigerian Cashew Nuts for international buyers.</p>
+<nav>
+
+    <a
+        href="index.html"
+        class="nav-logo"
+    >
+
+        <img
+            src="IMG-20260522-WA0001(1).jpg"
+            alt="OLANES GLOBAL EXPORT LTD Logo"
+        >
+
+        OLANES GLOBAL EXPORT LTD
+
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#products">
+            Products
+        </a>
+
+        <a href="index.html#services">
+            Services
+        </a>
+
+        <a href="index.html#process">
+            Export Process
+        </a>
+
+        <a href="index.html#quote">
+            Request a Quote
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            Premium Nigerian Cashew Nuts
+        </h1>
+
+        <p>
+            Quality Nigerian cashew nuts available for
+            wholesale, commercial, and international
+            export markets.
+        </p>
+
+
+        <a
+            href="index.html#quote"
+            class="button quote-button"
+        >
+            Request a Quote
+        </a>
+
+
+        <a
+            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Cashew%20Nuts."
+            class="button whatsapp-button"
+            target="_blank"
+        >
+            💬 WhatsApp Us
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- MAIN CONTENT -->
+
+<main class="container">
+
+
+    <!-- PRODUCT INTRODUCTION -->
+
+    <section class="product-intro">
+
+
+        <div class="product-image">
+
+            <img
+                src="IMG-20260725-WA0017.jpg"
+                alt="Premium Nigerian Cashew Nuts"
+            >
+
+        </div>
+
+
+        <div class="product-content">
+
+            <h2>
+                Nigerian Cashew Nuts for Export
+            </h2>
+
+            <p>
+                OLANES GLOBAL EXPORT LTD supplies quality
+                Nigerian cashew nuts for wholesale,
+                commercial, and international markets.
+            </p>
+
+            <p>
+                Our cashew products are available for bulk
+                supply and can be prepared according to
+                agreed buyer requirements, packaging needs,
+                and order specifications.
+            </p>
+
+
+            <div class="highlights">
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Country of Origin
+                    </strong>
+
+                    Nigeria
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Product
+                    </strong>
+
+                    Cashew Nuts
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Supply Type
+                    </strong>
+
+                    Wholesale & Export
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Market
+                    </strong>
+
+                    International Buyers
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PRODUCT GALLERY -->
+
+    <section class="gallery-section">
+
+
+        <div class="section-title">
+
+            <h2>
+                Our Cashew Nuts
+            </h2>
+
+            <p>
+                View our Nigerian cashew nuts available
+                for wholesale and export supply.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <img
+                src="IMG-20260725-WA0017.jpg"
+                alt="Premium Nigerian Cashew Nuts"
+            >
+
+            <img
+                src="IMG-20260725-WA0028.jpg"
+                alt="Nigerian Cashew Nuts for Export"
+            >
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>
+            Interested in Our Cashew Nuts?
+        </h2>
+
+        <p>
+            Contact OLANES GLOBAL EXPORT LTD to discuss
+            your required quantity, packaging, product
+            specifications, and international shipping
+            requirements.
+        </p>
+
+
+        <a
+            href="index.html#quote"
+            class="button quote-button"
+        >
+            Request a Quote
+        </a>
+
+
+        <a
+            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Cashew%20Nuts."
+            class="button whatsapp-button"
+            target="_blank"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <img
+        src="IMG-20260522-WA0001(1).jpg"
+        alt="OLANES GLOBAL EXPORT LTD Logo"
+    >
+
+    <p>
+        <strong>
+            OLANES GLOBAL EXPORT LTD
+        </strong>
+    </p>
+
+    <p>
+        Nigerian Agricultural & Natural Product Exporters
+    </p>
+
+    <p>
+        Boluwatife Community, Ayekale, Ota Efun,
+        Osogbo, Osun State, Nigeria
+    </p>
+
+    <p>
+        © 2026 OLANES GLOBAL EXPORT LTD.
+        All rights reserved.
+    </p>
+
+</footer>
+
 
 </body>
+
 </html>
