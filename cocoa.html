@@ -4,13 +4,19 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Cocoa | OLANES GLOBAL EXPORT LTD</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Premium Nigerian Cocoa | OLANES GLOBAL EXPORT LTD
+    </title>
 
     <meta
         name="description"
-        content="Quality Nigerian cocoa products available for wholesale supply and international export markets."
+        content="OLANES GLOBAL EXPORT LTD supplies quality Nigerian cocoa for wholesale, commercial, food processing, and international export markets."
     >
 
     <style>
@@ -21,151 +27,495 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f5f7f5;
             color: #222;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
-        header {
-            background: linear-gradient(135deg, #063b2a, #0b5a40);
-            color: white;
-            text-align: center;
-            padding: 25px 20px;
-        }
-
-        .logo {
-            width: 120px;
-            height: 120px;
-            object-fit: contain;
-            background: white;
-            border-radius: 50%;
-            padding: 8px;
-        }
-
-        header h1 {
-            margin-top: 15px;
-            font-size: 32px;
-        }
+        /* NAVIGATION */
 
         nav {
-            background: white;
-            padding: 16px;
-            text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            background: #ffffff;
+            padding: 14px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
         }
 
-        nav a {
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             color: #063b2a;
             text-decoration: none;
             font-weight: bold;
-            margin: 0 12px;
+            font-size: 18px;
         }
+
+        .nav-logo img {
+            width: 52px;
+            height: 52px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: #063b2a;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #c79a21;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 580px;
+
+            background:
+                linear-gradient(
+                    rgba(3, 45, 31, 0.75),
+                    rgba(3, 45, 31, 0.75)
+                ),
+                url("IMG-20260725-WA0028.jpg");
+
+            background-size: cover;
+            background-position: center;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            padding: 70px 20px;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 58px;
+            line-height: 1.2;
+            margin-bottom: 22px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            color: #f0f5f2;
+        }
+
+        /* BUTTONS */
+
+        .button {
+            display: inline-block;
+            padding: 14px 27px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .quote-button {
+            background: #c79a21;
+            color: white;
+        }
+
+        .quote-button:hover {
+            background: #a77f16;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-button {
+            background: #25D366;
+            color: white;
+        }
+
+        .whatsapp-button:hover {
+            background: #1da851;
+            transform: translateY(-2px);
+        }
+
+        .email-button {
+            background: white;
+            color: #063b2a;
+        }
+
+        .email-button:hover {
+            background: #eeeeee;
+        }
+
+        /* MAIN CONTAINER */
 
         .container {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 1150px;
+            margin: auto;
+            padding: 75px 25px;
         }
 
-        .back-button {
-            display: inline-block;
-            margin-bottom: 25px;
-            padding: 10px 18px;
-            background: #063b2a;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
+        /* PRODUCT INTRODUCTION */
+
+        .product-intro {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 55px;
+            align-items: center;
         }
 
-        .product-page {
-            background: white;
-            padding: 35px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+        .product-image img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            border-radius: 15px;
+
+            box-shadow:
+                0 12px 35px
+                rgba(0,0,0,0.15);
         }
 
-        .product-page h2 {
+        .product-content h2 {
             color: #063b2a;
-            font-size: 32px;
-            margin-bottom: 15px;
+            font-size: 40px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .product-content p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        /* PRODUCT HIGHLIGHTS */
+
+        .highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .highlight {
+            background: white;
+            padding: 18px;
+            border-left: 4px solid #c79a21;
+            border-radius: 7px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+        }
+
+        .highlight strong {
+            display: block;
+            color: #063b2a;
+            margin-bottom: 5px;
+        }
+
+        /* SECTION TITLE */
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            color: #063b2a;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* IMAGE GALLERY */
+
+        .gallery-section {
+            margin-top: 85px;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
+            grid-template-columns: 1fr;
+            max-width: 700px;
+            margin: auto;
         }
 
-        .gallery img {
+        .gallery-card {
+            background: white;
+            padding: 12px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        .gallery-card img {
             width: 100%;
-            height: 320px;
+            height: 500px;
             object-fit: cover;
             border-radius: 10px;
+            display: block;
         }
 
-        .details {
-            margin-top: 30px;
+        /* PRODUCT INFORMATION */
+
+        .info-section {
+            margin-top: 85px;
         }
 
-        .details h3 {
+        .specs {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+
+        .spec {
+            background: white;
+            padding: 22px;
+            border-radius: 8px;
+            border-left: 4px solid #c79a21;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .spec strong {
+            display: block;
             color: #063b2a;
-            margin-bottom: 12px;
+            margin-bottom: 5px;
         }
 
-        .details p {
+        /* PACKAGING */
+
+        .packaging-text {
+            text-align: center;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            color: #555;
+        }
+
+        .packaging {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .package {
+            background: white;
+            padding: 28px 15px;
+            text-align: center;
+            border-radius: 10px;
+            color: #063b2a;
+            font-weight: bold;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            border-bottom: 4px solid #c79a21;
+        }
+
+        /* EXPORT SUPPLY */
+
+        .supply-box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .supply-box p {
+            color: #555;
+            margin-bottom: 18px;
+        }
+
+        /* QUALITY */
+
+        .quality-section {
+            background: #063b2a;
+            color: white;
+            padding: 55px 40px;
+            border-radius: 15px;
+            margin-top: 85px;
+        }
+
+        .quality-section h2 {
+            font-size: 34px;
+            margin-bottom: 18px;
+        }
+
+        .quality-section p {
+            color: #dce8e2;
+            margin-bottom: 15px;
+        }
+
+        /* CALL TO ACTION */
+
+        .cta {
+            margin-top: 85px;
+
+            background:
+                linear-gradient(
+                    rgba(3,45,31,0.95),
+                    rgba(3,45,31,0.95)
+                );
+
+            color: white;
+            text-align: center;
+            padding: 65px 25px;
+            border-radius: 15px;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 750px;
+            margin: 0 auto 25px;
+            color: #dce8e2;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            margin-top: 85px;
+            background: white;
+            padding: 45px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+        }
+
+        .contact h2 {
+            color: #063b2a;
+            font-size: 34px;
             margin-bottom: 20px;
         }
 
-        .quote-button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 13px 25px;
-            background: #c79a21;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+        .contact p {
+            color: #555;
+            margin-bottom: 12px;
         }
 
-        .whatsapp-button {
-            display: inline-block;
-            margin-top: 15px;
-            margin-left: 10px;
-            padding: 13px 25px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
+        .contact strong {
+            color: #063b2a;
         }
+
+        .contact a {
+            color: #063b2a;
+        }
+
+        /* FOOTER */
 
         footer {
             background: #04251b;
             color: white;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
+            padding: 45px 20px;
+            margin-top: 85px;
         }
 
-        @media (max-width: 600px) {
+        footer img {
+            width: 75px;
+            height: 75px;
+            object-fit: contain;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
 
-            .container {
-                padding: 15px;
+        footer p {
+            color: #c8d3ce;
+            margin: 5px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .nav-links {
+                display: none;
             }
 
-            .product-page {
-                padding: 22px;
+            .hero h1 {
+                font-size: 42px;
             }
 
-            .product-page h2 {
-                font-size: 26px;
+            .product-intro {
+                grid-template-columns: 1fr;
             }
 
-            .whatsapp-button {
-                margin-left: 0;
+            .product-image img {
+                height: 450px;
+            }
+
+            .specs {
+                grid-template-columns: 1fr;
+            }
+
+            .packaging {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+        @media (max-width: 550px) {
+
+            .hero {
+                min-height: 520px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .product-content h2 {
+                font-size: 30px;
+            }
+
+            .highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .packaging {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-card img {
+                height: 400px;
+            }
+
+            .quality-section {
+                padding: 35px 25px;
+            }
+
+            .contact {
+                padding: 30px 25px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
             }
 
         }
@@ -178,157 +528,634 @@
 <body>
 
 
-<header>
-
-    <img
-        src="IMG-20260522-WA0001(1).jpg"
-        alt="OLANES GLOBAL EXPORT LTD Logo"
-        class="logo"
-    >
-
-    <h1>OLANES GLOBAL EXPORT LTD</h1>
-
-</header>
-
+<!-- NAVIGATION -->
 
 <nav>
 
-    <a href="index.html">Home</a>
+    <a
+        href="index.html"
+        class="nav-logo"
+    >
 
-    <a href="index.html#products">Products</a>
+        <img
+            src="IMG-20260522-WA0001(1).jpg"
+            alt="OLANES GLOBAL EXPORT LTD Logo"
+        >
 
-    <a href="index.html#services">Services</a>
+        OLANES GLOBAL EXPORT LTD
 
-    <a href="index.html#contact">Contact</a>
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#products">
+            Products
+        </a>
+
+        <a href="index.html#services">
+            Services
+        </a>
+
+        <a href="index.html#process">
+            Export Process
+        </a>
+
+        <a href="index.html#quote">
+            Request a Quote
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
 
 </nav>
 
 
-<div class="container">
+<!-- HERO -->
 
+<section class="hero">
 
-    <a
-        href="index.html#products"
-        class="back-button"
-    >
-        ← Back to Products
-    </a>
+    <div class="hero-content">
 
-
-    <div class="product-page">
-
-
-        <h2>Cocoa</h2>
-
+        <h1>
+            Premium Nigerian Cocoa
+        </h1>
 
         <p>
-            Nigerian cocoa products available for wholesale supply,
-            commercial quantities, and international commodity markets.
+            Quality Nigerian cocoa available for
+            wholesale, commercial, food processing,
+            and international export markets.
         </p>
+
+
+        <a
+            href="index.html#quote"
+            class="button quote-button"
+        >
+            Request a Quote
+        </a>
+
+
+        <a
+            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Cocoa."
+            class="button whatsapp-button"
+            target="_blank"
+        >
+            💬 WhatsApp Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- MAIN CONTENT -->
+
+<main class="container">
+
+
+    <!-- PRODUCT INTRODUCTION -->
+
+    <section class="product-intro">
+
+
+        <div class="product-image">
+
+            <img
+                src="IMG-20260725-WA0028.jpg"
+                alt="Premium Nigerian Cocoa"
+            >
+
+        </div>
+
+
+        <div class="product-content">
+
+            <h2>
+                Nigerian Cocoa for Export
+            </h2>
+
+            <p>
+                OLANES GLOBAL EXPORT LTD supplies quality
+                Nigerian cocoa for wholesale, commercial,
+                food processing, and international markets.
+            </p>
+
+            <p>
+                Our cocoa is available for bulk supply
+                and can be prepared according to agreed
+                buyer requirements, packaging needs,
+                and order specifications.
+            </p>
+
+            <p>
+                We work with international buyers,
+                wholesalers, distributors, processors,
+                and long-term business partners.
+            </p>
+
+
+            <div class="highlights">
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Country of Origin
+                    </strong>
+
+                    Nigeria
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Product
+                    </strong>
+
+                    Nigerian Cocoa
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Supply Type
+                    </strong>
+
+                    Wholesale & Export
+
+                </div>
+
+
+                <div class="highlight">
+
+                    <strong>
+                        Market
+                    </strong>
+
+                    International Buyers
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- IMAGE GALLERY -->
+
+    <section class="gallery-section">
+
+
+        <div class="section-title">
+
+            <h2>
+                Our Cocoa
+            </h2>
+
+            <p>
+                View our Nigerian cocoa available
+                for wholesale and export supply.
+            </p>
+
+        </div>
 
 
         <div class="gallery">
 
 
-            <img
-                src="IMG-20260725-WA0028.jpg"
-                alt="Nigerian Cocoa"
-            >
+            <div class="gallery-card">
+
+                <img
+                    src="IMG-20260725-WA0028.jpg"
+                    alt="Premium Nigerian Cocoa"
+                >
+
+            </div>
 
 
         </div>
 
+    </section>
 
-        <div class="details">
+
+    <!-- PRODUCT INFORMATION -->
+
+    <section class="info-section">
 
 
-            <h3>Product Overview</h3>
+        <div class="section-title">
 
+            <h2>
+                Product Information
+            </h2>
 
             <p>
-                OLANES GLOBAL EXPORT LTD supplies Nigerian cocoa products
-                for wholesalers, distributors, importers, manufacturers,
-                and international buyers seeking quality agricultural
-                commodities from Nigeria.
+                Product specifications can be discussed
+                and confirmed according to buyer requirements
+                and agreed order specifications.
             </p>
 
+        </div>
 
-            <h3>Country of Origin</h3>
+
+        <div class="specs">
 
 
-            <p>
+            <div class="spec">
+
+                <strong>
+                    Product
+                </strong>
+
+                Premium Nigerian Cocoa
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Country of Origin
+                </strong>
+
                 Nigeria
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Product Type
+                </strong>
+
+                Cocoa
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Supply
+                </strong>
+
+                Wholesale and Bulk Supply
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Export Market
+                </strong>
+
+                International Markets
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Packaging
+                </strong>
+
+                Available according to buyer requirements
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Minimum Order Quantity
+                </strong>
+
+                Subject to mutual agreement
+
+            </div>
+
+
+            <div class="spec">
+
+                <strong>
+                    Supply Lead Time
+                </strong>
+
+                To be confirmed based on order quantity
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- PACKAGING -->
+
+    <section class="info-section">
+
+
+        <div class="section-title">
+
+            <h2>
+                Packaging Options
+            </h2>
+
+        </div>
+
+
+        <p class="packaging-text">
+
+            Packaging can be arranged according to buyer
+            requirements, destination market, product
+            specifications, and agreed order quantities.
+
+        </p>
+
+
+        <div class="packaging">
+
+
+            <div class="package">
+                Bulk Packaging
+            </div>
+
+
+            <div class="package">
+                Wholesale Packaging
+            </div>
+
+
+            <div class="package">
+                Custom Buyer Packaging
+            </div>
+
+
+            <div class="package">
+                Export Packaging
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- BULK & EXPORT SUPPLY -->
+
+    <section class="info-section">
+
+
+        <div class="section-title">
+
+            <h2>
+                Bulk & Export Supply
+            </h2>
+
+        </div>
+
+
+        <div class="supply-box">
+
+            <p>
+                OLANES GLOBAL EXPORT LTD is available
+                to discuss bulk Nigerian cocoa supply
+                for international buyers, wholesalers,
+                processors, distributors, and commercial
+                customers.
             </p>
-
-
-            <h3>Product Type</h3>
 
 
             <p>
-                Nigerian Cocoa
+                We work with buyers to understand their
+                required quantity, product specifications,
+                packaging preferences, destination,
+                and shipping requirements.
             </p>
-
-
-            <h3>Supply</h3>
 
 
             <p>
-                Available for wholesale and commercial quantities,
-                subject to buyer requirements and order specifications.
+                Export documentation, shipping arrangements,
+                and delivery terms can be discussed according
+                to the buyer's destination and agreed
+                international trade terms.
             </p>
 
+        </div>
 
-            <h3>Packaging</h3>
-
-
-            <p>
-                Packaging options can be discussed according to buyer
-                requirements, order quantity, and destination market.
-            </p>
+    </section>
 
 
-            <h3>International Export</h3>
+    <!-- QUALITY -->
+
+    <section class="quality-section">
 
 
-            <p>
-                We coordinate product sourcing, packaging, export
-                documentation, and shipping arrangements according
-                to agreed trade terms.
-            </p>
+        <h2>
+            Quality & Buyer Requirements
+        </h2>
 
+
+        <p>
+            We work with buyers to discuss product
+            specifications, quality requirements,
+            packaging, order quantities, and shipping
+            arrangements before confirming an order.
+        </p>
+
+
+        <p>
+            Additional product information and quality
+            details can be provided to serious buyers
+            upon request.
+        </p>
+
+
+        <p>
+            Product specifications and commercial terms
+            are confirmed between OLANES GLOBAL EXPORT LTD
+            and the buyer before final order processing.
+        </p>
+
+    </section>
+
+
+    <!-- CALL TO ACTION -->
+
+    <section class="cta">
+
+
+        <h2>
+            Interested in Our Cocoa?
+        </h2>
+
+
+        <p>
+            Contact OLANES GLOBAL EXPORT LTD to discuss
+            your required quantity, packaging,
+            specifications, and international shipping
+            requirements.
+        </p>
+
+
+        <a
+            href="index.html#quote"
+            class="button quote-button"
+        >
+            Request a Quote
+        </a>
+
+
+        <a
+            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Cocoa."
+            class="button whatsapp-button"
+            target="_blank"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+
+        <a
+            href="mailto:olanesglobalexportltd@gmail.com"
+            class="button email-button"
+        >
+            ✉️ Send an Email
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section
+        class="contact"
+        id="contact"
+    >
+
+
+        <h2>
+            Contact OLANES GLOBAL EXPORT LTD
+        </h2>
+
+
+        <p>
+            We welcome inquiries from international
+            buyers, wholesalers, distributors,
+            processors, and business partners.
+        </p>
+
+
+        <br>
+
+
+        <p>
+
+            <strong>
+                Address:
+            </strong>
+
+            <br>
+
+            Boluwatife Community, Ayekale, Ota Efun,
+            Osogbo, Osun State, Nigeria
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Phone / WhatsApp:
+            </strong>
+
+            <br>
+
+            +234 706 516 0991
+
+        </p>
+
+
+        <p>
+
+            <strong>
+                Email:
+            </strong>
+
+            <br>
 
             <a
-                href="index.html#quote"
-                class="quote-button"
+                href="mailto:olanesglobalexportltd@gmail.com"
             >
-                Request a Quote
+                olanesglobalexportltd@gmail.com
             </a>
 
+        </p>
+
+
+        <div class="buttons">
+
 
             <a
-                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Cocoa."
-                class="whatsapp-button"
+                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Cocoa."
+                class="button whatsapp-button"
                 target="_blank"
             >
-                💬 Ask About Cocoa
+                💬 Chat on WhatsApp
+            </a>
+
+
+            <a
+                href="mailto:olanesglobalexportltd@gmail.com"
+                class="button quote-button"
+            >
+                ✉️ Send an Email
             </a>
 
 
         </div>
 
+    </section>
 
-    </div>
+
+</main>
 
 
-</div>
-
+<!-- FOOTER -->
 
 <footer>
 
 
+    <img
+        src="IMG-20260522-WA0001(1).jpg"
+        alt="OLANES GLOBAL EXPORT LTD Logo"
+    >
+
+
     <p>
-        © 2026 OLANES GLOBAL EXPORT LTD.
-        All rights reserved.
+
+        <strong>
+            OLANES GLOBAL EXPORT LTD
+        </strong>
+
     </p>
 
 
@@ -337,9 +1164,21 @@
     </p>
 
 
+    <p>
+        Boluwatife Community, Ayekale, Ota Efun,
+        Osogbo, Osun State, Nigeria
+    </p>
+
+
+    <p>
+        © 2026 OLANES GLOBAL EXPORT LTD.
+        All rights reserved.
+    </p>
+
+
 </footer>
 
 
 </body>
 
-  </html>
+    </html>
