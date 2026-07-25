@@ -1,1012 +1,909 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>OLANES GLOBAL EXPORT LTD | Nigerian Export Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="OLANES GLOBAL EXPORT LTD supplies premium Nigerian agricultural commodities, hardwood lump charcoal, and natural products to local and international markets.">
+    <title>OLANES GLOBAL EXPORT LTD | Nigerian Export Company</title>
 
-<style>
+    <meta name="description" content="OLANES GLOBAL EXPORT LTD supplies premium Nigerian agricultural commodities, hardwood lump charcoal, and natural products to local and international markets.">
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+    <style>
 
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 1.6;
-        background: #f5f7f5;
-        color: #222;
-    }
-
-    /* HEADER */
-
-    header {
-        background: linear-gradient(135deg, #063b2a, #0b5a40);
-        color: white;
-        padding: 25px 20px 70px;
-        text-align: center;
-    }
-
-    .logo {
-        width: 150px;
-        height: 150px;
-        object-fit: contain;
-        background: white;
-        border-radius: 50%;
-        padding: 8px;
-        margin-bottom: 25px;
-    }
-
-    header h1 {
-        font-size: 40px;
-        margin-bottom: 15px;
-        letter-spacing: 1px;
-    }
-
-    header p {
-        font-size: 19px;
-        max-width: 750px;
-        margin: auto;
-    }
-
-    .hero-button {
-        display: inline-block;
-        margin-top: 25px;
-        padding: 13px 28px;
-        background: #c79a21;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
-
-    .hero-button:hover {
-        background: #a57c0f;
-    }
-
-    /* NAVIGATION */
-
-    nav {
-        background: white;
-        padding: 16px;
-        text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-    }
-
-    nav a {
-        color: #063b2a;
-        text-decoration: none;
-        margin: 0 10px;
-        font-weight: bold;
-    }
-
-    nav a:hover {
-        color: #c79a21;
-    }
-
-    /* SECTIONS */
-
-    section {
-        max-width: 1100px;
-        margin: 45px auto;
-        padding: 45px;
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 3px 15px rgba(0,0,0,0.05);
-    }
-
-    h2 {
-        color: #063b2a;
-        margin-bottom: 20px;
-        font-size: 30px;
-    }
-
-    h3 {
-        color: #063b2a;
-        margin-bottom: 10px;
-    }
-
-    /* PRODUCTS */
-
-    .products {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 25px;
-        margin-top: 30px;
-    }
-
-    .product {
-        background: #f5f7f5;
-        border-radius: 10px;
-        overflow: hidden;
-        border: 1px solid #e2e6e2;
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .product:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.10);
-    }
-
-    .product img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        display: block;
-    }
-
-    .product-content {
-        padding: 22px;
-    }
-
-    .product-content h3 {
-        margin-bottom: 10px;
-    }
-
-    .product-button {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 18px;
-        background: #063b2a;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-    }
-
-    .product-button:hover {
-        background: #0b5a40;
-    }
-
-    /* SERVICES */
-
-    .services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: 20px;
-    }
-
-    .service {
-        padding: 25px;
-        background: #f5f7f5;
-        border-left: 4px solid #c79a21;
-        border-radius: 8px;
-    }
-
-    /* PROCESS */
-
-    .process {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 20px;
-        margin-top: 25px;
-    }
-
-    .process-step {
-        text-align: center;
-        padding: 20px;
-        background: #f5f7f5;
-        border-radius: 8px;
-    }
-
-    .process-number {
-        width: 45px;
-        height: 45px;
-        margin: 0 auto 12px;
-        border-radius: 50%;
-        background: #063b2a;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-    }
-
-    /* QUOTE FORM */
-
-    .quote-form {
-        display: grid;
-        gap: 15px;
-        margin-top: 25px;
-    }
-
-    .quote-form input,
-    .quote-form select,
-    .quote-form textarea {
-        width: 100%;
-        padding: 13px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-    }
-
-    .quote-form textarea {
-        min-height: 130px;
-        resize: vertical;
-    }
-
-    .quote-button {
-        padding: 14px;
-        background: #063b2a;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .quote-button:hover {
-        background: #0b5a40;
-    }
-
-    /* CONTACT */
-
-    .contact-box {
-        background: #063b2a;
-        color: white;
-        padding: 35px;
-        border-radius: 10px;
-    }
-
-    .contact-box h2 {
-        color: white;
-    }
-
-    .contact-box a {
-        color: white;
-    }
-
-    .contact-button {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 12px 25px;
-        background: #25D366;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
-
-    .email-button {
-        display: inline-block;
-        margin-top: 20px;
-        margin-left: 10px;
-        padding: 12px 25px;
-        background: #c79a21;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
-
-    /* FOOTER */
-
-    footer {
-        background: #04251b;
-        color: white;
-        text-align: center;
-        padding: 35px 20px;
-        margin-top: 50px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 600px) {
-
-        header h1 {
-            font-size: 28px;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        header p {
-            font-size: 16px;
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: #f5f7f5;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #063b2a, #0b5a40);
+            color: white;
+            padding: 25px 20px 70px;
+            text-align: center;
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            background: white;
+            border-radius: 50%;
+            padding: 8px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 19px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .hero-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #c79a21;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: white;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
         }
 
         nav a {
-            display: inline-block;
-            margin: 5px;
-            font-size: 14px;
+            color: #063b2a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
         }
 
         section {
-            margin: 20px 10px;
-            padding: 25px;
+            max-width: 1100px;
+            margin: 45px auto;
+            padding: 45px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.05);
         }
 
         h2 {
-            font-size: 25px;
+            color: #063b2a;
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        h3 {
+            color: #063b2a;
+            margin-bottom: 10px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .product {
+            background: #f5f7f5;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e2e6e2;
+            transition: transform 0.2s ease;
+        }
+
+        .product:hover {
+            transform: translateY(-4px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .product-content {
+            padding: 22px;
+        }
+
+        .product-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 18px;
+            background: #063b2a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .service {
+            padding: 25px;
+            background: #f5f7f5;
+            border-left: 4px solid #c79a21;
+            border-radius: 8px;
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 20px;
+            background: #f5f7f5;
+            border-radius: 8px;
+        }
+
+        .process-number {
+            width: 45px;
+            height: 45px;
+            margin: 0 auto 12px;
+            border-radius: 50%;
+            background: #063b2a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .quote-form {
+            display: grid;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .quote-form input,
+        .quote-form select,
+        .quote-form textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .quote-form textarea {
+            min-height: 130px;
+        }
+
+        .quote-button {
+            padding: 14px;
+            background: #063b2a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .contact-box {
+            background: #063b2a;
+            color: white;
+            padding: 35px;
+            border-radius: 10px;
+        }
+
+        .contact-box h2 {
+            color: white;
+        }
+
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
         .email-button {
-            margin-left: 0;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 10px;
+            padding: 12px 25px;
+            background: #c79a21;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
         }
 
-    }
-
-</style>
-
-</head><body><!-- HEADER --><header><img
-    src="IMG-20260522-WA0001(1).jpg"
-    alt="OLANES GLOBAL EXPORT LTD Logo"
-    class="logo"
->
-
-<h1>OLANES GLOBAL EXPORT LTD</h1>
-
-<p>
-    Connecting quality Nigerian agricultural commodities,
-    premium charcoal, and natural products with international markets.
-</p>
-
-<a href="#quote" class="hero-button">
-    Request a Quote
-</a>
-
-</header><!-- NAVIGATION --><nav><a href="#about">About</a>
-<a href="#products">Products</a>
-<a href="#services">Services</a>
-<a href="#process">Export Process</a>
-<a href="#quote">Request a Quote</a>
-<a href="#contact">Contact</a>
-
-</nav><!-- ABOUT --><section id="about"><h2>About OLANES GLOBAL EXPORT LTD</h2>
-
-<p>
-    OLANES GLOBAL EXPORT LTD is a Nigerian export company focused on
-    sourcing and supplying quality agricultural commodities, charcoal,
-    and natural products for local and international markets.
-</p>
-
-<br>
-
-<p>
-    We aim to build reliable relationships with international buyers,
-    wholesalers, distributors, and business partners while providing
-    quality-focused products and professional export services.
-</p>
-
-<br>
-
-<p>
-    Our approach is centered on clear communication, reliable sourcing,
-    careful product handling, and professional coordination throughout
-    the export process.
-</p>
-
-</section><!-- PRODUCTS --><section id="products"><h2>Our Products</h2>
-
-<p>
-    We supply selected Nigerian agricultural commodities and natural
-    products for wholesale and international export.
-</p>
-
-
-<div class="products">
-
-
-    <!-- CHARCOAL -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260722-WA0012.jpg"
-            alt="Premium Hardwood Lump Charcoal"
-        >
-
-        <div class="product-content">
-
-            <h3>Premium Hardwood Lump Charcoal</h3>
-
-            <p>
-                Quality hardwood lump charcoal suitable for barbecue
-                and commercial applications. Available for bulk and
-                international export supply.
-            </p>
-
-            <a
-                href="charcoal.html"
-                class="product-button"
-            >
-                View Product Details
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- CASHEW NUTS -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260725-WA0017.jpg"
-            alt="Nigerian Cashew Nuts"
-        >
-
-        <div class="product-content">
-
-            <h3>Cashew Nuts</h3>
-
-            <p>
-                Quality Nigerian cashew nuts available for wholesale
-                supply and international export markets.
-            </p>
-
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- HIBISCUS FLOWER -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260725-WA0039.jpg"
-            alt="Nigerian Hibiscus Flower"
-        >
-
-        <div class="product-content">
-
-            <h3>Hibiscus Flower</h3>
-
-            <p>
-                Quality dried Nigerian hibiscus flower (zobo)
-                available for wholesale supply and international
-                export markets.
-            </p>
-
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- PALM OIL -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260725-WA0032.jpg"
-            alt="Nigerian Palm Oil"
-        >
-
-        <div class="product-content">
-
-            <h3>Palm Oil</h3>
-
-            <p>
-                Nigerian palm oil products available for commercial
-                supply and export according to buyer requirements.
-            </p>
-
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- SESAME SEEDS -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260725-WA0036.jpg"
-            alt="Nigerian Sesame Seeds"
-        >
-
-        <div class="product-content">
-
-            <h3>Sesame Seeds</h3>
-
-            <p>
-                Quality Nigerian sesame seeds available for wholesale
-                supply and international commodity markets.
-            </p>
-
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- COCOA -->
-
-    <div class="product">
-
-        <img
-            src="IMG-20260725-WA0028.jpg" 
-            alt="Nigerian Cocoa"
-        >
-
-        <div class="product-content">
-
-            <h3>Cocoa</h3>
-
-            <p>
-                Nigerian cocoa products sourced for wholesale supply
-                and international commodity markets.
-            </p>
-
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- COFFEE -->
-
-<div class="product">
+        footer {
+            background: #04251b;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            section {
+                margin: 20px 10px;
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .email-button {
+                margin-left: 0;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
 
     <img
-        src="IMG-20260725-WA0025.jpg"
-        alt="Nigerian Coffee"
+        src="IMG-20260522-WA0001(1).jpg"
+        alt="OLANES GLOBAL EXPORT LTD Logo"
+        class="logo"
     >
 
-    <div class="product-content">
+    <h1>OLANES GLOBAL EXPORT LTD</h1>
 
-        <h3>Coffee</h3>
+    <p>
+        Connecting quality Nigerian agricultural commodities,
+        premium charcoal, and natural products with international markets.
+    </p>
 
-        <p>
-            Quality Nigerian coffee products available for wholesale
-            supply and international export markets.
-        </p>
+    <a href="#quote" class="hero-button">
+        Request a Quote
+    </a>
 
-        <a href="#quote" class="product-button">
-            Request a Quote
-        </a>
+</header>
+
+
+<nav>
+
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#services">Services</a>
+    <a href="#process">Export Process</a>
+    <a href="#quote">Request a Quote</a>
+    <a href="#contact">Contact</a>
+
+</nav>
+
+
+<section id="about">
+
+    <h2>About OLANES GLOBAL EXPORT LTD</h2>
+
+    <p>
+        OLANES GLOBAL EXPORT LTD is a Nigerian export company focused on
+        sourcing and supplying quality agricultural commodities, charcoal,
+        and natural products for local and international markets.
+    </p>
+
+    <br>
+
+    <p>
+        We aim to build reliable relationships with international buyers,
+        wholesalers, distributors, and business partners while providing
+        quality-focused products and professional export services.
+    </p>
+
+    <br>
+
+    <p>
+        Our approach is centered on clear communication, reliable sourcing,
+        careful product handling, and professional coordination throughout
+        the export process.
+    </p>
+
+</section>
+
+
+<section id="products">
+
+    <h2>Our Products</h2>
+
+    <p>
+        We supply selected Nigerian agricultural commodities and natural
+        products for wholesale and international export.
+    </p>
+
+
+    <div class="products">
+
+
+        <!-- CHARCOAL -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260722-WA0012.jpg"
+                alt="Premium Hardwood Lump Charcoal"
+            >
+
+            <div class="product-content">
+
+                <h3>Premium Hardwood Lump Charcoal</h3>
+
+                <p>
+                    Quality hardwood lump charcoal suitable for barbecue
+                    and commercial applications. Available for bulk and
+                    international export supply.
+                </p>
+
+                <a
+                    href="charcoal.html"
+                    class="product-button"
+                >
+                    View Product Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CASHEW NUTS -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0017.jpg"
+                alt="Nigerian Cashew Nuts"
+            >
+
+            <div class="product-content">
+
+                <h3>Cashew Nuts</h3>
+
+                <p>
+                    Quality Nigerian cashew nuts available for wholesale
+                    supply and international export markets.
+                </p>
+
+                <a
+                    href="cashew.html"
+                    class="product-button"
+                >
+                    View Product Details
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HIBISCUS -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0039.jpg"
+                alt="Nigerian Hibiscus Flower"
+            >
+
+            <div class="product-content">
+
+                <h3>Hibiscus Flower</h3>
+
+                <p>
+                    Quality dried Nigerian hibiscus flower (zobo)
+                    available for wholesale supply and international
+                    export markets.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PALM OIL -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0032.jpg"
+                alt="Nigerian Palm Oil"
+            >
+
+            <div class="product-content">
+
+                <h3>Palm Oil</h3>
+
+                <p>
+                    Nigerian palm oil products available for commercial
+                    supply and export according to buyer requirements.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SESAME SEEDS -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0036.jpg"
+                alt="Nigerian Sesame Seeds"
+            >
+
+            <div class="product-content">
+
+                <h3>Sesame Seeds</h3>
+
+                <p>
+                    Quality Nigerian sesame seeds available for wholesale
+                    supply and international commodity markets.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COCOA -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0028.jpg"
+                alt="Nigerian Cocoa"
+            >
+
+            <div class="product-content">
+
+                <h3>Cocoa</h3>
+
+                <p>
+                    Nigerian cocoa products sourced for wholesale supply
+                    and international commodity markets.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- COFFEE -->
+
+        <div class="product">
+
+            <img
+                src="IMG-20260725-WA0025.jpg"
+                alt="Nigerian Coffee"
+            >
+
+            <div class="product-content">
+
+                <h3>Coffee</h3>
+
+                <p>
+                    Quality Nigerian coffee products available for
+                    wholesale supply and international export markets.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOYA BEANS -->
+
+        <div class="product">
+
+            <div class="product-content">
+
+                <h3>Soya Beans</h3>
+
+                <p>
+                    Agricultural commodity supply for wholesale and
+                    international markets.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- YAM FLOUR -->
+
+        <div class="product">
+
+            <div class="product-content">
+
+                <h3>Yam Flour & Afro Products</h3>
+
+                <p>
+                    Selected Nigerian food and Afro products available
+                    for international customers.
+                </p>
+
+                <a href="#quote" class="product-button">
+                    Request a Quote
+                </a>
+
+            </div>
+
+        </div>
+
 
     </div>
 
-</div>
+</section>
 
 
-    <!-- SOYA BEANS -->
+<section id="services">
 
-    <div class="product">
+    <h2>Our Export Services</h2>
 
-        <div class="product-content">
+    <div class="services">
 
-            <h3>Soya Beans</h3>
-
+        <div class="service">
+            <h3>Bulk Supply</h3>
             <p>
-                Agricultural commodity supply for wholesale and
-                international markets.
+                We work with buyers requiring agricultural commodities,
+                charcoal, and natural products in commercial quantities.
             </p>
+        </div>
 
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
+        <div class="service">
+            <h3>Product Sourcing</h3>
+            <p>
+                We coordinate product sourcing according to agreed
+                specifications, quantities, and buyer requirements.
+            </p>
+        </div>
 
+        <div class="service">
+            <h3>Packaging Coordination</h3>
+            <p>
+                Product packaging can be discussed according to product
+                type, buyer requirements, and agreed order specifications.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Export Documentation</h3>
+            <p>
+                Export documentation and related processes are coordinated
+                according to the requirements of each shipment.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>International Shipping</h3>
+            <p>
+                We coordinate with logistics partners for shipment
+                arrangements based on agreed international trade terms.
+            </p>
+        </div>
+
+        <div class="service">
+            <h3>Buyer Support</h3>
+            <p>
+                We communicate with buyers throughout the order process
+                to discuss product requirements and shipment arrangements.
+            </p>
         </div>
 
     </div>
 
+</section>
 
-    <!-- YAM FLOUR & AFRO PRODUCTS -->
 
-    <div class="product">
+<section id="process">
 
-        <div class="product-content">
+    <h2>Our Export Process</h2>
 
-            <h3>Yam Flour & Afro Products</h3>
+    <p>
+        We work with buyers through a structured process designed to
+        provide clear communication from inquiry to shipment.
+    </p>
 
-            <p>
-                Selected Nigerian food and Afro products available
-                for international customers.
-            </p>
+    <div class="process">
 
-            <a href="#quote" class="product-button">
-                Request a Quote
-            </a>
+        <div class="process-step">
+            <div class="process-number">1</div>
+            <h3>Buyer Inquiry</h3>
+            <p>Send us your product and quantity requirements.</p>
+        </div>
 
+        <div class="process-step">
+            <div class="process-number">2</div>
+            <h3>Quotation</h3>
+            <p>We discuss pricing, packaging, and shipping requirements.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="process-number">3</div>
+            <h3>Order Confirmation</h3>
+            <p>Order details and agreed terms are confirmed.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="process-number">4</div>
+            <h3>Preparation</h3>
+            <p>Products are prepared and packaged according to agreed terms.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="process-number">5</div>
+            <h3>Documentation</h3>
+            <p>Required export documentation is prepared and coordinated.</p>
+        </div>
+
+        <div class="process-step">
+            <div class="process-number">6</div>
+            <h3>Shipment</h3>
+            <p>Shipment arrangements are coordinated with logistics partners.</p>
         </div>
 
     </div>
 
+</section>
 
-</div>
 
-</section><!-- SERVICES --><section id="services"><h2>Our Export Services</h2>
+<section id="quote">
 
-
-<div class="services">
-
-
-    <div class="service">
-
-        <h3>Bulk Supply</h3>
-
-        <p>
-            We work with buyers requiring agricultural commodities,
-            charcoal, and natural products in commercial quantities.
-        </p>
-
-    </div>
-
-
-    <div class="service">
-
-        <h3>Product Sourcing</h3>
-
-        <p>
-            We coordinate product sourcing according to agreed
-            specifications, quantities, and buyer requirements.
-        </p>
-
-    </div>
-
-
-    <div class="service">
-
-        <h3>Packaging Coordination</h3>
-
-        <p>
-            Product packaging can be discussed according to product
-            type, buyer requirements, and agreed order specifications.
-        </p>
-
-    </div>
-
-
-    <div class="service">
-
-        <h3>Export Documentation</h3>
-
-        <p>
-            Export documentation and related processes are coordinated
-            according to the requirements of each shipment.
-        </p>
-
-    </div>
-
-
-    <div class="service">
-
-        <h3>International Shipping</h3>
-
-        <p>
-            We coordinate with logistics partners for shipment
-            arrangements based on agreed international trade terms.
-        </p>
-
-    </div>
-
-
-    <div class="service">
-
-        <h3>Buyer Support</h3>
-
-        <p>
-            We communicate with buyers throughout the order process
-            to discuss product requirements and shipment arrangements.
-        </p>
-
-    </div>
-
-
-</div>
-
-</section><!-- EXPORT PROCESS --><section id="process"><h2>Our Export Process</h2>
-
-<p>
-    We work with buyers through a structured process designed to
-    provide clear communication from inquiry to shipment.
-</p>
-
-
-<div class="process">
-
-
-    <div class="process-step">
-
-        <div class="process-number">1</div>
-
-        <h3>Buyer Inquiry</h3>
-
-        <p>
-            Send us your product and quantity requirements.
-        </p>
-
-    </div>
-
-
-    <div class="process-step">
-
-        <div class="process-number">2</div>
-
-        <h3>Quotation</h3>
-
-        <p>
-            We discuss pricing, packaging, and shipping requirements.
-        </p>
-
-    </div>
-
-
-    <div class="process-step">
-
-        <div class="process-number">3</div>
-
-        <h3>Order Confirmation</h3>
-
-        <p>
-            Order details and agreed terms are confirmed.
-        </p>
-
-    </div>
-
-
-    <div class="process-step">
-
-        <div class="process-number">4</div>
-
-        <h3>Preparation</h3>
-
-        <p>
-            Products are prepared and packaged according to agreed terms.
-        </p>
-
-    </div>
-
-
-    <div class="process-step">
-
-        <div class="process-number">5</div>
-
-        <h3>Documentation</h3>
-
-        <p>
-            Required export documentation is prepared and coordinated.
-        </p>
-
-    </div>
-
-
-    <div class="process-step">
-
-        <div class="process-number">6</div>
-
-        <h3>Shipment</h3>
-
-        <p>
-            Shipment arrangements are coordinated with logistics partners.
-        </p>
-
-    </div>
-
-
-</div>
-
-</section><!-- REQUEST A QUOTE --><section id="quote"><h2>Request a Quote</h2>
-
-<p>
-    Interested in our products? Send us your requirements and our team
-    will contact you to discuss your order.
-</p>
-
-
-<form
-    class="quote-form"
-    action="https://formsubmit.co/olanesglobalexportltd@gmail.com"
-    method="POST"
->
-
-    <input
-        type="hidden"
-        name="_subject"
-        value="New OLANES GLOBAL EXPORT LTD Quote Request"
-    >
-
-    <input
-        type="hidden"
-        name="_captcha"
-        value="false"
-    >
-
-    <input
-        type="hidden"
-        name="_template"
-        value="table"
-    >
-
-    <input
-        type="text"
-        name="name"
-        placeholder="Full Name"
-        required
-    >
-
-    <input
-        type="text"
-        name="company"
-        placeholder="Company Name"
-    >
-
-    <input
-        type="email"
-        name="email"
-        placeholder="Email Address"
-        required
-    >
-
-    <input
-        type="text"
-        name="country"
-        placeholder="Country"
-        required
-    >
-
-    <select name="product" required>
-
-        <option value="">
-            Select Product
-        </option>
-
-        <option>
-            Premium Hardwood Lump Charcoal
-        </option>
-
-        <option>
-            Cashew Nuts
-        </option>
-
-        <option>
-            Hibiscus Flower
-        </option>
-
-        <option>
-            Palm Oil
-        </option>
-
-        <option>
-            Sesame Seeds
-        </option>
-
-        <option>
-            Cocoa
-        </option>
-
-        <option>
-            Coffee
-        </option>
-
-        <option>
-            Soya Beans
-        </option>
-
-        <option>
-            Yam Flour & Afro Products
-        </option>
-
-        <option>
-            Other
-        </option>
-
-    </select>
-
-
-    <input
-        type="text"
-        name="quantity"
-        placeholder="Required Quantity"
-        required
-    >
-
-
-    <input
-        type="text"
-        name="destination"
-        placeholder="Destination / Port"
-    >
-
-
-    <textarea
-        name="message"
-        placeholder="Tell us about your product requirements, packaging preferences, and other details."
-    ></textarea>
-
-
-    <button
-        type="submit"
-        class="quote-button"
-    >
-        Submit Quote Request
-    </button>
-
-</form>
-
-</section><!-- CONTACT --><section id="contact"><div class="contact-box">
-
-    <h2>Contact OLANES GLOBAL EXPORT LTD</h2>
+    <h2>Request a Quote</h2>
 
     <p>
-        We welcome inquiries from international buyers, wholesalers,
-        distributors, and business partners.
+        Interested in our products? Send us your requirements and our team
+        will contact you to discuss your order.
     </p>
 
-    <br>
+    <form
+        class="quote-form"
+        action="https://formsubmit.co/olanesglobalexportltd@gmail.com"
+        method="POST"
+    >
 
-    <p>
-        <strong>Address:</strong><br>
-        Boluwatife Community, Ayekale, Ota Efun,
-        Osogbo, Osun State, Nigeria
-    </p>
+        <input
+            type="hidden"
+            name="_subject"
+            value="New OLANES GLOBAL EXPORT LTD Quote Request"
+        >
 
-    <br>
+        <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+        >
 
-    <p>
-        <strong>Phone / WhatsApp:</strong><br>
-        +234 706 516 0991
-    </p>
+        <input
+            type="hidden"
+            name="_template"
+            value="table"
+        >
 
-    <br>
+        <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required
+        >
 
-    <p>
-        <strong>Email:</strong><br>
-        <a href="mailto:olanesglobalexportltd@gmail.com">
+        <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+        >
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+        >
+
+        <input
+            type="text"
+            name="country"
+            placeholder="Country"
+            required
+        >
+
+        <select name="product" required>
+
+            <option value="">Select Product</option>
+
+            <option>Premium Hardwood Lump Charcoal</option>
+            <option>Cashew Nuts</option>
+            <option>Hibiscus Flower</option>
+            <option>Palm Oil</option>
+            <option>Sesame Seeds</option>
+            <option>Cocoa</option>
+            <option>Coffee</option>
+            <option>Soya Beans</option>
+            <option>Yam Flour & Afro Products</option>
+            <option>Other</option>
+
+        </select>
+
+        <input
+            type="text"
+            name="quantity"
+            placeholder="Required Quantity"
+            required
+        >
+
+        <input
+            type="text"
+            name="destination"
+            placeholder="Destination / Port"
+        >
+
+        <textarea
+            name="message"
+            placeholder="Tell us about your product requirements, packaging preferences, and other details."
+        ></textarea>
+
+        <button
+            type="submit"
+            class="quote-button"
+        >
+            Submit Quote Request
+        </button>
+
+    </form>
+
+</section>
+
+
+<section id="contact">
+
+    <div class="contact-box">
+
+        <h2>Contact OLANES GLOBAL EXPORT LTD</h2>
+
+        <p>
+            We welcome inquiries from international buyers, wholesalers,
+            distributors, and business partners.
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Address:</strong><br>
+            Boluwatife Community, Ayekale, Ota Efun,
+            Osogbo, Osun State, Nigeria
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Phone / WhatsApp:</strong><br>
+            +234 706 516 0991
+        </p>
+
+        <br>
+
+        <p>
+            <strong>Email:</strong><br>
             olanesglobalexportltd@gmail.com
+        </p>
+
+        <a
+            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20products."
+            class="contact-button"
+            target="_blank"
+        >
+            💬 Chat With Us on WhatsApp
         </a>
+
+        <a
+            href="mailto:olanesglobalexportltd@gmail.com"
+            class="email-button"
+        >
+            ✉️ Email Us
+        </a>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 OLANES GLOBAL EXPORT LTD.
+        All rights reserved.
     </p>
 
+    <p>
+        Nigerian Agricultural & Natural Product Exporters
+    </p>
 
-    <a
-        href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20products."
-        class="contact-button"
-        target="_blank"
-    >
-        💬 Chat With Us on WhatsApp
-    </a>
+</footer>
 
-
-    <a
-        href="mailto:olanesglobalexportltd@gmail.com"
-        class="email-button"
-    >
-        ✉️ Email Us
-    </a>
-
-</div>
-
-</section><!-- FOOTER --><footer><p>
-    © 2026 OLANES GLOBAL EXPORT LTD.
-    All rights reserved.
-</p>
-
-<p>
-    Nigerian Agricultural & Natural Product Exporters
-</p>
-
-</footer></body>
-    </html>
+</body>
+    </html> 
