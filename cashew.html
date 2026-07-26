@@ -3,575 +3,1839 @@
 
 <head>
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Premium Nigerian Cashew Nuts | OLANES GLOBAL EXPORT LTD
-    </title>
-
-    <meta
-        name="description"
-        content="OLANES GLOBAL EXPORT LTD supplies quality Nigerian cashew nuts for wholesale, commercial, and international export markets."
-    >
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7f5;
-            color: #222;
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        nav {
-            background: #ffffff;
-            padding: 14px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-        }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: #063b2a;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .nav-logo img {
-            width: 52px;
-            height: 52px;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: #063b2a;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #c79a21;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            min-height: 580px;
-
-            background:
-                linear-gradient(
-                    rgba(3, 45, 31, 0.78),
-                    rgba(3, 45, 31, 0.78)
-                ),
-                url("IMG-20260725-WA0017.jpg");
-
-            background-size: cover;
-            background-position: center;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-            color: white;
-
-            padding: 70px 20px;
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            line-height: 1.2;
-            margin-bottom: 22px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #f0f5f2;
-        }
-
-
-        /* =========================
-           BUTTONS
-        ========================= */
-
-        .button {
-            display: inline-block;
-            padding: 14px 27px;
-            margin: 5px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .quote-button {
-            background: #c79a21;
-            color: white;
-        }
-
-        .quote-button:hover {
-            background: #a77f16;
-            transform: translateY(-2px);
-        }
-
-        .whatsapp-button {
-            background: #25D366;
-            color: white;
-        }
-
-        .whatsapp-button:hover {
-            background: #1da851;
-            transform: translateY(-2px);
-        }
-
-        .email-button {
-            background: white;
-            color: #063b2a;
-        }
-
-        .email-button:hover {
-            background: #eeeeee;
-        }
-
-
-        /* =========================
-           MAIN CONTAINER
-        ========================= */
-
-        .container {
-            max-width: 1150px;
-            margin: auto;
-            padding: 75px 25px;
-        }
-
-
-        /* =========================
-           PRODUCT INTRODUCTION
-        ========================= */
-
-        .product-intro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 520px;
-            object-fit: cover;
-            border-radius: 15px;
-
-            box-shadow:
-                0 12px 35px
-                rgba(0,0,0,0.15);
-        }
-
-        .product-content h2 {
-            color: #063b2a;
-            font-size: 40px;
-            line-height: 1.3;
-            margin-bottom: 20px;
-        }
-
-        .product-content p {
-            color: #555;
-            margin-bottom: 18px;
-        }
-
-
-        /* =========================
-           PRODUCT HIGHLIGHTS
-        ========================= */
-
-        .highlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .highlight {
-            background: white;
-            padding: 18px;
-            border-left: 4px solid #c79a21;
-            border-radius: 7px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
-        }
-
-        .highlight strong {
-            display: block;
-            color: #063b2a;
-            margin-bottom: 5px;
-        }
-
-
-        /* =========================
-           SECTION TITLE
-        ========================= */
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section-title h2 {
-            color: #063b2a;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           IMAGE GALLERY
-        ========================= */
-
-        .gallery-section {
-            margin-top: 85px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-
-        .gallery-card {
-            background: white;
-            padding: 12px;
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-        }
-
-        .gallery-card img {
-            width: 100%;
-            height: 430px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
-
-
-        /* =========================
-           PRODUCT SPECIFICATIONS
-        ========================= */
-
-        .info-section {
-            margin-top: 85px;
-        }
-
-        .specs {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-        }
-
-        .spec {
-            background: white;
-            padding: 22px;
-            border-radius: 8px;
-            border-left: 4px solid #c79a21;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .spec strong {
-            display: block;
-            color: #063b2a;
-            margin-bottom: 5px;
-        }
-
-
-        /* =========================
-           PACKAGING
-        ========================= */
-
-        .packaging-text {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 30px;
-            color: #555;
-        }
-
-        .packaging {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .package {
-            background: white;
-            padding: 28px 15px;
-            text-align: center;
-            border-radius: 10px;
-            color: #063b2a;
-            font-weight: bold;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
-            border-bottom: 4px solid #c79a21;
-        }
-
-
-        /* =========================
-           EXPORT SUPPLY
-        ========================= */
-
-        .supply-box {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-        }
-
-        .supply-box p {
-            color: #555;
-            margin-bottom: 18px;
-        }
-
-
-        /* =========================
-           QUALITY SECTION
-        ========================= */
-
-        .quality-section {
-            background: #063b2a;
-            color: white;
-            padding: 55px 40px;
-            border-radius: 15px;
-            margin-top: 85px;
-        }
-
-        .quality-section h2 {
-            font-size: 34px;
-            margin-bottom: 18px;
-        }
-
-        .quality-section p {
-            color: #dce8e2;
-            margin-bottom: 15px;
-        }
-
-
-        /* =========================
-           CALL TO ACTION
-        ========================= */
-
-        .cta {
-            margin-top: 85px;
-            background:
-                linear-gradient(
-                    rgba(3,45,31,0.95),
-                    rgba(3,45,31,0.95)
-                );
-
-            color: white;
-            text-align: center;
-            padding: 65px 25px;
-            border-radius: 15px;
-        }
-
-        .cta h2 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            max-width: 750px;
-            margin: 0 auto 25px;
-            color: #dce8e2;
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact {
-            margin-top: 85px;
-            background: white;
-            padding: 45px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-        }
-
-        .contact h2 {
-            color: #063b2a;
-            font-size: 34px;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            color: #555;
-            margin-bottom: 12px;
-        }
-
-        .contact strong {
-            color: #063b2a;
-        }
-
-        .contact a {
-            color: #063b2a;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background: #04251b;
-            color: white;
-            text-align: center;
-            padding: 45px 20px;
-            margin-top: 85px;
-        }
-
-        footer img {
-            width: 75px;
-            height: 75px;
-            object-fit: contain;
-            background: white;
-            padding: 5px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            color: #c8d3ce;
-            margin: 5px;
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 850px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .product-intro {
-                grid-template-columns: 1fr;
-            }
-
-            .product-image img {
-                height: 450px;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .specs {
-                grid-template-columns: 1fr;
-            }
-
-            .packaging {
-                grid-template-columns: 1fr 1fr;
-            }
-
-        }
-
-
-        @media (max-width: 550px) {
-
-            .hero {
-                min-height: 520px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .product-content h2 {
-                font-size: 30px;
-            }
-
-            .highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .packaging {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-card img {
-                height: 350px;
-            }
-
-            .quality-section {
-                padding: 35px 25px;
-            }
-
-            .contact {
-                padding: 30px 25px;
-            }
-
-            .cta h2 {
-                font-size: 30px;
-            }
-
-        }
-
-    </style>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cashew Nuts | OLANES GLOBAL EXPORT LTD</title>
+
+<meta
+name="description"
+content="OLANES GLOBAL EXPORT LTD supplies quality Nigerian cashew nuts for wholesalers, distributors, importers, and international buyers."
+>
+
+<meta
+name="keywords"
+content="Nigerian cashew nuts, cashew export Nigeria, cashew suppliers Nigeria, bulk cashew nuts, wholesale cashew nuts, OLANES GLOBAL EXPORT LTD"
+>
+
+<meta name="theme-color" content="#063b2a">
+
+
+<style>
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.7;
+
+    background:
+        #f7f8f6;
+
+    color:
+        #1e2823;
+
+    overflow-x:
+        hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+
+    --green-dark:
+        #063b2a;
+
+    --green:
+        #0b5a40;
+
+    --green-light:
+        #eaf3ee;
+
+    --gold:
+        #c79a21;
+
+    --gold-light:
+        #e9c866;
+
+    --white:
+        #ffffff;
+
+    --text:
+        #1e2823;
+
+    --muted:
+        #68736d;
+
+    --light-bg:
+        #f7f8f6;
+
+    --border:
+        #e2e8e3;
+
+    --shadow:
+        0 15px 45px rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green-dark),
+            #084b35
+        );
+
+    color:
+        white;
+
+    padding:
+        9px 5%;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    font-size:
+        13px;
+
+}
+
+.top-bar span {
+    opacity:
+        0.9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        9999;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.nav-container {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding:
+        11px 25px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+.nav-logo {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    color:
+        var(--green-dark);
+
+}
+
+.nav-logo img {
+
+    width:
+        52px;
+
+    height:
+        52px;
+
+    object-fit:
+        contain;
+
+}
+
+.nav-logo-text {
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+    font-size:
+        16px;
+
+    line-height:
+        1.2;
+
+}
+
+.nav-logo-text span {
+
+    color:
+        var(--gold);
+
+    display:
+        block;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        1.5px;
+
+    margin-top:
+        4px;
+
+}
+
+.nav-links {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+}
+
+.nav-links a {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        14px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.nav-links a:hover {
+
+    color:
+        var(--gold);
+
+}
+
+.nav-cta {
+
+    background:
+        var(--green-dark);
+
+    color:
+        white !important;
+
+    padding:
+        10px 18px;
+
+    border-radius:
+        5px;
+
+}
+
+.nav-cta:hover {
+
+    background:
+        var(--gold);
+
+}
+
+
+/* =========================================================
+   HAMBURGER MENU
+========================================================= */
+
+.menu-toggle {
+
+    display:
+        none;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    padding:
+        9px;
+
+    background:
+        transparent;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        6px;
+
+    cursor:
+        pointer;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        5px;
+
+}
+
+.menu-toggle span {
+
+    width:
+        24px;
+
+    height:
+        2px;
+
+    background:
+        var(--green-dark);
+
+    border-radius:
+        3px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform:
+        translateY(7px) rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2) {
+
+    opacity:
+        0;
+
+}
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform:
+        translateY(-7px) rotate(-45deg);
+
+}
+
+
+/* =========================================================
+   PRODUCT HERO
+========================================================= */
+
+.product-hero {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,34,24,0.96),
+            rgba(3,34,24,0.80),
+            rgba(3,34,24,0.30)
+        ),
+
+        url("IMG-20260725-WA0020.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+    min-height:
+        560px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+}
+
+.product-hero-content {
+
+    max-width:
+        1250px;
+
+    width:
+        100%;
+
+    margin:
+        auto;
+
+    padding:
+        90px 25px;
+
+    color:
+        white;
+
+    animation:
+        fadeUp 0.9s ease both;
+
+}
+
+.breadcrumb {
+
+    margin-bottom:
+        20px;
+
+    font-size:
+        13px;
+
+}
+
+.breadcrumb a {
+
+    color:
+        var(--gold-light);
+
+}
+
+.breadcrumb span {
+
+    color:
+        rgba(255,255,255,0.6);
+
+    margin:
+        0 8px;
+
+}
+
+.product-hero h1 {
+
+    font-size:
+        clamp(40px,6vw,68px);
+
+    line-height:
+        1.08;
+
+    max-width:
+        800px;
+
+    margin-bottom:
+        25px;
+
+}
+
+.product-hero h1 span {
+
+    color:
+        var(--gold-light);
+
+}
+
+.product-hero p {
+
+    max-width:
+        700px;
+
+    color:
+        rgba(255,255,255,0.85);
+
+    font-size:
+        18px;
+
+    margin-bottom:
+        30px;
+
+}
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+}
+
+.primary-button,
+.secondary-button {
+
+    padding:
+        14px 27px;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.primary-button {
+
+    background:
+        var(--gold);
+
+    color:
+        white;
+
+}
+
+.primary-button:hover {
+
+    background:
+        var(--gold-light);
+
+    color:
+        var(--green-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+.secondary-button {
+
+    border:
+        1px solid rgba(255,255,255,0.7);
+
+    color:
+        white;
+
+}
+
+.secondary-button:hover {
+
+    background:
+        white;
+
+    color:
+        var(--green-dark);
+
+}
+
+
+/* =========================================================
+   PRODUCT INTRO
+========================================================= */
+
+.product-intro {
+
+    padding:
+        90px 25px;
+
+    background:
+        white;
+
+}
+
+.product-intro-grid {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.1fr
+        0.9fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+
+/* =========================================================
+   IMAGE GALLERY
+========================================================= */
+
+.product-gallery {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+}
+
+.gallery-image {
+
+    height:
+        330px;
+
+    overflow:
+        hidden;
+
+    border-radius:
+        10px;
+
+    background:
+        var(--green-light);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.gallery-image:first-child {
+
+    grid-column:
+        span 2;
+
+    height:
+        430px;
+
+}
+
+.gallery-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+.gallery-image:hover img {
+
+    transform:
+        scale(1.05);
+
+}
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
+
+.product-intro-text {
+
+    animation:
+        fadeUp 0.8s ease both;
+
+}
+
+.section-label {
+
+    color:
+        var(--gold);
+
+    font-weight:
+        bold;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        2px;
+
+    font-size:
+        12px;
+
+    display:
+        block;
+
+    margin-bottom:
+        12px;
+
+}
+
+.product-intro-text h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        clamp(30px,4vw,45px);
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.product-intro-text p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        18px;
+
+}
+
+.product-highlights {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        12px;
+
+    margin-top:
+        25px;
+
+}
+
+.highlight {
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    padding:
+        15px;
+
+    border-radius:
+        6px;
+
+    font-size:
+        14px;
+
+    font-weight:
+        bold;
+
+}
+
+
+/* =========================================================
+   PRODUCT DETAILS
+========================================================= */
+
+.details-section {
+
+    padding:
+        90px 25px;
+
+    background:
+        var(--light-bg);
+
+}
+
+.section-container {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+}
+
+.section-heading {
+
+    max-width:
+        720px;
+
+    margin-bottom:
+        50px;
+
+}
+
+.section-heading h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        18px;
+
+}
+
+.section-heading p {
+
+    color:
+        var(--muted);
+
+}
+
+.details-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:
+        25px;
+
+}
+
+.detail-card {
+
+    background:
+        white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        10px;
+
+    padding:
+        28px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.detail-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.detail-card h3 {
+
+    color:
+        var(--green-dark);
+
+    margin-bottom:
+        15px;
+
+    font-size:
+        20px;
+
+}
+
+.detail-list {
+
+    list-style:
+        none;
+
+}
+
+.detail-list li {
+
+    padding:
+        10px 0;
+
+    border-bottom:
+        1px solid var(--border);
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+    font-size:
+        14px;
+
+}
+
+.detail-list li:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+.detail-list strong {
+
+    color:
+        var(--green-dark);
+
+}
+
+.detail-list span {
+
+    color:
+        var(--muted);
+
+    text-align:
+        right;
+
+}
+
+
+/* =========================================================
+   WHY BUY
+========================================================= */
+
+.why-section {
+
+    padding:
+        90px 25px;
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+}
+
+.why-section h2 {
+
+    color:
+        white;
+
+}
+
+.why-section .section-heading p {
+
+    color:
+        rgba(255,255,255,0.7);
+
+}
+
+.why-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        20px;
+
+}
+
+.why-card {
+
+    padding:
+        30px 25px;
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border-radius:
+        8px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.why-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        var(--gold);
+
+    background:
+        rgba(255,255,255,0.08);
+
+}
+
+.why-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    border-radius:
+        50%;
+
+    background:
+        rgba(199,154,33,0.15);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        22px;
+
+    margin-bottom:
+        20px;
+
+}
+
+.why-card h3 {
+
+    margin-bottom:
+        10px;
+
+}
+
+.why-card p {
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   EXPORT SUPPLY
+========================================================= */
+
+.supply-section {
+
+    padding:
+        90px 25px;
+
+    background:
+        white;
+
+}
+
+.supply-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+.supply-text h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        42px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.supply-text p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        18px;
+
+}
+
+.supply-points {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+    margin-top:
+        25px;
+
+}
+
+.supply-point {
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    padding:
+        17px;
+
+    border-radius:
+        6px;
+
+    font-weight:
+        bold;
+
+    font-size:
+        14px;
+
+}
+
+.supply-image {
+
+    position:
+        relative;
+
+}
+
+.supply-image img {
+
+    width:
+        100%;
+
+    height:
+        500px;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+/* =========================================================
+   QUOTE CTA
+========================================================= */
+
+.quote-cta {
+
+    padding:
+        85px 25px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(6,59,42,0.97),
+            rgba(6,59,42,0.90)
+        );
+
+    color:
+        white;
+
+    text-align:
+        center;
+
+}
+
+.quote-cta h2 {
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    margin-bottom:
+        15px;
+
+}
+
+.quote-cta p {
+
+    max-width:
+        650px;
+
+    margin:
+        0 auto 30px;
+
+    color:
+        rgba(255,255,255,0.75);
+
+}
+
+.quote-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+}
+
+.quote-button {
+
+    display:
+        inline-block;
+
+    padding:
+        14px 28px;
+
+    border-radius:
+        5px;
+
+    background:
+        var(--gold);
+
+    color:
+        white;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.quote-button:hover {
+
+    background:
+        var(--gold-light);
+
+    color:
+        var(--green-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+.whatsapp-button {
+
+    display:
+        inline-block;
+
+    padding:
+        14px 28px;
+
+    border:
+        1px solid rgba(255,255,255,0.6);
+
+    color:
+        white;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.whatsapp-button:hover {
+
+    background:
+        white;
+
+    color:
+        var(--green-dark);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background:
+        #031c14;
+
+    color:
+        white;
+
+    padding:
+        60px 25px 25px;
+
+}
+
+.footer-grid {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap:
+        50px;
+
+    padding-bottom:
+        40px;
+
+}
+
+.footer-brand img {
+
+    width:
+        75px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.footer-brand h3 {
+
+    margin-bottom:
+        12px;
+
+}
+
+.footer-brand p,
+.footer-column p {
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size:
+        14px;
+
+}
+
+.footer-column h4 {
+
+    color:
+        var(--gold-light);
+
+    margin-bottom:
+        18px;
+
+}
+
+.footer-column a {
+
+    display:
+        block;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size:
+        14px;
+
+    margin-bottom:
+        9px;
+
+}
+
+.footer-column a:hover {
+
+    color:
+        white;
+
+}
+
+.footer-bottom {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding-top:
+        25px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    text-align:
+        center;
+
+    color:
+        rgba(255,255,255,0.5);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1000px) {
+
+    .nav-links {
+        gap:
+            12px;
+    }
+
+    .why-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:750px) {
+
+    .top-bar {
+        display:
+            none;
+    }
+
+    .nav-container {
+
+        padding:
+            10px 15px;
+
+        position:
+            relative;
+
+    }
+
+    .menu-toggle {
+
+        display:
+            flex;
+
+    }
+
+    .nav-links {
+
+        display:
+            flex;
+
+        position:
+            absolute;
+
+        top:
+            100%;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            rgba(255,255,255,0.98);
+
+        backdrop-filter:
+            blur(10px);
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            0;
+
+        padding:
+            10px 20px 20px;
+
+        border-top:
+            1px solid var(--border);
+
+        box-shadow:
+            0 12px 25px rgba(0,0,0,0.1);
+
+        opacity:
+            0;
+
+        visibility:
+            hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            0.3s ease;
+
+    }
+
+    .nav-links.active {
+
+        opacity:
+            1;
+
+        visibility:
+            visible;
+
+        transform:
+            translateY(0);
+
+    }
+
+    .nav-links a {
+
+        display:
+            block;
+
+        padding:
+            14px 5px;
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+    .nav-links .nav-cta {
+
+        margin-top:
+            12px;
+
+        text-align:
+            center;
+
+    }
+
+    .nav-logo-text {
+
+        font-size:
+            13px;
+
+    }
+
+    .product-hero {
+
+        min-height:
+            600px;
+
+    }
+
+    .product-hero-content {
+
+        padding:
+            70px 20px;
+
+    }
+
+    .product-hero p {
+
+        font-size:
+            16px;
+
+    }
+
+    .product-intro-grid,
+    .supply-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            45px;
+
+    }
+
+    .product-gallery {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .gallery-image:first-child {
+
+        grid-column:
+            auto;
+
+        height:
+            350px;
+
+    }
+
+    .gallery-image {
+
+        height:
+            300px;
+
+    }
+
+    .details-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .why-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .supply-points,
+    .product-highlights {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .supply-image img {
+
+        height:
+            380px;
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width:450px) {
+
+    .nav-logo img {
+
+        width:
+            45px;
+
+        height:
+            45px;
+
+    }
+
+    .nav-logo-text {
+
+        font-size:
+            12px;
+
+    }
+
+    .nav-logo-text span {
+
+        font-size:
+            8px;
+
+    }
+
+    .product-hero h1 {
+
+        font-size:
+            38px;
+
+    }
+
+    .hero-buttons,
+    .quote-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+    .primary-button,
+    .secondary-button,
+    .quote-button,
+    .whatsapp-button {
+
+        text-align:
+            center;
+
+    }
+
+    .product-intro,
+    .details-section,
+    .why-section,
+    .supply-section {
+
+        padding:
+            65px 20px;
+
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -579,740 +1843,1078 @@
 <body>
 
 
-<!-- =========================
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+<span>
+Nigerian Agricultural & Natural Product Exporters
+</span>
+
+<span>
+📱 +234 706 516 0991
+</span>
+
+</div>
+
+
+<!-- =========================================================
      NAVIGATION
-========================= -->
+========================================================= -->
 
 <nav>
 
-    <a
-        href="index.html"
-        class="nav-logo"
-    >
-
-        <img
-            src="IMG-20260522-WA0001(1).jpg"
-            alt="OLANES GLOBAL EXPORT LTD Logo"
-        >
-
-        OLANES GLOBAL EXPORT LTD
-
-    </a>
+<div class="nav-container">
 
 
-    <div class="nav-links">
+<a
+href="index.html"
+class="nav-logo"
+>
 
-        <a href="index.html">
-            Home
-        </a>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-        <a href="index.html#products">
-            Products
-        </a>
+<div class="nav-logo-text">
 
-        <a href="index.html#services">
-            Services
-        </a>
+OLANES GLOBAL EXPORT LTD
 
-        <a href="index.html#process">
-            Export Process
-        </a>
+<span>
+GLOBAL COMMODITY EXPORT
+</span>
 
-        <a href="index.html#quote">
-            Request a Quote
-        </a>
+</div>
 
-        <a href="#contact">
-            Contact
-        </a>
+</a>
 
-    </div>
+
+<div
+class="nav-links"
+id="navLinks"
+>
+
+<a href="index.html#about">
+About
+</a>
+
+<a href="index.html#products">
+Products
+</a>
+
+<a href="index.html#services">
+Services
+</a>
+
+<a href="index.html#process">
+Export Process
+</a>
+
+<a href="index.html#contact">
+Contact
+</a>
+
+<a
+href="index.html#quote"
+class="nav-cta"
+>
+Request a Quote
+</a>
+
+</div>
+
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation menu"
+aria-expanded="false"
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+</div>
 
 </nav>
 
 
+<!-- =========================================================
+     PRODUCT HERO
+========================================================= -->
 
-<!-- =========================
-     HERO
-========================= -->
+<header class="product-hero">
 
-<section class="hero">
-
-    <div class="hero-content">
-
-        <h1>
-            Premium Nigerian Cashew Nuts
-        </h1>
-
-        <p>
-            Quality Nigerian cashew nuts available for
-            wholesale, commercial, and international
-            export markets.
-        </p>
+<div class="product-hero-content">
 
 
-        <a
-            href="index.html#quote"
-            class="button quote-button"
-        >
-            Request a Quote
-        </a>
+<div class="breadcrumb">
+
+<a href="index.html">
+Home
+</a>
+
+<span>
+/
+</span>
+
+<a href="index.html#products">
+Products
+</a>
+
+<span>
+/
+</span>
+
+Cashew Nuts
+
+</div>
 
 
-        <a
-            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Cashew%20Nuts."
-            class="button whatsapp-button"
-            target="_blank"
-        >
-            💬 WhatsApp Us
-        </a>
+<h1>
 
-    </div>
+Premium Nigerian
+<span>
+Cashew Nuts
+</span>
+
+</h1>
+
+
+<p>
+
+Quality Nigerian cashew nuts supplied for wholesalers,
+importers, distributors, food processors, and international
+buyers seeking reliable bulk commodity supply.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="index.html#quote"
+class="primary-button"
+>
+Request a Quote
+</a>
+
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20cashew%20nuts."
+class="secondary-button"
+target="_blank"
+rel="noopener"
+>
+Chat on WhatsApp
+</a>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     PRODUCT INTRODUCTION
+========================================================= -->
+
+<section class="product-intro">
+
+<div class="product-intro-grid">
+
+
+<!-- IMAGE GALLERY -->
+
+<div class="product-gallery">
+
+
+<div class="gallery-image">
+
+<img
+src="IMG-20260725-WA0020.jpg"
+alt="Premium Nigerian Cashew Nuts"
+>
+
+</div>
+
+
+<div class="gallery-image">
+
+<img
+src="IMG-20260725-WA0017.jpg"
+alt="Quality Nigerian Cashew Nuts for Export"
+>
+
+</div>
+
+
+<div class="gallery-image">
+
+<img
+src="IMG-20260725-WA0020.jpg"
+alt="Bulk Nigerian Cashew Supply"
+>
+
+</div>
+
+
+</div>
+
+
+<!-- INTRO TEXT -->
+
+<div class="product-intro-text">
+
+<span class="section-label">
+Our Cashew Nuts
+</span>
+
+<h2>
+Quality Cashew Supply from Nigeria
+</h2>
+
+<p>
+
+OLANES GLOBAL EXPORT LTD supplies Nigerian cashew nuts
+to international buyers, wholesalers, distributors,
+and commercial businesses.
+
+</p>
+
+<p>
+
+Our focus is on connecting buyers with quality products
+through organized sourcing, clear communication,
+professional packaging, and export coordination.
+
+</p>
+
+<div class="product-highlights">
+
+<div class="highlight">
+✓ Bulk Supply
+</div>
+
+<div class="highlight">
+✓ Wholesale Orders
+</div>
+
+<div class="highlight">
+✓ Export Coordination
+</div>
+
+<div class="highlight">
+✓ International Buyers
+</div>
+
+</div>
+
+</div>
+
+
+</div>
 
 </section>
 
 
+<!-- =========================================================
+     PRODUCT DETAILS
+========================================================= -->
 
-<!-- =========================
-     MAIN CONTENT
-========================= -->
+<section class="details-section">
 
-<main class="container">
+<div class="section-container">
 
 
-    <!-- PRODUCT INTRODUCTION -->
+<div class="section-heading">
 
-    <section class="product-intro">
+<span class="section-label">
+Product Information
+</span>
 
+<h2>
+Cashew Supply for Commercial Markets
+</h2>
 
-        <div class="product-image">
+<p>
 
-            <img
-                src="IMG-20260725-WA0017.jpg"
-                alt="Premium Nigerian Cashew Nuts"
-            >
+We work with buyers to understand their required
+specifications, quantities, packaging preferences,
+and destination before confirming an order.
 
-        </div>
+</p>
 
+</div>
 
-        <div class="product-content">
 
-            <h2>
-                Nigerian Cashew Nuts for Export
-            </h2>
+<div class="details-grid">
 
-            <p>
-                OLANES GLOBAL EXPORT LTD supplies quality
-                Nigerian cashew nuts for wholesale,
-                commercial, and international markets.
-            </p>
 
-            <p>
-                Our cashew products are available for bulk
-                supply and can be prepared according to
-                agreed buyer requirements, packaging needs,
-                and order specifications.
-            </p>
+<!-- PRODUCT PROFILE -->
 
-            <p>
-                We work with international buyers,
-                wholesalers, distributors, processors,
-                and long-term business partners.
-            </p>
+<div class="detail-card">
 
+<h3>
+Product Profile
+</h3>
 
-            <div class="highlights">
+<ul class="detail-list">
 
+<li>
 
-                <div class="highlight">
+<strong>
+Product
+</strong>
 
-                    <strong>
-                        Country of Origin
-                    </strong>
+<span>
+Cashew Nuts
+</span>
 
-                    Nigeria
+</li>
 
-                </div>
+<li>
 
+<strong>
+Country of Origin
+</strong>
 
-                <div class="highlight">
+<span>
+Nigeria
+</span>
 
-                    <strong>
-                        Product
-                    </strong>
+</li>
 
-                    Cashew Nuts
+<li>
 
-                </div>
+<strong>
+Product Type
+</strong>
 
+<span>
+Agricultural Commodity
+</span>
 
-                <div class="highlight">
+</li>
 
-                    <strong>
-                        Supply Type
-                    </strong>
+<li>
 
-                    Wholesale & Export
+<strong>
+Supply Type
+</strong>
 
-                </div>
+<span>
+Wholesale / Bulk
+</span>
 
+</li>
 
-                <div class="highlight">
+<li>
 
-                    <strong>
-                        Market
-                    </strong>
+<strong>
+Market
+</strong>
 
-                    International Buyers
+<span>
+Local & International
+</span>
 
-                </div>
+</li>
 
+</ul>
 
-            </div>
+</div>
 
-        </div>
 
-    </section>
+<!-- PACKAGING -->
 
+<div class="detail-card">
 
+<h3>
+Packaging & Supply
+</h3>
 
-    <!-- =========================
-         IMAGE GALLERY
-    ========================= -->
+<ul class="detail-list">
 
-    <section class="gallery-section">
+<li>
 
+<strong>
+Packaging
+</strong>
 
-        <div class="section-title">
+<span>
+According to Buyer Requirements
+</span>
 
-            <h2>
-                Our Cashew Nuts
-            </h2>
+</li>
 
-            <p>
-                View our Nigerian cashew nuts available
-                for wholesale and export supply.
-            </p>
+<li>
 
-        </div>
+<strong>
+Order Quantity
+</strong>
 
+<span>
+Bulk / Commercial Quantities
+</span>
 
-        <div class="gallery">
+</li>
 
+<li>
 
-            <!-- CORRECT CASHEW IMAGE 1 -->
+<strong>
+Container Loading
+</strong>
 
-            <div class="gallery-card">
+<span>
+Subject to Order & Product Specification
+</span>
 
-                <img
-                    src="IMG-20260725-WA0017.jpg"
-                    alt="Premium Nigerian Cashew Nuts"
-                >
+</li>
 
-            </div>
+<li>
 
+<strong>
+Private Label
+</strong>
 
-            <!-- CORRECT CASHEW IMAGE 2 -->
+<span>
+Available Upon Agreement
+</span>
 
-            <div class="gallery-card">
+</li>
 
-                <img
-                    src="IMG-20260725-WA0020.jpg"
-                    alt="Nigerian Cashew Nuts for Export"
-                >
+<li>
 
-            </div>
+<strong>
+Custom Packaging
+</strong>
 
+<span>
+Available Upon Request
+</span>
 
-        </div>
+</li>
 
-    </section>
+</ul>
 
+</div>
 
 
-    <!-- =========================
-         PRODUCT SPECIFICATIONS
-    ========================= -->
+<!-- EXPORT -->
 
-    <section class="info-section">
+<div class="detail-card">
 
+<h3>
+Export & Logistics
+</h3>
 
-        <div class="section-title">
+<ul class="detail-list">
 
-            <h2>
-                Product Information
-            </h2>
+<li>
 
-            <p>
-                Product specifications can be discussed and
-                confirmed according to buyer requirements
-                and agreed order specifications.
-            </p>
+<strong>
+Origin
+</strong>
 
-        </div>
+<span>
+Nigeria
+</span>
 
+</li>
 
-        <div class="specs">
+<li>
 
+<strong>
+Destination
+</strong>
 
-            <div class="spec">
+<span>
+International Markets
+</span>
 
-                <strong>
-                    Product
-                </strong>
+</li>
 
-                Premium Nigerian Cashew Nuts
+<li>
 
-            </div>
+<strong>
+Shipping
+</strong>
 
+<span>
+Sea Freight / Other Options
+</span>
 
-            <div class="spec">
+</li>
 
-                <strong>
-                    Country of Origin
-                </strong>
+<li>
 
-                Nigeria
+<strong>
+Documentation
+</strong>
 
-            </div>
+<span>
+Coordinated as Required
+</span>
 
+</li>
 
-            <div class="spec">
+<li>
 
-                <strong>
-                    Product Type
-                </strong>
+<strong>
+Trade Terms
+</strong>
 
-                Cashew Nuts
+<span>
+Subject to Agreement
+</span>
 
-            </div>
+</li>
 
+</ul>
 
-            <div class="spec">
+</div>
 
-                <strong>
-                    Supply
-                </strong>
 
-                Wholesale and Bulk Supply
+<!-- BUYER REQUIREMENTS -->
 
-            </div>
+<div class="detail-card">
 
+<h3>
+Buyer Requirements
+</h3>
 
-            <div class="spec">
+<ul class="detail-list">
 
-                <strong>
-                    Export Market
-                </strong>
+<li>
 
-                International Markets
+<strong>
+Quantity
+</strong>
 
-            </div>
+<span>
+Specify Required Volume
+</span>
 
+</li>
 
-            <div class="spec">
+<li>
 
-                <strong>
-                    Packaging
-                </strong>
+<strong>
+Packaging
+</strong>
 
-                Available according to buyer requirements
+<span>
+Specify Preferred Packaging
+</span>
 
-            </div>
+</li>
 
+<li>
 
-            <div class="spec">
+<strong>
+Destination
+</strong>
 
-                <strong>
-                    Minimum Order Quantity
-                </strong>
+<span>
+Specify Port / Country
+</span>
 
-                Subject to mutual agreement
+</li>
 
-            </div>
+<li>
 
+<strong>
+Quality
+</strong>
 
-            <div class="spec">
+<span>
+Subject to Agreed Specification
+</span>
 
-                <strong>
-                    Production & Supply Lead Time
-                </strong>
+</li>
 
-                To be confirmed based on order quantity
+<li>
 
-            </div>
+<strong>
+Quotation
+</strong>
 
+<span>
+Available Upon Inquiry
+</span>
 
-        </div>
+</li>
 
-    </section>
+</ul>
 
+</div>
 
 
-    <!-- =========================
-         PACKAGING
-    ========================= -->
+</div>
 
-    <section class="info-section">
+</div>
 
+</section>
 
-        <div class="section-title">
 
-            <h2>
-                Packaging Options
-            </h2>
+<!-- =========================================================
+     WHY BUY FROM US
+========================================================= -->
 
-        </div>
+<section class="why-section">
 
+<div class="section-container">
 
-        <p class="packaging-text">
 
-            Packaging can be arranged according to
-            buyer requirements, destination market,
-            product specifications, and agreed order
-            quantities.
+<div class="section-heading">
 
-        </p>
+<span class="section-label">
+Why Work With Us
+</span>
 
+<h2>
+A Reliable Partner for Your Cashew Supply
+</h2>
 
-        <div class="packaging">
+<p>
 
+We focus on making the sourcing and export process
+clear, organized, and responsive to buyer requirements.
 
-            <div class="package">
+</p>
 
-                Bulk Packaging
+</div>
 
-            </div>
 
+<div class="why-grid">
 
-            <div class="package">
 
-                Wholesale Packaging
+<div class="why-card">
 
-            </div>
+<div class="why-icon">
+✓
+</div>
 
+<h3>
+Quality-Focused Sourcing
+</h3>
 
-            <div class="package">
+<p>
 
-                Custom Buyer Packaging
+We focus on sourcing products according to
+agreed buyer specifications and requirements.
 
-            </div>
+</p>
 
+</div>
 
-            <div class="package">
 
-                Export Packaging
+<div class="why-card">
 
-            </div>
+<div class="why-icon">
+◈
+</div>
 
+<h3>
+Bulk Supply
+</h3>
 
-        </div>
+<p>
 
-    </section>
+We support wholesale and commercial quantity
+orders for suitable buyers.
 
+</p>
 
+</div>
 
-    <!-- =========================
-         BULK & EXPORT SUPPLY
-    ========================= -->
 
-    <section class="info-section">
+<div class="why-card">
 
+<div class="why-icon">
+📋
+</div>
 
-        <div class="section-title">
+<h3>
+Export Coordination
+</h3>
 
-            <h2>
-                Bulk & Export Supply
-            </h2>
+<p>
 
-        </div>
+We coordinate packaging, documentation,
+logistics, and shipment arrangements.
 
+</p>
 
-        <div class="supply-box">
+</div>
 
-            <p>
 
-                OLANES GLOBAL EXPORT LTD is available
-                to discuss bulk cashew nut supply for
-                international buyers, wholesalers,
-                processors, distributors, and commercial
-                customers.
+<div class="why-card">
 
-            </p>
+<div class="why-icon">
+🌍
+</div>
 
+<h3>
+International Buyer Support
+</h3>
 
-            <p>
+<p>
 
-                We work with buyers to understand their
-                required quantity, product specifications,
-                packaging preferences, destination,
-                and shipping requirements.
+We communicate directly with international buyers
+and business partners throughout the order process.
 
-            </p>
+</p>
 
+</div>
 
-            <p>
 
-                Export documentation, shipping arrangements,
-                and delivery terms can be discussed according
-                to the buyer's destination and agreed
-                international trade terms.
+</div>
 
-            </p>
+</div>
 
-        </div>
+</section>
 
-    </section>
 
+<!-- =========================================================
+     INTERNATIONAL SUPPLY
+========================================================= -->
 
+<section class="supply-section">
 
-    <!-- =========================
-         QUALITY
-    ========================= -->
+<div class="section-container">
 
-    <section class="quality-section">
+<div class="supply-grid">
 
 
-        <h2>
-            Quality & Buyer Requirements
-        </h2>
+<div class="supply-text">
 
+<span class="section-label">
+International Supply
+</span>
 
-        <p>
+<h2>
+From Nigeria to Global Markets
+</h2>
 
-            We work with buyers to discuss product
-            specifications, quality requirements,
-            packaging, order quantities, and shipping
-            arrangements before confirming an order.
+<p>
 
-        </p>
+OLANES GLOBAL EXPORT LTD works with international
+buyers seeking Nigerian agricultural commodities
+for wholesale, distribution, processing, and
+commercial purposes.
 
+</p>
 
-        <p>
+<p>
 
-            Additional product information and quality
-            details can be provided to serious buyers
-            upon request.
+Tell us your required quantity, preferred packaging,
+destination, and specifications. We will review
+your requirements and prepare a quotation based
+on the agreed order details.
 
-        </p>
+</p>
 
 
-        <p>
+<div class="supply-points">
 
-            Product specifications and commercial terms
-            are confirmed between OLANES GLOBAL EXPORT LTD
-            and the buyer before final order processing.
+<div class="supply-point">
+🌍 International Buyers
+</div>
 
-        </p>
+<div class="supply-point">
+📦 Bulk Orders
+</div>
 
-    </section>
+<div class="supply-point">
+📋 Export Documentation
+</div>
 
+<div class="supply-point">
+🚢 Shipping Coordination
+</div>
 
+</div>
 
-    <!-- =========================
-         CALL TO ACTION
-    ========================= -->
+</div>
 
-    <section class="cta">
 
+<div class="supply-image">
 
-        <h2>
-            Interested in Our Cashew Nuts?
-        </h2>
+<img
+src="IMG-20260725-WA0017.jpg"
+alt="Nigerian Cashew Nuts Export Supply"
+>
 
+</div>
 
-        <p>
 
-            Contact OLANES GLOBAL EXPORT LTD to discuss
-            your required quantity, packaging,
-            specifications, and international shipping
-            requirements.
+</div>
 
-        </p>
+</div>
 
+</section>
 
-        <a
-            href="index.html#quote"
-            class="button quote-button"
-        >
-            Request a Quote
-        </a>
 
+<!-- =========================================================
+     QUOTE CTA
+========================================================= -->
 
-        <a
-            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Cashew%20Nuts."
-            class="button whatsapp-button"
-            target="_blank"
-        >
-            💬 Chat on WhatsApp
-        </a>
+<section class="quote-cta">
 
+<h2>
+Looking for Nigerian Cashew Nuts?
+</h2>
 
-        <a
-            href="mailto:olanesglobalexportltd@gmail.com"
-            class="button email-button"
-        >
-            ✉️ Send an Email
-        </a>
+<p>
 
-    </section>
+Send us your quantity, packaging requirements,
+destination, and any specific product specifications.
+Our team will review your request and respond with
+the appropriate quotation.
 
+</p>
 
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+<div class="quote-buttons">
 
-    <section
-        class="contact"
-        id="contact"
-    >
+<a
+href="index.html#quote"
+class="quote-button"
+>
+Request a Product Quote
+</a>
 
 
-        <h2>
-            Contact OLANES GLOBAL EXPORT LTD
-        </h2>
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20would%20like%20to%20request%20a%20quotation%20for%20cashew%20nuts."
+class="whatsapp-button"
+target="_blank"
+rel="noopener"
+>
+💬 WhatsApp Us
+</a>
 
+</div>
 
-        <p>
+</section>
 
-            We welcome inquiries from international
-            buyers, wholesalers, distributors,
-            processors, and business partners.
 
-        </p>
-
-
-        <br>
-
-
-        <p>
-
-            <strong>
-                Address:
-            </strong>
-
-            <br>
-
-            Boluwatife Community, Ayekale, Ota Efun,
-            Osogbo, Osun State, Nigeria
-
-        </p>
-
-
-        <p>
-
-            <strong>
-                Phone / WhatsApp:
-            </strong>
-
-            <br>
-
-            +234 706 516 0991
-
-        </p>
-
-
-        <p>
-
-            <strong>
-                Email:
-            </strong>
-
-            <br>
-
-            <a
-                href="mailto:olanesglobalexportltd@gmail.com"
-            >
-
-                olanesglobalexportltd@gmail.com
-
-            </a>
-
-        </p>
-
-
-        <div class="buttons">
-
-
-            <a
-                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am interested%20in%20your%20Cashew%20Nuts."
-                class="button whatsapp-button"
-                target="_blank"
-            >
-
-                💬 Chat on WhatsApp
-
-            </a>
-
-
-            <a
-                href="mailto:olanesglobalexportltd@gmail.com"
-                class="button quote-button"
-            >
-
-                ✉️ Send an Email
-
-            </a>
-
-
-        </div>
-
-    </section>
-
-
-</main>
-
-
-
-<!-- =========================
+<!-- =========================================================
      FOOTER
-========================= -->
+========================================================= -->
 
 <footer>
 
-
-    <img
-        src="IMG-20260522-WA0001(1).jpg"
-        alt="OLANES GLOBAL EXPORT LTD Logo"
-    >
+<div class="footer-grid">
 
 
-    <p>
+<div class="footer-brand">
 
-        <strong>
-            OLANES GLOBAL EXPORT LTD
-        </strong>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-    </p>
+<h3>
+OLANES GLOBAL EXPORT LTD
+</h3>
 
+<p>
 
-    <p>
+Connecting quality Nigerian agricultural commodities,
+charcoal, and natural products with international markets.
 
-        Nigerian Agricultural & Natural Product Exporters
+</p>
 
-    </p>
-
-
-    <p>
-
-        Boluwatife Community, Ayekale, Ota Efun,
-        Osogbo, Osun State, Nigeria
-
-    </p>
+</div>
 
 
-    <p>
+<div class="footer-column">
 
-        © 2026 OLANES GLOBAL EXPORT LTD.
-        All rights reserved.
+<h4>
+Quick Links
+</h4>
 
-    </p>
+<a href="index.html">
+Home
+</a>
 
+<a href="index.html#about">
+About Us
+</a>
+
+<a href="index.html#products">
+Our Products
+</a>
+
+<a href="index.html#services">
+Our Services
+</a>
+
+<a href="index.html#quote">
+Request a Quote
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Contact
+</h4>
+
+<p>
+📱 +234 706 516 0991
+</p>
+
+<p>
+📧 olanesglobalexportltd@gmail.com
+</p>
+
+<p>
+📍 Osogbo, Osun State,
+Nigeria
+</p>
+
+<br>
+
+<a href="index.html#contact">
+Contact Our Team →
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 OLANES GLOBAL EXPORT LTD.
+All rights reserved.
+
+</div>
 
 </footer>
 
 
+<!-- =========================================================
+     MOBILE MENU JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+/* OPEN / CLOSE MENU */
+
+menuToggle.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        navLinks.classList.toggle("active");
+
+        menuToggle.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    }
+);
+
+
+/* CLOSE MENU AFTER CLICKING LINK */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+    );
+
+});
+
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest("nav")
+        ) {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
 </body>
 
-    </html> 
+</html>
