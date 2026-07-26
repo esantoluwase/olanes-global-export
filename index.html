@@ -1,1 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OLANES GLOBAL EXPORT LTD | Nigerian Agricultural & Natural Product Exporters</title>
+
+<meta
+name="description"
+content="OLANES GLOBAL EXPORT LTD supplies quality Nigerian agricultural commodities, premium hardwood lump charcoal, and natural products to international buyers, wholesalers, and distributors."
+>
+
+<meta
+name="keywords"
+content="Nigeria export company, Nigerian agricultural products, hardwood charcoal, cashew nuts, hibiscus flower, cocoa, coffee, sesame seeds, palm oil, Nigerian exporters"
+>
+
+<meta name="theme-color" content="#063b2a">
+
+<style>
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background: #f7f8f6;
+    color: #1e2823;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+
+    --green-dark: #063b2a;
+
+    --green: #0b5a40;
+
+    --green-light: #eaf3ee;
+
+    --gold: #c79a21;
+
+    --gold-light: #e9c866;
+
+    --white: #ffffff;
+
+    --text: #1e2823;
+
+    --muted: #68736d;
+
+    --light-bg: #f7f8f6;
+
+    --border: #e2e8e3;
+
+    --shadow:
+        0 15px 45px rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green-dark),
+            #084b35
+        );
+
+    color: white;
+
+    padding:
+        9px
+        5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    font-size: 13px;
+
+}
+
+.top-bar span {
+    opacity: 0.9;
+}
+
+.top-bar a {
+    color: white;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 9999;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.nav-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding:
+        11px 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+.nav-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--green-dark);
+
+}
+
+.nav-logo img {
+
+    width: 52px;
+
+    height: 52px;
+
+    object-fit: contain;
+
+}
+
+.nav-logo-text {
+
+    color: var(--green-dark);
+
+    font-weight: bold;
+
+    font-size: 16px;
+
+    line-height: 1.2;
+
+}
+
+.nav-logo-text span {
+
+    color: var(--gold);
+
+    display: block;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    margin-top: 4px;
+
+}
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+}
+
+.nav-links a {
+
+    color: var(--green-dark);
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+.nav-links a:hover {
+
+    color: var(--gold);
+
+}
+
+.nav-cta {
+
+    background:
+        var(--green-dark);
+
+    color:
+        white !important;
+
+    padding:
+        10px 18px;
+
+    border-radius:
+        5px;
+
+}
+
+.nav-cta:hover {
+
+    background:
+        var(--gold);
+
+}
+
+
+/* =========================================================
+   HAMBURGER MENU
+========================================================= */
+
+.menu-toggle {
+
+    display: none;
+
+    width: 45px;
+
+    height: 45px;
+
+    padding: 9px;
+
+    background: transparent;
+
+    border: 1px solid var(--border);
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+.menu-toggle span {
+
+    width: 24px;
+
+    height: 2px;
+
+    background: var(--green-dark);
+
+    border-radius: 3px;
+
+    transition: 0.3s ease;
+
+}
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform:
+        translateY(7px)
+        rotate(45deg);
+
+}
+
+.menu-toggle.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform:
+        translateY(-7px)
+        rotate(-45deg);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    min-height: 680px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,34,24,0.96),
+            rgba(3,34,24,0.78),
+            rgba(3,34,24,0.25)
+        ),
+
+        url("IMG-20260722-WA0012.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.hero-content {
+
+    max-width: 1250px;
+
+    width: 100%;
+
+    margin: auto;
+
+    padding: 90px 25px;
+
+    color: white;
+
+    animation:
+        fadeUp
+        0.9s
+        ease
+        both;
+
+}
+
+.hero-label {
+
+    display: inline-block;
+
+    color: var(--gold-light);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    font-size: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+.hero h1 {
+
+    font-size:
+        clamp(42px,6vw,72px);
+
+    line-height: 1.06;
+
+    max-width: 850px;
+
+    margin-bottom: 25px;
+
+}
+
+.hero h1 span {
+
+    color: var(--gold-light);
+
+}
+
+.hero p {
+
+    max-width: 680px;
+
+    font-size: 19px;
+
+    color:
+        rgba(255,255,255,0.88);
+
+    margin-bottom: 35px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+}
+
+.hero-primary,
+.hero-secondary {
+
+    padding: 15px 28px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+
+}
+
+.hero-primary {
+
+    background: var(--gold);
+
+    color: white;
+
+}
+
+.hero-primary:hover {
+
+    background: var(--gold-light);
+
+    color: var(--green-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+.hero-secondary {
+
+    border:
+        1px solid
+        rgba(255,255,255,0.7);
+
+    color: white;
+
+}
+
+.hero-secondary:hover {
+
+    background: white;
+
+    color: var(--green-dark);
+
+}
+
+
+/* =========================================================
+   TRUST STRIP
+========================================================= */
+
+.trust-strip {
+
+    background: white;
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.trust-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+}
+
+.trust-item {
+
+    padding:
+        28px 20px;
+
+    text-align: center;
+
+    border-right:
+        1px solid var(--border);
+
+}
+
+.trust-item:last-child {
+
+    border-right: none;
+
+}
+
+.trust-item strong {
+
+    display: block;
+
+    color: var(--green-dark);
+
+    font-size: 16px;
+
+    margin-bottom: 5px;
+
+}
+
+.trust-item span {
+
+    color: var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+section {
+
+    padding:
+        90px 25px;
+
+}
+
+.section-container {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+.section-heading {
+
+    max-width: 720px;
+
+    margin-bottom: 50px;
+
+}
+
+.section-label {
+
+    color: var(--gold);
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+
+    display: block;
+
+    margin-bottom: 12px;
+
+}
+
+.section-heading h2 {
+
+    color: var(--green-dark);
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+
+}
+
+.section-heading p {
+
+    color: var(--muted);
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.about-image {
+
+    position: relative;
+
+}
+
+.about-image img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.about-badge {
+
+    position: absolute;
+
+    bottom: 25px;
+
+    right: -20px;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    padding: 25px;
+
+    border-radius: 8px;
+
+    max-width: 220px;
+
+    box-shadow:
+        0 15px
+        35px
+        rgba(0,0,0,0.2);
+
+}
+
+.about-badge strong {
+
+    display: block;
+
+    color: var(--gold-light);
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+
+}
+
+.about-text h2 {
+
+    color: var(--green-dark);
+
+    font-size: 40px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+.about-text p {
+
+    color: var(--muted);
+
+    margin-bottom: 20px;
+
+}
+
+.about-list {
+
+    margin-top: 25px;
+
+}
+
+.about-list div {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 13px;
+
+    color: var(--green-dark);
+
+    font-weight: bold;
+
+}
+
+.check {
+
+    color: var(--gold);
+
+    font-size: 20px;
+
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-section {
+
+    background: var(--green-dark);
+
+    color: white;
+
+}
+
+.why-section
+.section-heading h2 {
+
+    color: white;
+
+}
+
+.why-section
+.section-heading p {
+
+    color:
+        rgba(255,255,255,0.7);
+
+}
+
+.why-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 20px;
+
+}
+
+.why-card {
+
+    padding:
+        35px 28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border-radius: 8px;
+
+    transition: 0.35s ease;
+
+}
+
+.why-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    background:
+        rgba(255,255,255,0.08);
+
+    border-color:
+        var(--gold);
+
+}
+
+.why-icon {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(199,154,33,0.15);
+
+    color: var(--gold-light);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 23px;
+
+    margin-bottom: 22px;
+
+}
+
+.why-card h3 {
+
+    margin-bottom: 12px;
+
+    font-size: 19px;
+
+}
+
+.why-card p {
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================================
+   PRODUCTS
+========================================================= */
+
+.products-section {
+
+    background: var(--light-bg);
+
+}
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 22px;
+
+}
+
+.product-card {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border:
+        1px solid var(--border);
+
+    transition: 0.35s ease;
+
+}
+
+.product-card:hover {
+
+    transform:
+        translateY(-8px);
+
+    box-shadow: var(--shadow);
+
+}
+
+.product-image {
+
+    height: 245px;
+
+    overflow: hidden;
+
+    position: relative;
+
+}
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+
+}
+
+.product-card:hover
+.product-image img {
+
+    transform:
+        scale(1.06);
+
+}
+
+.product-tag {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    background:
+        var(--green-dark);
+
+    color: white;
+
+    padding:
+        5px 10px;
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    border-radius: 3px;
+
+}
+
+.product-content {
+
+    padding: 23px;
+
+}
+
+.product-content h3 {
+
+    color:
+        var(--green-dark);
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+
+}
+
+.product-content p {
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+    min-height: 70px;
+
+}
+
+.product-link {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin-top: 15px;
+
+    color:
+        var(--green-dark);
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+.product-link:hover {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================================
+   EXPORT SECTION
+========================================================= */
+
+.export-section {
+
+    background: white;
+
+}
+
+.export-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.export-content h2 {
+
+    color: var(--green-dark);
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+.export-content p {
+
+    color: var(--muted);
+
+    margin-bottom: 20px;
+
+}
+
+.export-points {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+}
+
+.export-point {
+
+    padding: 18px;
+
+    background:
+        var(--green-light);
+
+    border-radius: 6px;
+
+    color:
+        var(--green-dark);
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+}
+
+.export-image img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+}
+
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process-section {
+
+    background: var(--light-bg);
+
+}
+
+.process-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap: 15px;
+
+}
+
+.process-step {
+
+    text-align: center;
+
+}
+
+.process-number {
+
+    width: 55px;
+
+    height: 55px;
+
+    margin:
+        auto auto 18px;
+
+    background:
+        var(--green-dark);
+
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    border:
+        4px solid
+        var(--green-light);
+
+}
+
+.process-step h3 {
+
+    color:
+        var(--green-dark);
+
+    font-size: 15px;
+
+    margin-bottom: 8px;
+
+}
+
+.process-step p {
+
+    color:
+        var(--muted);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   QUOTE SECTION
+========================================================= */
+
+.quote-section {
+
+    background:
+
+        linear-gradient(
+            rgba(6,59,42,0.96),
+            rgba(6,59,42,0.96)
+        ),
+
+        url("IMG-20260722-WA0013.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.quote-grid {
+
+    display: grid;
+
+   
