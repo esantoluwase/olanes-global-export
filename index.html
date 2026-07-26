@@ -1238,4 +1238,2456 @@ section {
 
     display: grid;
 
-   
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: start;
+
+}
+
+.quote-info {
+
+    color: white;
+
+}
+
+.quote-info h2 {
+
+    font-size: 42px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+
+}
+
+.quote-info p {
+
+    color:
+        rgba(255,255,255,0.7);
+
+    margin-bottom: 30px;
+
+}
+
+.quote-contact {
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    padding-top: 20px;
+
+}
+
+.quote-contact div {
+
+    margin-bottom: 15px;
+
+}
+
+.quote-form-box {
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 20px
+        50px
+        rgba(0,0,0,0.2);
+
+}
+
+.quote-form {
+
+    display: grid;
+
+    gap: 14px;
+
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 5px;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+
+    border-color:
+        var(--green);
+
+}
+
+.quote-form textarea {
+
+    min-height: 120px;
+
+    resize: vertical;
+
+}
+
+.quote-button {
+
+    padding: 15px;
+
+    border: none;
+
+    background:
+        var(--green-dark);
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.quote-button:hover {
+
+    background: var(--gold);
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    background: white;
+
+}
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 20px;
+
+}
+
+.contact-card {
+
+    padding: 30px;
+
+    background:
+        var(--light-bg);
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+
+}
+
+.contact-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.contact-card-icon {
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+}
+
+.contact-card h3 {
+
+    color:
+        var(--green-dark);
+
+    margin-bottom: 8px;
+
+}
+
+.contact-card p {
+
+    color:
+        var(--muted);
+
+    font-size: 14px;
+
+}
+
+.whatsapp-button {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding:
+        14px 28px;
+
+    background:
+        #25D366;
+
+    color: white;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+
+}
+
+.whatsapp-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px
+        20px
+        rgba(37,211,102,0.25);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background:
+        #031c14;
+
+    color: white;
+
+    padding:
+        60px 25px 25px;
+
+}
+
+.footer-grid {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap: 50px;
+
+    padding-bottom: 40px;
+
+}
+
+.footer-brand img {
+
+    width: 75px;
+
+    margin-bottom: 15px;
+
+}
+
+.footer-brand h3 {
+
+    margin-bottom: 12px;
+
+}
+
+.footer-brand p,
+.footer-column p {
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size: 14px;
+
+}
+
+.footer-column h4 {
+
+    color:
+        var(--gold-light);
+
+    margin-bottom: 18px;
+
+}
+
+.footer-column a {
+
+    display: block;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size: 14px;
+
+    margin-bottom: 9px;
+
+}
+
+.footer-column a:hover {
+
+    color: white;
+
+}
+
+.footer-bottom {
+
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.1);
+
+    text-align: center;
+
+    color:
+        rgba(255,255,255,0.5);
+
+    font-size: 13px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1000px) {
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+    .why-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .products-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        row-gap: 35px;
+
+    }
+
+    .trust-container {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .trust-item:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:750px) {
+
+    .top-bar {
+
+        display: none;
+
+    }
+
+    .nav-container {
+
+        padding:
+            10px 15px;
+
+        position: relative;
+
+    }
+
+    .menu-toggle {
+
+        display: flex;
+
+    }
+
+    .nav-links {
+
+        display: flex;
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        right: 0;
+
+        background:
+            rgba(255,255,255,0.98);
+
+        backdrop-filter:
+            blur(10px);
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding:
+            10px 20px 20px;
+
+        border-top:
+            1px solid var(--border);
+
+        box-shadow:
+            0 12px
+            25px
+            rgba(0,0,0,0.1);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            0.3s ease;
+
+    }
+
+    .nav-links.active {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform:
+            translateY(0);
+
+    }
+
+    .nav-links a {
+
+        display: block;
+
+        padding:
+            14px 5px;
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+    .nav-links .nav-cta {
+
+        margin-top: 12px;
+
+        text-align: center;
+
+    }
+
+    .nav-logo-text {
+
+        font-size: 13px;
+
+    }
+
+    .hero {
+
+        min-height: 600px;
+
+    }
+
+    .hero-content {
+
+        padding:
+            70px 20px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+    .about-grid,
+    .export-grid,
+    .quote-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+    }
+
+    .about-image img,
+    .export-image img {
+
+        height: 380px;
+
+    }
+
+    .about-badge {
+
+        right: 15px;
+
+    }
+
+    .why-grid,
+    .products-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+    .export-points {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    section {
+
+        padding:
+            65px 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width:450px) {
+
+    .nav-logo img {
+
+        width: 45px;
+
+        height: 45px;
+
+    }
+
+    .nav-logo-text {
+
+        font-size: 12px;
+
+    }
+
+    .nav-logo-text span {
+
+        font-size: 8px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .hero-primary,
+    .hero-secondary {
+
+        text-align: center;
+
+    }
+
+    .process-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .trust-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .trust-item {
+
+        border-right: none;
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+    .trust-item:last-child {
+
+        border-bottom: none;
+
+    }
+
+    .quote-form-box {
+
+        padding: 22px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <span>
+        Nigerian Agricultural & Natural Product Exporters
+    </span>
+
+    <span>
+        📱 +234 706 516 0991
+    </span>
+
+</div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav>
+
+<div class="nav-container">
+
+
+<a
+href="index.html"
+class="nav-logo"
+>
+
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
+
+<div class="nav-logo-text">
+
+OLANES GLOBAL EXPORT LTD
+
+<span>
+GLOBAL COMMODITY EXPORT
+</span>
+
+</div>
+
+</a>
+
+
+<div
+class="nav-links"
+id="navLinks"
+>
+
+<a href="#about">
+About
+</a>
+
+<a href="#products">
+Products
+</a>
+
+<a href="#services">
+Services
+</a>
+
+<a href="#process">
+Export Process
+</a>
+
+<a href="#contact">
+Contact
+</a>
+
+<a
+href="#quote"
+class="nav-cta"
+>
+Request a Quote
+</a>
+
+</div>
+
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation menu"
+aria-expanded="false"
+type="button"
+>
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</button>
+
+
+</div>
+
+</nav>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<span class="hero-label">
+Nigerian Export Company
+</span>
+
+<h1>
+
+Connecting Nigeria's
+<span>
+Quality Commodities
+</span>
+to Global Markets
+
+</h1>
+
+<p>
+
+OLANES GLOBAL EXPORT LTD supplies quality agricultural
+commodities, premium hardwood lump charcoal, and natural
+products to wholesalers, distributors, and international buyers.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#products"
+class="hero-primary"
+>
+Explore Our Products
+</a>
+
+<a
+href="#quote"
+class="hero-secondary"
+>
+Request a Quote
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     TRUST STRIP
+========================================================= -->
+
+<div class="trust-strip">
+
+<div class="trust-container">
+
+<div class="trust-item">
+
+<strong>
+Quality-Focused
+</strong>
+
+<span>
+Carefully sourced products
+</span>
+
+</div>
+
+
+<div class="trust-item">
+
+<strong>
+Bulk Supply
+</strong>
+
+<span>
+Commercial quantity orders
+</span>
+
+</div>
+
+
+<div class="trust-item">
+
+<strong>
+Export Support
+</strong>
+
+<span>
+Documentation coordination
+</span>
+
+</div>
+
+
+<div class="trust-item">
+
+<strong>
+Global Reach
+</strong>
+
+<span>
+International buyer support
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section id="about">
+
+<div class="section-container">
+
+<div class="about-grid">
+
+
+<div class="about-image">
+
+<img
+src="IMG-20260722-WA0013.jpg"
+alt="OLANES Global Export Products"
+>
+
+<div class="about-badge">
+
+<strong>
+Nigeria
+</strong>
+
+<span>
+Sourcing quality commodities
+for local and international markets.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="about-text">
+
+<span class="section-label">
+About Our Company
+</span>
+
+<h2>
+Building Reliable Connections
+Between Nigeria and the World
+</h2>
+
+<p>
+
+OLANES GLOBAL EXPORT LTD is a Nigerian export company
+focused on sourcing and supplying agricultural commodities,
+charcoal, and natural products for local and international markets.
+
+</p>
+
+<p>
+
+We aim to build reliable relationships with international
+buyers, wholesalers, distributors, and business partners
+through clear communication, quality-focused sourcing,
+and professional export coordination.
+
+</p>
+
+<div class="about-list">
+
+<div>
+
+<span class="check">
+✓
+</span>
+
+Quality-focused product sourcing
+
+</div>
+
+<div>
+
+<span class="check">
+✓
+</span>
+
+Professional buyer communication
+
+</div>
+
+<div>
+
+<span class="check">
+✓
+</span>
+
+Flexible wholesale supply
+
+</div>
+
+<div>
+
+<span class="check">
+✓
+</span>
+
+Export and shipping coordination
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY CHOOSE US
+========================================================= -->
+
+<section class="why-section">
+
+<div class="section-container">
+
+<div class="section-heading">
+
+<span class="section-label">
+Why Choose OLANES
+</span>
+
+<h2>
+A Reliable Partner for Your
+Commodity Supply Needs
+</h2>
+
+<p>
+
+We work with buyers to understand their requirements
+and coordinate sourcing, packaging, documentation,
+and shipment arrangements according to agreed terms.
+
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div class="why-card">
+
+<div class="why-icon">
+✓
+</div>
+
+<h3>
+Quality-Focused Sourcing
+</h3>
+
+<p>
+
+We focus on sourcing products according to agreed
+specifications and buyer requirements.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+◈
+</div>
+
+<h3>
+Reliable Communication
+</h3>
+
+<p>
+
+We maintain clear communication with buyers throughout
+the order and export coordination process.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+◆
+</div>
+
+<h3>
+Export Coordination
+</h3>
+
+<p>
+
+We coordinate export documentation, packaging,
+logistics, and shipping arrangements as required.
+
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">
+◎
+</div>
+
+<h3>
+Buyer-Focused Service
+</h3>
+
+<p>
+
+We work to understand each buyer's product,
+quantity, packaging, and destination requirements.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     PRODUCTS
+========================================================= -->
+
+<section
+id="products"
+class="products-section"
+>
+
+<div class="section-container">
+
+<div class="section-heading">
+
+<span class="section-label">
+Our Products
+</span>
+
+<h2>
+Nigerian Commodities
+for Global Markets
+</h2>
+
+<p>
+
+Explore our range of agricultural commodities,
+natural products, and premium hardwood lump charcoal
+available for wholesale and international supply.
+
+</p>
+
+</div>
+
+
+<div class="products-grid">
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260722-WA0012.jpg"
+alt="Premium Hardwood Lump Charcoal"
+>
+
+<span class="product-tag">
+FEATURED
+</span>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Premium Hardwood Lump Charcoal
+</h3>
+
+<p>
+
+Quality hardwood lump charcoal suitable
+for barbecue and commercial applications,
+available for bulk export supply.
+
+</p>
+
+<a
+href="charcoal.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0017.jpg"
+alt="Nigerian Cashew Nuts"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Cashew Nuts
+</h3>
+
+<p>
+
+Nigerian cashew products available
+for wholesale supply and international
+commodity markets.
+
+</p>
+
+<a
+href="cashew.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0039.jpg"
+alt="Dried Nigerian Hibiscus Flower"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Hibiscus Flower
+</h3>
+
+<p>
+
+Dried hibiscus flower sourced for
+wholesale supply and international
+commodity markets.
+
+</p>
+
+<a
+href="hibiscus.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0032.jpg"
+alt="Nigerian Palm Oil"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Palm Oil
+</h3>
+
+<p>
+
+Nigerian palm oil available for
+commercial supply, wholesale orders,
+and international markets.
+
+</p>
+
+<a
+href="palm-oil.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0036.jpg"
+alt="Nigerian Sesame Seeds"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Sesame Seeds
+</h3>
+
+<p>
+
+Quality Nigerian sesame seeds available
+for wholesale supply and international
+export markets.
+
+</p>
+
+<a
+href="sesame-seeds.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0028.jpg"
+alt="Nigerian Cocoa"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Cocoa
+</h3>
+
+<p>
+
+Nigerian cocoa products available
+for wholesale supply and international
+commodity markets.
+
+</p>
+
+<a
+href="cocoa.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0025.jpg"
+alt="Nigerian Coffee"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Coffee
+</h3>
+
+<p>
+
+Nigerian coffee products available
+for wholesale supply and international
+commodity markets.
+
+</p>
+
+<a
+href="coffee.html"
+class="product-link"
+>
+View Product Details →
+</a>
+
+</div>
+
+</div>
+
+
+<div class="product-card">
+
+<div class="product-image">
+
+<img
+src="IMG-20260725-WA0042.jpg"
+alt="Nigerian Agricultural Commodities"
+>
+
+</div>
+
+<div class="product-content">
+
+<h3>
+Other Agricultural Products
+</h3>
+
+<p>
+
+Contact us for other Nigerian agricultural
+commodities and natural products available
+according to buyer requirements.
+
+</p>
+
+<a
+href="#quote"
+class="product-link"
+>
+Make an Inquiry →
+</a>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICES
+========================================================= -->
+
+<section id="services">
+
+<div class="section-container">
+
+<div class="section-heading">
+
+<span class="section-label">
+Our Services
+</span>
+
+<h2>
+Supporting Your Export Journey
+</h2>
+
+<p>
+
+From product sourcing to shipment coordination,
+we work with buyers to organize the key stages
+of the export process.
+
+</p>
+
+</div>
+
+
+<div class="why-grid">
+
+
+<div
+class="why-card"
+style="background:#f7f8f6;border:1px solid #e2e8e3;color:#1e2823;"
+>
+
+<div class="why-icon">
+📦
+</div>
+
+<h3>
+Bulk Supply
+</h3>
+
+<p style="color:#68736d;">
+
+Commercial quantities available according
+to product and buyer requirements.
+
+</p>
+
+</div>
+
+
+<div
+class="why-card"
+style="background:#f7f8f6;border:1px solid #e2e8e3;color:#1e2823;"
+>
+
+<div class="why-icon">
+🔎
+</div>
+
+<h3>
+Product Sourcing
+</h3>
+
+<p style="color:#68736d;">
+
+Sourcing coordinated according to agreed
+specifications and order requirements.
+
+</p>
+
+</div>
+
+
+<div
+class="why-card"
+style="background:#f7f8f6;border:1px solid #e2e8e3;color:#1e2823;"
+>
+
+<div class="why-icon">
+📋
+</div>
+
+<h3>
+Export Documentation
+</h3>
+
+<p style="color:#68736d;">
+
+Documentation and related export processes
+coordinated for each shipment.
+
+</p>
+
+</div>
+
+
+<div
+class="why-card"
+style="background:#f7f8f6;border:1px solid #e2e8e3;color:#1e2823;"
+>
+
+<div class="why-icon">
+🚢
+</div>
+
+<h3>
+Shipping Coordination
+</h3>
+
+<p style="color:#68736d;">
+
+Shipment arrangements coordinated with
+logistics partners according to agreed terms.
+
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     GLOBAL EXPORT
+========================================================= -->
+
+<section class="export-section">
+
+<div class="section-container">
+
+<div class="export-grid">
+
+
+<div class="export-content">
+
+<span class="section-label">
+International Supply
+</span>
+
+<h2>
+From Nigeria
+to International Markets
+</h2>
+
+<p>
+
+We work with international buyers, wholesalers,
+distributors, and business partners seeking
+Nigerian agricultural commodities and natural products.
+
+</p>
+
+<p>
+
+Our team coordinates product sourcing, packaging,
+export documentation, and shipping arrangements
+according to agreed trade terms.
+
+</p>
+
+<div class="export-points">
+
+<div class="export-point">
+🌍 International Buyers
+</div>
+
+<div class="export-point">
+📦 Wholesale Supply
+</div>
+
+<div class="export-point">
+📋 Export Documentation
+</div>
+
+<div class="export-point">
+🚢 Shipping Coordination
+</div>
+
+</div>
+
+</div>
+
+
+<div class="export-image">
+
+<img
+src="IMG-20260722-WA0014.jpg"
+alt="OLANES Global Export Supply"
+>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPORT PROCESS
+========================================================= -->
+
+<section
+id="process"
+class="process-section"
+>
+
+<div class="section-container">
+
+<div class="section-heading">
+
+<span class="section-label">
+How We Work
+</span>
+
+<h2>
+Our Export Process
+</h2>
+
+<p>
+
+A structured process designed to maintain
+clear communication from initial inquiry
+through shipment.
+
+</p>
+
+</div>
+
+
+<div class="process-grid">
+
+
+<div class="process-step">
+
+<div class="process-number">
+01
+</div>
+
+<h3>
+Buyer Inquiry
+</h3>
+
+<p>
+Tell us your product and quantity requirements.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+02
+</div>
+
+<h3>
+Quotation
+</h3>
+
+<p>
+We discuss pricing, packaging, and shipping.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+03
+</div>
+
+<h3>
+Confirmation
+</h3>
+
+<p>
+Order details and agreed terms are confirmed.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+04
+</div>
+
+<h3>
+Preparation
+</h3>
+
+<p>
+Products are prepared and packaged as agreed.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+05
+</div>
+
+<h3>
+Documentation
+</h3>
+
+<p>
+Required export documentation is coordinated.
+</p>
+
+</div>
+
+
+<div class="process-step">
+
+<div class="process-number">
+06
+</div>
+
+<h3>
+Shipment
+</h3>
+
+<p>
+Shipment arrangements are coordinated.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     REQUEST A QUOTE
+========================================================= -->
+
+<section
+id="quote"
+class="quote-section"
+>
+
+<div class="section-container">
+
+<div class="quote-grid">
+
+
+<div class="quote-info">
+
+<span class="section-label">
+Start a Conversation
+</span>
+
+<h2>
+Request a Product Quotation
+</h2>
+
+<p>
+
+Tell us what you are looking for, your required
+quantity, and destination. Our team will review
+your request and get back to you.
+
+</p>
+
+<div class="quote-contact">
+
+<div>
+
+📱
+<strong>
+WhatsApp / Phone
+</strong>
+
+<br>
+
++234 706 516 0991
+
+</div>
+
+
+<div>
+
+📍
+<strong>
+Location
+</strong>
+
+<br>
+
+Osogbo, Osun State, Nigeria
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     QUOTATION FORM
+===================================================== -->
+
+<div class="quote-form-box">
+
+<form
+    class="quote-form"
+    action="https://formsubmit.co/olanesglobalexportltd@gmail.com"
+    method="POST"
+>
+
+
+<!-- RETURN URL -->
+
+<input
+    type="hidden"
+    name="_next"
+    value="https://esantoluwase.github.io/olanes-global-export/index.html#quote"
+>
+
+
+<!-- EMAIL SUBJECT -->
+
+<input
+    type="hidden"
+    name="_subject"
+    value="New Product Quotation Request - OLANES GLOBAL EXPORT LTD"
+>
+
+
+<!-- DISABLE CAPTCHA -->
+
+<input
+    type="hidden"
+    name="_captcha"
+    value="false"
+>
+
+
+<!-- EMAIL TEMPLATE -->
+
+<input
+    type="hidden"
+    name="_template"
+    value="table"
+>
+
+
+<!-- CUSTOMER NAME -->
+
+<input
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    required
+>
+
+
+<!-- COMPANY -->
+
+<input
+    type="text"
+    name="company"
+    placeholder="Company Name"
+>
+
+
+<!-- EMAIL -->
+
+<input
+    type="email"
+    name="email"
+    placeholder="Email Address"
+    required
+>
+
+
+<!-- COUNTRY -->
+
+<input
+    type="text"
+    name="country"
+    placeholder="Country"
+    required
+>
+
+
+<!-- PRODUCT -->
+
+<select
+    name="product"
+    required
+>
+
+<option value="">
+Select Product
+</option>
+
+<option value="Premium Hardwood Lump Charcoal">
+Premium Hardwood Lump Charcoal
+</option>
+
+<option value="Cashew Nuts">
+Cashew Nuts
+</option>
+
+<option value="Hibiscus Flower">
+Hibiscus Flower
+</option>
+
+<option value="Palm Oil">
+Palm Oil
+</option>
+
+<option value="Sesame Seeds">
+Sesame Seeds
+</option>
+
+<option value="Cocoa">
+Cocoa
+</option>
+
+<option value="Coffee">
+Coffee
+</option>
+
+<option value="Other Agricultural Products">
+Other Agricultural Products
+</option>
+
+</select>
+
+
+<!-- QUANTITY -->
+
+<input
+    type="text"
+    name="quantity"
+    placeholder="Required Quantity"
+    required
+>
+
+
+<!-- DESTINATION -->
+
+<input
+    type="text"
+    name="destination"
+    placeholder="Destination / Port"
+>
+
+
+<!-- MESSAGE -->
+
+<textarea
+    name="message"
+    placeholder="Tell us about your product requirements, packaging preferences, and other details."
+></textarea>
+
+
+<!-- SUBMIT -->
+
+<button
+    type="submit"
+    class="quote-button"
+>
+
+Submit Quote Request
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+========================================================= -->
+
+<section
+id="contact"
+class="contact-section"
+>
+
+<div class="section-container">
+
+<div class="section-heading">
+
+<span class="section-label">
+Contact Us
+</span>
+
+<h2>
+Let's Discuss Your Requirements
+</h2>
+
+<p>
+
+Whether you are an importer, wholesaler,
+distributor, or international buyer,
+we welcome your inquiry.
+
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<div class="contact-card-icon">
+📱
+</div>
+
+<h3>
+Phone / WhatsApp
+</h3>
+
+<p>
++234 706 516 0991
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-card-icon">
+📍
+</div>
+
+<h3>
+Our Location
+</h3>
+
+<p>
+
+Boluwatife Community,
+Ayekale, Ota Efun,
+Osogbo, Osun State,
+Nigeria
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<div class="contact-card-icon">
+🌍
+</div>
+
+<h3>
+Business Inquiries
+</h3>
+
+<p>
+
+We welcome inquiries from international
+buyers, wholesalers, distributors,
+and business partners.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20products."
+class="whatsapp-button"
+target="_blank"
+rel="noopener"
+>
+
+💬 Chat With Us on WhatsApp
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+<div class="footer-grid">
+
+
+<div class="footer-brand">
+
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
+
+<h3>
+OLANES GLOBAL EXPORT LTD
+</h3>
+
+<p>
+
+Connecting quality Nigerian agricultural commodities,
+charcoal, and natural products with international markets.
+
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Quick Links
+</h4>
+
+<a href="#about">
+About Us
+</a>
+
+<a href="#products">
+Our Products
+</a>
+
+<a href="#services">
+Our Services
+</a>
+
+<a href="#process">
+Export Process
+</a>
+
+<a href="#quote">
+Request a Quote
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Contact
+</h4>
+
+<p>
++234 706 516 0991
+</p>
+
+<p>
+Osogbo, Osun State,
+Nigeria
+</p>
+
+<br>
+
+<a href="#contact">
+Contact Our Team →
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 OLANES GLOBAL EXPORT LTD.
+All rights reserved.
+
+</div>
+
+</footer>
+
+
+<!-- =========================================================
+     MOBILE MENU JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+/* =========================================================
+   OPEN / CLOSE MOBILE MENU
+========================================================= */
+
+menuToggle.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        navLinks.classList.toggle("active");
+
+        menuToggle.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    }
+);
+
+
+/* =========================================================
+   CLOSE MENU AFTER CLICKING A LINK
+========================================================= */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+    );
+
+});
+
+
+/* =========================================================
+   CLOSE MENU WHEN CLICKING OUTSIDE
+========================================================= */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest("nav")
+        ) {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   CLOSE MENU WHEN PRESSING ESCAPE
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+
+   </html>
