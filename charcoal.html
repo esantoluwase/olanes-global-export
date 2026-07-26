@@ -1,1104 +1,2087 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+<meta charset="UTF-8">
 
-    <title>
-        Premium Hardwood Lump Charcoal | OLANES GLOBAL EXPORT LTD
-    </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Premium Nigerian Hardwood Lump Charcoal supplied by OLANES GLOBAL EXPORT LTD for international buyers, wholesalers, distributors, and commercial markets."
-    >
+<title>Premium Hardwood Lump Charcoal | OLANES GLOBAL EXPORT LTD</title>
 
-    <style>
+<meta
+name="description"
+content="OLANES GLOBAL EXPORT LTD supplies premium Nigerian hardwood lump charcoal for international buyers, wholesalers, distributors, barbecue suppliers, and commercial markets."
+>
 
-        /* ==============================
-           GLOBAL STYLES
-        ============================== */
+<meta
+name="keywords"
+content="premium hardwood lump charcoal Nigeria, Nigerian charcoal exporter, hardwood charcoal export, BBQ charcoal Nigeria, bulk charcoal supplier, charcoal export Nigeria"
+>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta name="theme-color" content="#063b2a">
 
-        html {
-            scroll-behavior: smooth;
-        }
 
-        body {
-            font-family:
-                Arial,
-                Helvetica,
-                sans-serif;
+<style>
 
-            line-height: 1.7;
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
 
-            background: #f7f8f6;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-            color: #222;
-        }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
 
-        img {
-            max-width: 100%;
-            display: block;
-        }
+body {
 
-        a {
-            text-decoration: none;
-        }
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
+    line-height: 1.7;
 
-        /* ==============================
-           NAVIGATION
-        ============================== */
+    background:
+        #f7f8f6;
 
-        nav {
-            position: sticky;
+    color:
+        #1e2823;
 
-            top: 0;
+    overflow-x:
+        hidden;
 
-            z-index: 1000;
+}
 
-            background: rgba(255,255,255,0.97);
+a {
+    text-decoration: none;
+}
 
-            backdrop-filter: blur(10px);
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
 
-            display: flex;
+img {
+    max-width: 100%;
+    display: block;
+}
 
-            justify-content: space-between;
 
-            align-items: center;
+/* =========================================================
+   COLORS
+========================================================= */
 
-            padding: 14px 6%;
+:root {
 
-            box-shadow:
-                0 2px 15px
-                rgba(0,0,0,0.08);
-        }
+    --green-dark:
+        #063b2a;
 
-        .nav-logo {
-            display: flex;
+    --green:
+        #0b5a40;
 
-            align-items: center;
+    --green-light:
+        #eaf3ee;
 
-            gap: 12px;
+    --gold:
+        #c79a21;
 
-            color: #063b2a;
+    --gold-light:
+        #e9c866;
 
-            font-weight: bold;
+    --white:
+        #ffffff;
 
-            font-size: 18px;
-        }
+    --text:
+        #1e2823;
 
-        .nav-logo img {
-            width: 48px;
+    --muted:
+        #68736d;
 
-            height: 48px;
+    --light-bg:
+        #f7f8f6;
 
-            object-fit: contain;
+    --border:
+        #e2e8e3;
 
-            border-radius: 50%;
-        }
+    --shadow:
+        0 15px 45px rgba(0,0,0,0.08);
 
-        .nav-links {
-            display: flex;
+}
 
-            align-items: center;
 
-            gap: 25px;
-        }
+/* =========================================================
+   ANIMATIONS
+========================================================= */
 
-        .nav-links a {
-            color: #063b2a;
+@keyframes fadeUp {
 
-            font-size: 14px;
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
 
-            font-weight: bold;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-            transition: 0.3s;
-        }
+}
 
-        .nav-links a:hover {
-            color: #c79a21;
-        }
+@keyframes fadeIn {
 
-        .nav-quote {
-            background: #063b2a;
+    from {
+        opacity: 0;
+    }
 
-            color: white !important;
+    to {
+        opacity: 1;
+    }
 
-            padding: 10px 18px;
+}
 
-            border-radius: 5px;
-        }
 
-        .nav-quote:hover {
-            background: #c79a21;
+/* =========================================================
+   TOP BAR
+========================================================= */
 
-            color: white !important;
-        }
+.top-bar {
 
+    background:
+        linear-gradient(
+            90deg,
+            var(--green-dark),
+            #084b35
+        );
 
-        /* ==============================
-           HERO SECTION
-        ============================== */
+    color:
+        white;
 
-        .hero {
-            min-height: 560px;
+    padding:
+        9px 5%;
 
-            background:
-                linear-gradient(
-                    rgba(3, 38, 27, 0.88),
-                    rgba(3, 38, 27, 0.88)
-                ),
-                url("IMG-20260722-WA0012.jpg");
+    display:
+        flex;
 
-            background-size: cover;
+    justify-content:
+        space-between;
 
-            background-position: center;
+    align-items:
+        center;
 
-            display: flex;
+    font-size:
+        13px;
 
-            align-items: center;
+}
 
-            justify-content: center;
+.top-bar span {
+    opacity:
+        0.9;
+}
 
-            text-align: center;
 
-            color: white;
+/* =========================================================
+   NAVIGATION
+========================================================= */
 
-            padding: 70px 20px;
-        }
+nav {
 
-        .hero-content {
-            max-width: 900px;
-        }
+    position:
+        sticky;
 
-        .hero-badge {
-            display: inline-block;
+    top:
+        0;
 
-            background: rgba(199,154,33,0.95);
+    z-index:
+        9999;
 
-            color: white;
+    background:
+        rgba(255,255,255,0.97);
 
-            padding: 8px 18px;
+    backdrop-filter:
+        blur(12px);
 
-            border-radius: 30px;
+    border-bottom:
+        1px solid var(--border);
 
-            font-size: 13px;
+}
 
-            font-weight: bold;
+.nav-container {
 
-            text-transform: uppercase;
+    max-width:
+        1250px;
 
-            letter-spacing: 1px;
+    margin:
+        auto;
 
-            margin-bottom: 22px;
-        }
+    padding:
+        11px 25px;
 
-        .hero h1 {
-            font-size: 55px;
+    display:
+        flex;
 
-            line-height: 1.15;
+    align-items:
+        center;
 
-            margin-bottom: 20px;
-        }
+    justify-content:
+        space-between;
 
-        .hero p {
-            max-width: 700px;
+}
 
-            margin: 0 auto 30px;
+.nav-logo {
 
-            font-size: 19px;
+    display:
+        flex;
 
-            color: #f0f0f0;
-        }
+    align-items:
+        center;
 
-        .hero-buttons {
-            display: flex;
+    gap:
+        12px;
 
-            justify-content: center;
+    color:
+        var(--green-dark);
 
-            gap: 15px;
+}
 
-            flex-wrap: wrap;
-        }
+.nav-logo img {
 
+    width:
+        52px;
 
-        /* ==============================
-           BUTTONS
-        ============================== */
+    height:
+        52px;
 
-        .button {
-            display: inline-block;
+    object-fit:
+        contain;
 
-            padding: 14px 25px;
+}
 
-            border-radius: 6px;
+.nav-logo-text {
 
-            font-weight: bold;
+    color:
+        var(--green-dark);
 
-            transition: 0.3s;
+    font-weight:
+        bold;
 
-            border: none;
-        }
+    font-size:
+        16px;
 
-        .primary-button {
-            background: #c79a21;
+    line-height:
+        1.2;
 
-            color: white;
-        }
+}
 
-        .primary-button:hover {
-            background: #a77f16;
+.nav-logo-text span {
 
-            transform: translateY(-2px);
-        }
+    color:
+        var(--gold);
 
-        .secondary-button {
-            background: white;
+    display:
+        block;
 
-            color: #063b2a;
-        }
+    font-size:
+        10px;
 
-        .secondary-button:hover {
-            background: #f0f0f0;
+    letter-spacing:
+        1.5px;
 
-            transform: translateY(-2px);
-        }
+    margin-top:
+        4px;
 
-        .whatsapp-button {
-            background: #25D366;
+}
 
-            color: white;
-        }
+.nav-links {
 
-        .whatsapp-button:hover {
-            background: #1da851;
+    display:
+        flex;
 
-            transform: translateY(-2px);
-        }
+    align-items:
+        center;
 
-        .email-button {
-            background: #c79a21;
+    gap:
+        25px;
 
-            color: white;
-        }
+}
 
+.nav-links a {
 
-        /* ==============================
-           MAIN CONTAINER
-        ============================== */
+    color:
+        var(--green-dark);
 
-        .container {
-            max-width: 1200px;
+    font-size:
+        14px;
 
-            margin: auto;
+    font-weight:
+        bold;
 
-            padding:
-                70px 25px;
-        }
+    transition:
+        0.3s ease;
 
+}
 
-        /* ==============================
-           BREADCRUMB
-        ============================== */
+.nav-links a:hover {
 
-        .breadcrumb {
-            margin-bottom: 30px;
+    color:
+        var(--gold);
 
-            font-size: 14px;
+}
 
-            color: #666;
-        }
+.nav-cta {
 
-        .breadcrumb a {
-            color: #063b2a;
+    background:
+        var(--green-dark);
 
-            font-weight: bold;
-        }
+    color:
+        white !important;
 
+    padding:
+        10px 18px;
 
-        /* ==============================
-           PRODUCT INTRO
-        ============================== */
+    border-radius:
+        5px;
 
-        .product-intro {
-            display: grid;
+}
 
-            grid-template-columns:
-                1fr 1fr;
+.nav-cta:hover {
 
-            gap: 55px;
+    background:
+        var(--gold);
 
-            align-items: center;
+}
 
-            margin-bottom: 80px;
-        }
 
-        .product-gallery {
-            position: relative;
-        }
+/* =========================================================
+   HAMBURGER
+========================================================= */
 
-        .main-product-image {
-            width: 100%;
+.menu-toggle {
 
-            height: 500px;
+    display:
+        none;
 
-            object-fit: cover;
+    width:
+        45px;
 
-            border-radius: 15px;
+    height:
+        45px;
 
-            box-shadow:
-                0 15px 40px
-                rgba(0,0,0,0.15);
-        }
+    padding:
+        9px;
 
-        .gallery-images {
-            display: grid;
+    background:
+        transparent;
 
-            grid-template-columns:
-                repeat(3, 1fr);
+    border:
+        1px solid var(--border);
 
-            gap: 12px;
+    border-radius:
+        6px;
 
-            margin-top: 15px;
-        }
+    cursor:
+        pointer;
 
-        .gallery-images img {
-            width: 100%;
+    flex-direction:
+        column;
 
-            height: 100px;
+    justify-content:
+        center;
 
-            object-fit: cover;
+    align-items:
+        center;
 
-            border-radius: 8px;
+    gap:
+        5px;
 
-            cursor: pointer;
+}
 
-            border: 3px solid transparent;
+.menu-toggle span {
 
-            transition: 0.3s;
-        }
+    width:
+        24px;
 
-        .gallery-images img:hover {
-            border-color: #c79a21;
+    height:
+        2px;
 
-            transform: translateY(-3px);
-        }
+    background:
+        var(--green-dark);
 
-        .product-text .small-title {
-            color: #c79a21;
+    border-radius:
+        3px;
 
-            font-weight: bold;
+    transition:
+        0.3s ease;
 
-            text-transform: uppercase;
+}
 
-            letter-spacing: 2px;
+.menu-toggle.active span:nth-child(1) {
 
-            font-size: 13px;
+    transform:
+        translateY(7px)
+        rotate(45deg);
 
-            margin-bottom: 10px;
-        }
+}
 
-        .product-text h2 {
-            color: #063b2a;
+.menu-toggle.active span:nth-child(2) {
 
-            font-size: 42px;
+    opacity:
+        0;
 
-            line-height: 1.2;
+}
 
-            margin-bottom: 20px;
-        }
+.menu-toggle.active span:nth-child(3) {
 
-        .product-text p {
-            color: #555;
+    transform:
+        translateY(-7px)
+        rotate(-45deg);
 
-            margin-bottom: 18px;
+}
 
-            font-size: 16px;
-        }
 
-        .product-highlights {
-            display: grid;
+/* =========================================================
+   HERO
+========================================================= */
 
-            grid-template-columns:
-                repeat(2, 1fr);
+.product-hero {
 
-            gap: 12px;
+    min-height:
+        650px;
 
-            margin: 25px 0;
-        }
+    display:
+        flex;
 
-        .highlight {
-            background: #f4f6f3;
+    align-items:
+        center;
 
-            padding: 15px;
+    position:
+        relative;
 
-            border-radius: 8px;
+    background:
 
-            border-left:
-                4px solid #c79a21;
-        }
+        linear-gradient(
+            90deg,
+            rgba(3,34,24,0.96),
+            rgba(3,34,24,0.80),
+            rgba(3,34,24,0.25)
+        ),
 
-        .highlight strong {
-            display: block;
+        url("IMG-20260722-WA0012.jpg");
 
-            color: #063b2a;
+    background-size:
+        cover;
 
-            font-size: 14px;
-        }
+    background-position:
+        center;
 
-        .highlight span {
-            color: #555;
+}
 
-            font-size: 14px;
-        }
+.product-hero-content {
 
-        .product-buttons {
-            display: flex;
+    max-width:
+        1250px;
 
-            gap: 10px;
+    width:
+        100%;
 
-            flex-wrap: wrap;
+    margin:
+        auto;
 
-            margin-top: 25px;
-        }
+    padding:
+        90px 25px;
 
+    color:
+        white;
 
-        /* ==============================
-           SECTION TITLES
-        ============================== */
+    animation:
+        fadeUp
+        0.9s
+        ease
+        both;
 
-        .section-heading {
-            text-align: center;
+}
 
-            max-width: 750px;
+.breadcrumb {
 
-            margin:
-                0 auto 45px;
-        }
+    display:
+        flex;
 
-        .section-heading span {
-            color: #c79a21;
+    flex-wrap:
+        wrap;
 
-            font-weight: bold;
+    gap:
+        8px;
 
-            text-transform: uppercase;
+    margin-bottom:
+        25px;
 
-            letter-spacing: 2px;
+    font-size:
+        13px;
 
-            font-size: 13px;
-        }
+    color:
+        rgba(255,255,255,0.7);
 
-        .section-heading h2 {
-            color: #063b2a;
+}
 
-            font-size: 36px;
+.breadcrumb a {
 
-            margin:
-                10px 0 15px;
-        }
+    color:
+        var(--gold-light);
 
-        .section-heading p {
-            color: #666;
-        }
+}
 
+.product-hero-label {
 
-        /* ==============================
-           SPECIFICATIONS
-        ============================== */
+    color:
+        var(--gold-light);
 
-        .spec-section {
-            background: white;
+    font-size:
+        13px;
 
-            padding:
-                70px 40px;
+    font-weight:
+        bold;
 
-            border-radius: 18px;
+    text-transform:
+        uppercase;
 
-            margin-bottom: 70px;
+    letter-spacing:
+        2px;
 
-            box-shadow:
-                0 8px 30px
-                rgba(0,0,0,0.05);
-        }
+    margin-bottom:
+        15px;
 
-        .specs {
-            display: grid;
+}
 
-            grid-template-columns:
-                repeat(3, 1fr);
+.product-hero h1 {
 
-            gap: 18px;
-        }
+    max-width:
+        850px;
 
-        .spec {
-            background: #f7f8f6;
+    font-size:
+        clamp(40px,6vw,70px);
 
-            padding: 22px;
+    line-height:
+        1.08;
 
-            border-radius: 10px;
+    margin-bottom:
+        25px;
 
-            border-bottom:
-                3px solid #c79a21;
+}
 
-            transition: 0.3s;
-        }
+.product-hero h1 span {
 
-        .spec:hover {
-            transform: translateY(-4px);
+    color:
+        var(--gold-light);
 
-            box-shadow:
-                0 8px 20px
-                rgba(0,0,0,0.08);
-        }
+}
 
-        .spec strong {
-            display: block;
+.product-hero p {
 
-            color: #063b2a;
+    max-width:
+        680px;
 
-            margin-bottom: 5px;
+    color:
+        rgba(255,255,255,0.86);
 
-            font-size: 14px;
-        }
+    font-size:
+        18px;
 
-        .spec span {
-            color: #555;
+    margin-bottom:
+        35px;
 
-            font-size: 15px;
-        }
+}
 
+.hero-buttons {
 
-        /* ==============================
-           PACKAGING
-        ============================== */
+    display:
+        flex;
 
-        .packaging-section {
-            margin-bottom: 80px;
-        }
+    flex-wrap:
+        wrap;
 
-        .packaging-grid {
-            display: grid;
+    gap:
+        15px;
 
-            grid-template-columns:
-                repeat(4, 1fr);
+}
 
-            gap: 20px;
-        }
+.primary-button,
+.secondary-button {
 
-        .package {
-            background: white;
+    padding:
+        15px 28px;
 
-            padding: 35px 20px;
+    border-radius:
+        5px;
 
-            text-align: center;
+    font-weight:
+        bold;
 
-            border-radius: 12px;
+    transition:
+        0.3s ease;
 
-            box-shadow:
-                0 6px 20px
-                rgba(0,0,0,0.06);
+}
 
-            transition: 0.3s;
-        }
+.primary-button {
 
-        .package:hover {
-            transform: translateY(-6px);
+    background:
+        var(--gold);
 
-            box-shadow:
-                0 12px 30px
-                rgba(0,0,0,0.1);
-        }
+    color:
+        white;
 
-        .package-icon {
-            font-size: 40px;
+}
 
-            margin-bottom: 15px;
-        }
+.primary-button:hover {
 
-        .package h3 {
-            color: #063b2a;
+    background:
+        var(--gold-light);
 
-            margin-bottom: 8px;
-        }
+    color:
+        var(--green-dark);
 
-        .package p {
-            color: #666;
+    transform:
+        translateY(-3px);
 
-            font-size: 14px;
-        }
+}
 
+.secondary-button {
 
-        /* ==============================
-           WHY CHOOSE US
-        ============================== */
+    color:
+        white;
 
-        .why-section {
-            background:
-                linear-gradient(
-                    135deg,
-                    #063b2a,
-                    #0b5a40
-                );
+    border:
+        1px solid rgba(255,255,255,0.7);
 
-            color: white;
+}
 
-            padding:
-                70px 40px;
+.secondary-button:hover {
 
-            border-radius: 18px;
+    background:
+        white;
 
-            margin-bottom: 80px;
-        }
+    color:
+        var(--green-dark);
 
-        .why-section .section-heading h2 {
-            color: white;
-        }
+}
 
-        .why-section .section-heading p {
-            color: #d8e5df;
-        }
 
-        .why-grid {
-            display: grid;
+/* =========================================================
+   GENERAL
+========================================================= */
 
-            grid-template-columns:
-                repeat(4, 1fr);
+section {
 
-            gap: 25px;
-        }
+    padding:
+        90px 25px;
 
-        .why-card {
-            text-align: center;
+}
 
-            padding: 25px 15px;
-        }
+.section-container {
 
-        .why-icon {
-            font-size: 38px;
+    max-width:
+        1250px;
 
-            margin-bottom: 15px;
-        }
+    margin:
+        auto;
 
-        .why-card h3 {
-            margin-bottom: 10px;
+}
 
-            color: #fff;
-        }
+.section-heading {
 
-        .why-card p {
-            color: #d8e5df;
+    max-width:
+        720px;
 
-            font-size: 14px;
-        }
+    margin-bottom:
+        50px;
 
+}
 
-        /* ==============================
-           EXPORT SUPPLY
-        ============================== */
+.section-label {
 
-        .export-section {
-            display: grid;
+    display:
+        block;
 
-            grid-template-columns:
-                1fr 1fr;
+    color:
+        var(--gold);
 
-            gap: 50px;
+    font-size:
+        12px;
 
-            align-items: center;
+    font-weight:
+        bold;
 
-            margin-bottom: 80px;
-        }
+    text-transform:
+        uppercase;
 
-        .export-text h2 {
-            color: #063b2a;
+    letter-spacing:
+        2px;
 
-            font-size: 36px;
+    margin-bottom:
+        12px;
 
-            margin-bottom: 20px;
-        }
+}
 
-        .export-text p {
-            color: #555;
+.section-heading h2 {
 
-            margin-bottom: 18px;
-        }
+    color:
+        var(--green-dark);
 
-        .export-list {
-            list-style: none;
+    font-size:
+        clamp(30px,4vw,46px);
 
-            margin-top: 20px;
-        }
+    line-height:
+        1.2;
 
-        .export-list li {
-            margin-bottom: 12px;
+    margin-bottom:
+        18px;
 
-            color: #444;
-        }
+}
 
-        .export-list li::before {
-            content: "✓";
+.section-heading p {
 
-            color: #c79a21;
+    color:
+        var(--muted);
 
-            font-weight: bold;
+    font-size:
+        16px;
 
-            margin-right: 10px;
-        }
+}
 
-        .export-card {
-            background: white;
 
-            padding: 40px;
+/* =========================================================
+   PRODUCT INTRO
+========================================================= */
 
-            border-radius: 15px;
+.product-intro {
 
-            box-shadow:
-                0 10px 30px
-                rgba(0,0,0,0.08);
+    background:
+        white;
 
-            border-top:
-                5px solid #c79a21;
-        }
+}
 
-        .export-card h3 {
-            color: #063b2a;
+.product-intro-grid {
 
-            margin-bottom: 20px;
+    display:
+        grid;
 
-            font-size: 25px;
-        }
+    grid-template-columns:
+        1fr 1fr;
 
-        .export-detail {
-            display: flex;
+    gap:
+        70px;
 
-            justify-content: space-between;
+    align-items:
+        center;
 
-            gap: 20px;
+}
 
-            padding: 14px 0;
+.product-main-image {
 
-            border-bottom:
-                1px solid #eee;
-        }
+    position:
+        relative;
 
-        .export-detail strong {
-            color: #063b2a;
-        }
+}
 
-        .export-detail span {
-            color: #666;
+.product-main-image img {
 
-            text-align: right;
-        }
+    width:
+        100%;
 
+    height:
+        550px;
 
-        /* ==============================
-           QUALITY SECTION
-        ============================== */
+    object-fit:
+        cover;
 
-        .quality-section {
-            background: #fff;
+    border-radius:
+        10px;
 
-            padding:
-                60px 40px;
+    box-shadow:
+        var(--shadow);
 
-            border-radius: 18px;
+}
 
-            text-align: center;
+.image-badge {
 
-            margin-bottom: 80px;
+    position:
+        absolute;
 
-            box-shadow:
-                0 6px 25px
-                rgba(0,0,0,0.05);
-        }
+    left:
+        20px;
 
-        .quality-section h2 {
-            color: #063b2a;
+    bottom:
+        20px;
 
-            font-size: 34px;
+    background:
+        var(--green-dark);
 
-            margin-bottom: 15px;
-        }
+    color:
+        white;
 
-        .quality-section p {
-            max-width: 800px;
+    padding:
+        18px 22px;
 
-            margin: 0 auto 25px;
+    border-radius:
+        7px;
 
-            color: #666;
-        }
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.2);
 
+}
 
-        /* ==============================
-           CONTACT CTA
-        ============================== */
+.image-badge strong {
 
-        .contact-section {
-            background:
-                linear-gradient(
-                    135deg,
-                    #063b2a,
-                    #04251b
-                );
+    display:
+        block;
 
-            color: white;
+    color:
+        var(--gold-light);
 
-            padding:
-                70px 40px;
+    margin-bottom:
+        4px;
 
-            border-radius: 18px;
+}
 
-            text-align: center;
-        }
+.product-intro-text h2 {
 
-        .contact-section h2 {
-            font-size: 38px;
+    color:
+        var(--green-dark);
 
-            margin-bottom: 15px;
-        }
+    font-size:
+        40px;
 
-        .contact-section > p {
-            max-width: 700px;
+    line-height:
+        1.2;
 
-            margin:
-                0 auto 30px;
+    margin-bottom:
+        20px;
 
-            color: #d8e5df;
-        }
+}
 
-        .contact-details {
-            display: flex;
+.product-intro-text p {
 
-            justify-content: center;
+    color:
+        var(--muted);
 
-            flex-wrap: wrap;
+    margin-bottom:
+        18px;
 
-            gap: 30px;
+}
 
-            margin-bottom: 30px;
-        }
+.highlight-box {
 
-        .contact-item {
-            min-width: 200px;
-        }
+    margin-top:
+        25px;
 
-        .contact-item strong {
-            display: block;
+    padding:
+        22px;
 
-            color: #c79a21;
+    background:
+        var(--green-light);
 
-            margin-bottom: 5px;
-        }
+    border-left:
+        4px solid var(--gold);
 
-        .contact-item a {
-            color: white;
-        }
+    border-radius:
+        5px;
 
+}
 
-        /* ==============================
-           FOOTER
-        ============================== */
+.highlight-box strong {
 
-        footer {
-            background: #021a12;
+    color:
+        var(--green-dark);
 
-            color: white;
+    display:
+        block;
 
-            padding:
-                45px 25px;
+    margin-bottom:
+        5px;
 
-            text-align: center;
+}
 
-            margin-top: 70px;
-        }
 
-        .footer-logo {
-            width: 70px;
+/* =========================================================
+   PRODUCT GALLERY
+========================================================= */
 
-            height: 70px;
+.gallery-section {
 
-            object-fit: contain;
+    background:
+        var(--light-bg);
 
-            background: white;
+}
 
-            padding: 5px;
+.gallery-grid {
 
-            border-radius: 50%;
+    display:
+        grid;
 
-            margin:
-                0 auto 15px;
-        }
+    grid-template-columns:
+        2fr 1fr 1fr;
 
-        footer h3 {
-            margin-bottom: 10px;
-        }
+    grid-template-rows:
+        250px 250px;
 
-        footer p {
-            color: #bfcac5;
+    gap:
+        15px;
 
-            font-size: 14px;
+}
 
-            margin: 5px 0;
-        }
+.gallery-item {
 
+    overflow:
+        hidden;
 
-        /* ==============================
-           MOBILE
-        ============================== */
+    border-radius:
+        8px;
 
-        @media (max-width: 900px) {
+    background:
+        #ddd;
 
-            .nav-links {
-                gap: 12px;
-            }
+}
 
-            .nav-links a {
-                font-size: 12px;
-            }
+.gallery-item:first-child {
 
-            .product-intro,
-            .export-section {
-                grid-template-columns: 1fr;
-            }
+    grid-row:
+        span 2;
 
-            .specs {
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
+}
 
-            .packaging-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
+.gallery-item img {
 
-            .why-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
-            }
+    width:
+        100%;
 
-            .hero h1 {
-                font-size: 44px;
-            }
+    height:
+        100%;
 
-        }
+    object-fit:
+        cover;
 
+    transition:
+        0.5s ease;
 
-        @media (max-width: 600px) {
+}
 
-            nav {
-                padding:
-                    12px 15px;
-            }
+.gallery-item:hover img {
 
-            .nav-logo {
-                font-size: 14px;
-            }
+    transform:
+        scale(1.06);
 
-            .nav-logo img {
-                width: 40px;
+}
 
-                height: 40px;
-            }
 
-            .nav-links {
-                display: none;
-            }
+/* =========================================================
+   SPECS
+========================================================= */
 
-            .hero {
-                min-height: 500px;
+.specs-section {
 
-                padding:
-                    60px 20px;
-            }
+    background:
+        white;
 
-            .hero h1 {
-                font-size: 34px;
-            }
+}
 
-            .hero p {
-                font-size: 16px;
-            }
+.specs-grid {
 
-            .container {
-                padding:
-                    50px 15px;
-            }
+    display:
+        grid;
 
-            .product-text h2 {
-                font-size: 32px;
-            }
+    grid-template-columns:
+        repeat(3,1fr);
 
-            .main-product-image {
-                height: 350px;
-            }
+    gap:
+        18px;
 
-            .product-highlights {
-                grid-template-columns: 1fr;
-            }
+}
 
-            .spec-section,
-            .why-section,
-            .quality-section,
-            .contact-section {
-                padding:
-                    45px 20px;
-            }
+.spec-card {
 
-            .specs {
-                grid-template-columns: 1fr;
-            }
+    padding:
+        25px;
 
-            .packaging-grid {
-                grid-template-columns: 1fr;
-            }
+    background:
+        var(--light-bg);
 
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
+    border:
+        1px solid var(--border);
 
-            .section-heading h2 {
-                font-size: 29px;
-            }
+    border-radius:
+        8px;
 
-            .contact-section h2 {
-                font-size: 30px;
-            }
+    transition:
+        0.3s ease;
 
-            .product-buttons {
-                flex-direction: column;
-            }
+}
 
-            .product-buttons .button {
-                text-align: center;
+.spec-card:hover {
 
-                width: 100%;
-            }
+    transform:
+        translateY(-5px);
 
-            .hero-buttons {
-                flex-direction: column;
-            }
+    box-shadow:
+        var(--shadow);
 
-            .hero-buttons .button {
-                width: 100%;
+}
 
-                text-align: center;
-            }
+.spec-icon {
 
-        }
+    font-size:
+        25px;
 
-    </style>
+    margin-bottom:
+        12px;
+
+}
+
+.spec-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        12px;
+
+    margin-bottom:
+        5px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        1px;
+
+}
+
+.spec-card strong {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        16px;
+
+}
+
+
+/* =========================================================
+   PACKAGING
+========================================================= */
+
+.packaging-section {
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+}
+
+.packaging-section
+.section-heading h2 {
+
+    color:
+        white;
+
+}
+
+.packaging-section
+.section-heading p {
+
+    color:
+        rgba(255,255,255,0.7);
+
+}
+
+.packaging-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        20px;
+
+}
+
+.packaging-card {
+
+    padding:
+        35px 25px;
+
+    text-align:
+        center;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.12);
+
+    border-radius:
+        8px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.packaging-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    border-color:
+        var(--gold);
+
+}
+
+.packaging-visual {
+
+    width:
+        100px;
+
+    height:
+        130px;
+
+    margin:
+        0 auto 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #f5f1df,
+            #d8cfa8
+        );
+
+    border-radius:
+        8px 8px 15px 15px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+    font-size:
+        12px;
+
+    text-align:
+        center;
+
+    padding:
+        12px;
+
+    box-shadow:
+        0 12px 25px rgba(0,0,0,0.25);
+
+}
+
+.packaging-card h3 {
+
+    color:
+        var(--gold-light);
+
+    margin-bottom:
+        8px;
+
+}
+
+.packaging-card p {
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   WHY CHARCOAL
+========================================================= */
+
+.why-product {
+
+    background:
+        var(--light-bg);
+
+}
+
+.why-product-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        20px;
+
+}
+
+.why-product-card {
+
+    background:
+        white;
+
+    padding:
+        30px 25px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.why-product-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.why-product-icon {
+
+    width:
+        50px;
+
+    height:
+        50px;
+
+    border-radius:
+        50%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+        var(--green-light);
+
+    font-size:
+        22px;
+
+    margin-bottom:
+        18px;
+
+}
+
+.why-product-card h3 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        18px;
+
+    margin-bottom:
+        10px;
+
+}
+
+.why-product-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   EXPORT SECTION
+========================================================= */
+
+.export-section {
+
+    background:
+        white;
+
+}
+
+.export-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+.export-content h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        42px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.export-content p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        20px;
+
+}
+
+.export-points {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+    margin-top:
+        30px;
+
+}
+
+.export-point {
+
+    padding:
+        18px;
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+    border-radius:
+        6px;
+
+}
+
+.export-image {
+
+    position:
+        relative;
+
+}
+
+.export-image img {
+
+    width:
+        100%;
+
+    height:
+        500px;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta-section {
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--green-dark),
+            #0b5a40
+        );
+
+    color:
+        white;
+
+    text-align:
+        center;
+
+}
+
+.cta-content {
+
+    max-width:
+        800px;
+
+    margin:
+        auto;
+
+}
+
+.cta-content h2 {
+
+    font-size:
+        clamp(30px,4vw,48px);
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        18px;
+
+}
+
+.cta-content p {
+
+    color:
+        rgba(255,255,255,0.75);
+
+    margin-bottom:
+        30px;
+
+}
+
+.cta-buttons {
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+
+    background:
+        white;
+
+}
+
+.contact-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        20px;
+
+}
+
+.contact-card {
+
+    padding:
+        30px;
+
+    background:
+        var(--light-bg);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        8px;
+
+}
+
+.contact-card-icon {
+
+    font-size:
+        25px;
+
+    margin-bottom:
+        12px;
+
+}
+
+.contact-card h3 {
+
+    color:
+        var(--green-dark);
+
+    margin-bottom:
+        8px;
+
+}
+
+.contact-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+.whatsapp-button {
+
+    display:
+        inline-block;
+
+    margin-top:
+        35px;
+
+    padding:
+        14px 28px;
+
+    background:
+        #25D366;
+
+    color:
+        white;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.whatsapp-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(37,211,102,0.25);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background:
+        #031c14;
+
+    color:
+        white;
+
+    padding:
+        60px 25px 25px;
+
+}
+
+.footer-grid {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap:
+        50px;
+
+    padding-bottom:
+        40px;
+
+}
+
+.footer-brand img {
+
+    width:
+        75px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.footer-brand h3 {
+
+    margin-bottom:
+        12px;
+
+}
+
+.footer-brand p,
+.footer-column p {
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size:
+        14px;
+
+}
+
+.footer-column h4 {
+
+    color:
+        var(--gold-light);
+
+    margin-bottom:
+        18px;
+
+}
+
+.footer-column a {
+
+    display:
+        block;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size:
+        14px;
+
+    margin-bottom:
+        9px;
+
+}
+
+.footer-column a:hover {
+
+    color:
+        white;
+
+}
+
+.footer-bottom {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding-top:
+        25px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+
+    text-align:
+        center;
+
+    color:
+        rgba(255,255,255,0.5);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1000px) {
+
+    .nav-links {
+        gap:
+            12px;
+    }
+
+    .specs-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .packaging-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .why-product-grid {
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:750px) {
+
+    .top-bar {
+        display:
+            none;
+    }
+
+    .nav-container {
+
+        padding:
+            10px 15px;
+
+        position:
+            relative;
+
+    }
+
+    .menu-toggle {
+        display:
+            flex;
+    }
+
+    .nav-links {
+
+        display:
+            flex;
+
+        position:
+            absolute;
+
+        top:
+            100%;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            rgba(255,255,255,0.98);
+
+        backdrop-filter:
+            blur(10px);
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            0;
+
+        padding:
+            10px 20px 20px;
+
+        border-top:
+            1px solid var(--border);
+
+        box-shadow:
+            0 12px 25px rgba(0,0,0,0.1);
+
+        opacity:
+            0;
+
+        visibility:
+            hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            0.3s ease;
+
+    }
+
+    .nav-links.active {
+
+        opacity:
+            1;
+
+        visibility:
+            visible;
+
+        transform:
+            translateY(0);
+
+    }
+
+    .nav-links a {
+
+        display:
+            block;
+
+        padding:
+            14px 5px;
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+    .nav-links .nav-cta {
+
+        margin-top:
+            12px;
+
+        text-align:
+            center;
+
+    }
+
+    .nav-logo-text {
+        font-size:
+            13px;
+    }
+
+    .product-hero {
+        min-height:
+            600px;
+    }
+
+    .product-hero-content {
+        padding:
+            70px 20px;
+    }
+
+    .product-hero p {
+        font-size:
+            16px;
+    }
+
+    .product-intro-grid,
+    .export-grid {
+        grid-template-columns:
+            1fr;
+
+        gap:
+            40px;
+    }
+
+    .product-main-image img,
+    .export-image img {
+        height:
+            380px;
+    }
+
+    .gallery-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-template-rows:
+            250px 180px 180px;
+
+    }
+
+    .gallery-item:first-child {
+
+        grid-row:
+            span 1;
+
+        grid-column:
+            span 2;
+
+    }
+
+    .specs-grid,
+    .why-product-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .packaging-grid {
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+    .export-points {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    section {
+
+        padding:
+            65px 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width:450px) {
+
+    .nav-logo img {
+
+        width:
+            45px;
+
+        height:
+            45px;
+
+    }
+
+    .nav-logo-text {
+
+        font-size:
+            12px;
+
+    }
+
+    .nav-logo-text span {
+
+        font-size:
+            8px;
+
+    }
+
+    .product-hero h1 {
+
+        font-size:
+            38px;
+
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+    .primary-button,
+    .secondary-button {
+
+        text-align:
+            center;
+
+    }
+
+    .gallery-grid {
+
+        grid-template-columns:
+            1fr;
+
+        grid-template-rows:
+            repeat(4,220px);
+
+    }
+
+    .gallery-item:first-child {
+
+        grid-column:
+            span 1;
+
+    }
+
+    .packaging-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -1106,973 +2089,1289 @@
 <body>
 
 
-<!-- ==============================
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+    <span>
+        Nigerian Agricultural & Natural Product Exporters
+    </span>
+
+    <span>
+        📱 +234 706 516 0991
+    </span>
+
+</div>
+
+
+<!-- =========================================================
      NAVIGATION
-============================== -->
+========================================================= -->
 
 <nav>
 
-    <a href="index.html" class="nav-logo">
-
-        <img
-            src="IMG-20260522-WA0001(1).jpg"
-            alt="OLANES GLOBAL EXPORT LTD Logo"
-        >
-
-        <span>
-            OLANES GLOBAL EXPORT LTD
-        </span>
-
-    </a>
+<div class="nav-container">
 
 
-    <div class="nav-links">
+<a
+href="index.html"
+class="nav-logo"
+>
 
-        <a href="index.html">
-            Home
-        </a>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-        <a href="index.html#products">
-            Products
-        </a>
+<div class="nav-logo-text">
 
-        <a href="index.html#services">
-            Services
-        </a>
+OLANES GLOBAL EXPORT LTD
 
-        <a href="index.html#process">
-            Export Process
-        </a>
+<span>
+GLOBAL COMMODITY EXPORT
+</span>
 
-        <a href="index.html#quote" class="nav-quote">
-            Request a Quote
-        </a>
+</div>
 
-    </div>
+</a>
+
+
+<div
+class="nav-links"
+id="navLinks"
+>
+
+<a href="index.html#about">
+About
+</a>
+
+<a href="index.html#products">
+Products
+</a>
+
+<a href="index.html#services">
+Services
+</a>
+
+<a href="index.html#process">
+Export Process
+</a>
+
+<a href="index.html#contact">
+Contact
+</a>
+
+<a
+href="index.html#quote"
+class="nav-cta"
+>
+Request a Quote
+</a>
+
+</div>
+
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation menu"
+aria-expanded="false"
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+</div>
 
 </nav>
 
 
+<!-- =========================================================
+     PRODUCT HERO
+========================================================= -->
 
-<!-- ==============================
-     HERO
-============================== -->
+<header class="product-hero">
 
-<section class="hero">
-
-    <div class="hero-content">
-
-        <span class="hero-badge">
-            Premium Nigerian Export Product
-        </span>
-
-        <h1>
-            Premium Hardwood
-            Lump Charcoal
-        </h1>
-
-        <p>
-            High-quality Nigerian hardwood lump charcoal
-            available for wholesale, commercial, and
-            international export supply.
-        </p>
+<div class="product-hero-content">
 
 
-        <div class="hero-buttons">
+<div class="breadcrumb">
 
-            <a
-                href="index.html#quote"
-                class="button primary-button"
-            >
-                Request a Quote
-            </a>
+<a href="index.html">
+Home
+</a>
 
-            <a
-                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Premium%20Hardwood%20Lump%20Charcoal."
-                class="button whatsapp-button"
-                target="_blank"
-            >
-                💬 WhatsApp Us
-            </a>
+<span>
+/
+</span>
 
-        </div>
+<a href="index.html#products">
+Products
+</a>
 
-    </div>
+<span>
+/
+</span>
+
+<span>
+Hardwood Lump Charcoal
+</span>
+
+</div>
+
+
+<div class="product-hero-label">
+
+Premium Nigerian Export Product
+
+</div>
+
+
+<h1>
+
+Premium
+<span>
+Hardwood Lump Charcoal
+</span>
+
+for International Markets
+
+</h1>
+
+
+<p>
+
+Quality hardwood lump charcoal sourced in Nigeria
+for barbecue, food service, wholesale, and commercial
+applications. Available for bulk supply and international
+export according to buyer requirements.
+
+</p>
+
+
+<div class="hero-buttons">
+
+<a
+href="index.html#quote"
+class="primary-button"
+>
+Request a Quote
+</a>
+
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Premium%20Hardwood%20Lump%20Charcoal."
+class="secondary-button"
+target="_blank"
+rel="noopener"
+>
+Chat on WhatsApp
+</a>
+
+</div>
+
+
+</div>
+
+</header>
+
+
+<!-- =========================================================
+     PRODUCT INTRO
+========================================================= -->
+
+<section class="product-intro">
+
+<div class="section-container">
+
+<div class="product-intro-grid">
+
+
+<div class="product-main-image">
+
+<img
+src="IMG-20260722-WA0012.jpg"
+alt="Premium Hardwood Lump Charcoal from Nigeria"
+>
+
+<div class="image-badge">
+
+<strong>
+Product of Nigeria
+</strong>
+
+<span>
+Available for international bulk supply
+</span>
+
+</div>
+
+</div>
+
+
+<div class="product-intro-text">
+
+<span class="section-label">
+Our Featured Export Product
+</span>
+
+<h2>
+Premium Hardwood Charcoal for Global Buyers
+</h2>
+
+<p>
+
+OLANES GLOBAL EXPORT LTD supplies premium hardwood
+lump charcoal sourced from Nigeria for international
+buyers, wholesalers, distributors, barbecue suppliers,
+and commercial markets.
+
+</p>
+
+<p>
+
+Our charcoal is produced from premium hardwood,
+with a focus on quality, consistent supply, and
+professional export coordination.
+
+</p>
+
+<p>
+
+We work with buyers to discuss product specifications,
+packaging requirements, order quantities, destination,
+and shipping arrangements.
+
+</p>
+
+
+<div class="highlight-box">
+
+<strong>
+🌍 Bulk Export Supply
+</strong>
+
+We can coordinate commercial quantity orders
+and international shipment arrangements based
+on agreed buyer requirements.
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
+<!-- =========================================================
+     PRODUCT GALLERY
+========================================================= -->
 
-<!-- ==============================
-     MAIN CONTENT
-============================== -->
+<section class="gallery-section">
 
-<main class="container">
+<div class="section-container">
 
+<div class="section-heading">
 
-    <!-- BREADCRUMB -->
+<span class="section-label">
+Product Gallery
+</span>
 
-    <div class="breadcrumb">
+<h2>
+Premium Hardwood Lump Charcoal
+</h2>
 
-        <a href="index.html">
-            Home
-        </a>
+<p>
 
-        &nbsp; / &nbsp;
+Explore our product presentation and charcoal supply visuals.
+Additional professional OLANES GLOBAL EXPORT branded packaging
+visuals can be added to this gallery as your packaging designs
+are finalized.
 
-        <a href="index.html#products">
-            Products
-        </a>
+</p>
 
-        &nbsp; / &nbsp;
+</div>
 
-        Premium Hardwood Lump Charcoal
 
-    </div>
+<div class="gallery-grid">
 
 
+<div class="gallery-item">
 
-    <!-- PRODUCT INTRODUCTION -->
+<img
+src="IMG-20260722-WA0012.jpg"
+alt="Premium Hardwood Lump Charcoal"
+>
 
-    <section class="product-intro">
+</div>
 
 
-        <!-- GALLERY -->
+<div class="gallery-item">
 
-        <div class="product-gallery">
+<img
+src="IMG-20260722-WA0013.jpg"
+alt="Hardwood Lump Charcoal Product"
+>
 
-            <img
-                id="mainProductImage"
-                src="IMG-20260722-WA0012.jpg"
-                alt="Premium Hardwood Lump Charcoal from Nigeria"
-                class="main-product-image"
-            >
+</div>
 
 
-            <div class="gallery-images">
+<div class="gallery-item">
 
-                <img
-                    src="IMG-20260722-WA0012.jpg"
-                    alt="Premium Hardwood Lump Charcoal"
-                    onclick="changeImage(this.src)"
-                >
+<img
+src="IMG-20260722-WA0014.jpg"
+alt="OLANES Global Export Charcoal Supply"
+>
 
-                <img
-                    src="IMG-20260722-WA0013.jpg"
-                    alt="OLANES Hardwood Lump Charcoal"
-                    onclick="changeImage(this.src)"
-                >
+</div>
 
-                <img
-                    src="IMG-20260722-WA0014.jpg"
-                    alt="OLANES Export Charcoal"
-                    onclick="changeImage(this.src)"
-                >
 
-            </div>
+<!--
+     ADDITIONAL BRANDED PACKAGING IMAGE
 
-        </div>
+     Replace the filename below with the final
+     OLANES GLOBAL EXPORT branded packaging image.
+-->
 
+<div class="gallery-item">
 
+<img
+src="charcoal-bag-olanes.jpg"
+alt="OLANES GLOBAL EXPORT Premium Hardwood Lump Charcoal Packaging"
+>
 
-        <!-- PRODUCT INFORMATION -->
+</div>
 
-        <div class="product-text">
 
-            <div class="small-title">
-                OLANES GLOBAL EXPORT LTD
-            </div>
+<!--
+     ADDITIONAL EXPORT IMAGE
 
-            <h2>
-                Premium Hardwood Lump Charcoal
-            </h2>
+     Replace the filename below with a suitable
+     professional export / container image.
+-->
 
-            <p>
-                OLANES GLOBAL EXPORT LTD supplies premium
-                hardwood lump charcoal sourced from Nigeria
-                for wholesale, commercial, and international
-                markets.
-            </p>
+<div class="gallery-item">
 
-            <p>
-                Our charcoal is available for bulk supply
-                and can be packaged according to agreed buyer
-                requirements and order specifications.
-            </p>
+<img
+src="charcoal-export-shipment.jpg"
+alt="Bulk Hardwood Lump Charcoal Export Shipment"
+>
 
+</div>
 
-            <div class="product-highlights">
 
-                <div class="highlight">
+</div>
 
-                    <strong>
-                        Country of Origin
-                    </strong>
+</div>
 
-                    <span>
-                        Nigeria
-                    </span>
+</section>
 
-                </div>
 
+<!-- =========================================================
+     PRODUCT SPECIFICATIONS
+========================================================= -->
 
-                <div class="highlight">
+<section class="specs-section">
 
-                    <strong>
-                        Wood Species
-                    </strong>
+<div class="section-container">
 
-                    <span>
-                        Premium Hardwood (Ayin)
-                    </span>
+<div class="section-heading">
 
-                </div>
+<span class="section-label">
+Product Specifications
+</span>
 
+<h2>
+Key Product Information
+</h2>
 
-                <div class="highlight">
+<p>
 
-                    <strong>
-                        Fixed Carbon
-                    </strong>
+The following information represents our current
+product specifications. Additional specifications
+can be discussed according to buyer requirements.
 
-                    <span>
-                        75–85%
-                    </span>
+</p>
 
-                </div>
+</div>
 
 
-                <div class="highlight">
+<div class="specs-grid">
 
-                    <strong>
-                        Burning Time
-                    </strong>
 
-                    <span>
-                        5–7 hours
-                    </span>
+<div class="spec-card">
 
-                </div>
+<div class="spec-icon">
+🇳🇬
+</div>
 
+<span>
+Country of Origin
+</span>
 
-                <div class="highlight">
+<strong>
+Nigeria
+</strong>
 
-                    <strong>
-                        Packaging
-                    </strong>
+</div>
 
-                    <span>
-                        5 kg – 20 kg bags
-                    </span>
 
-                </div>
+<div class="spec-card">
 
+<div class="spec-icon">
+🌳
+</div>
 
-                <div class="highlight">
+<span>
+Wood Species
+</span>
 
-                    <strong>
-                        Production Lead Time
-                    </strong>
+<strong>
+Premium Hardwood (Ayin)
+</strong>
 
-                    <span>
-                        15 days
-                    </span>
+</div>
 
-                </div>
 
-            </div>
+<div class="spec-card">
 
+<div class="spec-icon">
+🔥
+</div>
 
-            <div class="product-buttons">
+<span>
+Fixed Carbon
+</span>
 
-                <a
-                    href="index.html#quote"
-                    class="button primary-button"
-                >
-                    Request a Quote
-                </a>
+<strong>
+75–85%
+</strong>
 
+</div>
 
-                <a
-                    href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Premium%20Hardwood%20Lump%20Charcoal."
-                    class="button whatsapp-button"
-                    target="_blank"
-                >
-                    💬 WhatsApp Us
-                </a>
 
-            </div>
+<div class="spec-card">
 
-        </div>
+<div class="spec-icon">
+⚪
+</div>
 
-    </section>
+<span>
+Ash Content
+</span>
 
+<strong>
+3–5%
+</strong>
 
+</div>
 
-    <!-- SPECIFICATIONS -->
 
-    <section class="spec-section">
+<div class="spec-card">
 
-        <div class="section-heading">
+<div class="spec-icon">
+⏱️
+</div>
 
-            <span>
-                Product Information
-            </span>
+<span>
+Burning Time
+</span>
 
-            <h2>
-                Technical Specifications
-            </h2>
+<strong>
+5–7 Hours
+</strong>
 
-            <p>
-                Our premium hardwood lump charcoal is
-                prepared for bulk and international supply.
-                Additional specifications can be discussed
-                according to buyer requirements.
-            </p>
+</div>
 
-        </div>
 
+<div class="spec-card">
 
-        <div class="specs">
+<div class="spec-icon">
+🔥
+</div>
 
+<span>
+Ignition Time
+</span>
 
-            <div class="spec">
-                <strong>Product</strong>
-                <span>
-                    Premium Hardwood Lump Charcoal
-                </span>
-            </div>
+<strong>
+Approximately 5 Minutes
+</strong>
 
+</div>
 
-            <div class="spec">
-                <strong>Country of Origin</strong>
-                <span>
-                    Nigeria
-                </span>
-            </div>
 
+<div class="spec-card">
 
-            <div class="spec">
-                <strong>Wood Species</strong>
-                <span>
-                    Premium Hardwood (Ayin)
-                </span>
-            </div>
+<div class="spec-icon">
+📦
+</div>
 
+<span>
+Packaging
+</span>
 
-            <div class="spec">
-                <strong>Fixed Carbon</strong>
-                <span>
-                    75–85%
-                </span>
-            </div>
+<strong>
+5 kg, 10 kg, 15 kg & 20 kg
+</strong>
 
+</div>
 
-            <div class="spec">
-                <strong>Ash Content</strong>
-                <span>
-                    3–5%
-                </span>
-            </div>
 
+<div class="spec-card">
 
-            <div class="spec">
-                <strong>Burning Time</strong>
-                <span>
-                    5–7 hours
-                </span>
-            </div>
+<div class="spec-icon">
+⏳
+</div>
 
+<span>
+Production Lead Time
+</span>
 
-            <div class="spec">
-                <strong>Ignition Time</strong>
-                <span>
-                    Approximately 5 minutes
-                </span>
-            </div>
+<strong>
+15 Days
+</strong>
 
+</div>
 
-            <div class="spec">
-                <strong>Moisture Content</strong>
-                <span>
-                    Available upon request
-                </span>
-            </div>
 
+<div class="spec-card">
 
-            <div class="spec">
-                <strong>Volatile Matter</strong>
-                <span>
-                    Available upon request
-                </span>
-            </div>
+<div class="spec-icon">
+🚢
+</div>
 
+<span>
+Supply
+</span>
 
-            <div class="spec">
-                <strong>Average Lump Size</strong>
-                <span>
-                    Available upon request
-                </span>
-            </div>
+<strong>
+Bulk & Export Orders
+</strong>
 
+</div>
 
-            <div class="spec">
-                <strong>Smoke Level</strong>
-                <span>
-                    Available upon request
-                </span>
-            </div>
 
+</div>
 
-            <div class="spec">
-                <strong>Spark Level</strong>
-                <span>
-                    Available upon request
-                </span>
-            </div>
+</div>
 
+</section>
 
-            <div class="spec">
-                <strong>Production Lead Time</strong>
-                <span>
-                    15 days
-                </span>
-            </div>
 
+<!-- =========================================================
+     PACKAGING
+========================================================= -->
 
-        </div>
+<section class="packaging-section">
 
-    </section>
+<div class="section-container">
 
+<div class="section-heading">
 
+<span class="section-label">
+Packaging Options
+</span>
 
-    <!-- PACKAGING -->
+<h2>
+Flexible Packaging for International Buyers
+</h2>
 
-    <section class="packaging-section">
+<p>
 
-        <div class="section-heading">
+Our charcoal can be prepared in different packaging
+sizes according to buyer requirements and agreed
+commercial specifications.
 
-            <span>
-                Flexible Packaging
-            </span>
+</p>
 
-            <h2>
-                Packaging Options
-            </h2>
+</div>
 
-            <p>
-                Packaging can be arranged according to buyer
-                requirements, destination market, and agreed
-                order specifications.
-            </p>
 
-        </div>
+<div class="packaging-grid">
 
 
-        <div class="packaging-grid">
+<div class="packaging-card">
 
+<div class="packaging-visual">
 
-            <div class="package">
+OLANES
+<br>
+GLOBAL EXPORT
+<br><br>
+5 KG
 
-                <div class="package-icon">
-                    📦
-                </div>
+</div>
 
-                <h3>
-                    5 kg Bags
-                </h3>
+<h3>
+5 kg Bag
+</h3>
 
-                <p>
-                    Suitable for retail and consumer markets.
-                </p>
+<p>
+Suitable for retail and smaller consumer markets.
+</p>
 
-            </div>
+</div>
 
 
-            <div class="package">
+<div class="packaging-card">
 
-                <div class="package-icon">
-                    📦
-                </div>
+<div class="packaging-visual">
 
-                <h3>
-                    10 kg Bags
-                </h3>
+OLANES
+<br>
+GLOBAL EXPORT
+<br><br>
+10 KG
 
-                <p>
-                    Suitable for retail and commercial supply.
-                </p>
+</div>
 
-            </div>
+<h3>
+10 kg Bag
+</h3>
 
+<p>
+Suitable for retail, wholesale, and food service.
+</p>
 
-            <div class="package">
+</div>
 
-                <div class="package-icon">
-                    📦
-                </div>
 
-                <h3>
-                    15 kg Bags
-                </h3>
+<div class="packaging-card">
 
-                <p>
-                    Suitable for commercial and wholesale markets.
-                </p>
+<div class="packaging-visual">
 
-            </div>
+OLANES
+<br>
+GLOBAL EXPORT
+<br><br>
+15 KG
 
+</div>
 
-            <div class="package">
+<h3>
+15 kg Bag
+</h3>
 
-                <div class="package-icon">
-                    📦
-                </div>
+<p>
+Suitable for wholesale and commercial supply.
+</p>
 
-                <h3>
-                    20 kg Bags
-                </h3>
+</div>
 
-                <p>
-                    Suitable for bulk and international supply.
-                </p>
 
-            </div>
+<div class="packaging-card">
 
+<div class="packaging-visual">
 
-        </div>
+OLANES
+<br>
+GLOBAL EXPORT
+<br><br>
+20 KG
 
-    </section>
+</div>
 
+<h3>
+20 kg Bag
+</h3>
 
+<p>
+Suitable for bulk commercial and export orders.
+</p>
 
-    <!-- WHY CHOOSE OUR CHARCOAL -->
+</div>
 
-    <section class="why-section">
 
-        <div class="section-heading">
+</div>
 
-            <span>
-                Our Commitment
-            </span>
+</div>
 
-            <h2>
-                Why Choose Our Charcoal?
-            </h2>
+</section>
 
-            <p>
-                We work with buyers to deliver reliable
-                product supply and export solutions.
-            </p>
 
-        </div>
+<!-- =========================================================
+     WHY CHOOSE OUR CHARCOAL
+========================================================= -->
 
+<section class="why-product">
 
-        <div class="why-grid">
+<div class="section-container">
 
+<div class="section-heading">
 
-            <div class="why-card">
+<span class="section-label">
+Why Choose Our Charcoal
+</span>
 
-                <div class="why-icon">
-                    🌳
-                </div>
+<h2>
+Built for Quality-Focused Buyers
+</h2>
 
-                <h3>
-                    Premium Hardwood
-                </h3>
+<p>
 
-                <p>
-                    Produced from selected hardwood
-                    for quality charcoal supply.
-                </p>
+We focus on reliable sourcing and professional
+coordination for buyers seeking Nigerian hardwood
+lump charcoal for international markets.
 
-            </div>
+</p>
 
+</div>
 
-            <div class="why-card">
 
-                <div class="why-icon">
-                    📦
-                </div>
+<div class="why-product-grid">
 
-                <h3>
-                    Flexible Packaging
-                </h3>
 
-                <p>
-                    Packaging options available based
-                    on buyer requirements.
-                </p>
+<div class="why-product-card">
 
-            </div>
+<div class="why-product-icon">
+🔥
+</div>
 
+<h3>
+High Fixed Carbon
+</h3>
 
-            <div class="why-card">
+<p>
 
-                <div class="why-icon">
-                    🚢
-                </div>
+Our stated fixed carbon specification is
+75–85%, supporting long-lasting charcoal
+performance.
 
-                <h3>
-                    Export Supply
-                </h3>
+</p>
 
-                <p>
-                    Available for international buyers,
-                    wholesalers, and distributors.
-                </p>
+</div>
 
-            </div>
 
+<div class="why-product-card">
 
-            <div class="why-card">
+<div class="why-product-icon">
+🌳
+</div>
 
-                <div class="why-icon">
-                    🤝
-                </div>
+<h3>
+Premium Hardwood
+</h3>
 
-                <h3>
-                    Buyer Focused
-                </h3>
+<p>
 
-                <p>
-                    We discuss specifications, quantities,
-                    packaging, and shipping requirements.
-                </p>
+Sourced from premium hardwood species,
+including Ayin, according to product
+requirements.
 
-            </div>
+</p>
 
+</div>
 
-        </div>
 
-    </section>
+<div class="why-product-card">
 
+<div class="why-product-icon">
+📦
+</div>
 
+<h3>
+Flexible Packaging
+</h3>
 
-    <!-- EXPORT SUPPLY -->
+<p>
 
-    <section class="export-section">
+Available packaging options include
+5 kg, 10 kg, 15 kg, and 20 kg bags.
 
+</p>
 
-        <div class="export-text">
+</div>
 
-            <span class="small-title">
-                International Supply
-            </span>
 
-            <h2>
-                Bulk & Export Supply
-            </h2>
+<div class="why-product-card">
 
-            <p>
-                OLANES GLOBAL EXPORT LTD is available to
-                discuss bulk charcoal supply for international
-                buyers and commercial customers.
-            </p>
+<div class="why-product-icon">
+🌍
+</div>
 
-            <p>
-                Production lead time is approximately
-                15 days, subject to order quantity, product
-                specifications, packaging requirements,
-                and mutual agreement.
-            </p>
+<h3>
+Export Coordination
+</h3>
 
-            <ul class="export-list">
+<p>
 
-                <li>
-                    International wholesale supply
-                </li>
+We coordinate product preparation,
+documentation, logistics, and shipment
+arrangements according to agreed terms.
 
-                <li>
-                    Commercial bulk orders
-                </li>
+</p>
 
-                <li>
-                    Buyer-specific packaging
-                </li>
+</div>
 
-                <li>
-                    Export documentation support
-                </li>
 
-                <li>
-                    Shipping arrangements based on destination
-                </li>
+</div>
 
-            </ul>
+</div>
 
-        </div>
+</section>
 
 
-        <div class="export-card">
+<!-- =========================================================
+     EXPORT INFORMATION
+========================================================= -->
 
-            <h3>
-                Supply Information
-            </h3>
+<section class="export-section">
 
+<div class="section-container">
 
-            <div class="export-detail">
+<div class="export-grid">
 
-                <strong>
-                    Origin
-                </strong>
 
-                <span>
-                    Nigeria
-                </span>
+<div class="export-content">
 
-            </div>
+<span class="section-label">
+International Supply
+</span>
 
+<h2>
+From Nigerian Hardwood
+to Global Markets
+</h2>
 
-            <div class="export-detail">
+<p>
 
-                <strong>
-                    Product
-                </strong>
+OLANES GLOBAL EXPORT LTD works with international
+buyers seeking reliable supplies of premium Nigerian
+hardwood lump charcoal.
 
-                <span>
-                    Hardwood Lump Charcoal
-                </span>
+</p>
 
-            </div>
+<p>
 
+We coordinate the export process from product
+preparation and packaging to documentation and
+shipping arrangements.
 
-            <div class="export-detail">
+</p>
 
-                <strong>
-                    Packaging
-                </strong>
+<div class="export-points">
 
-                <span>
-                    5 kg – 20 kg
-                </span>
+<div class="export-point">
+🇳🇬 Product of Nigeria
+</div>
 
-            </div>
+<div class="export-point">
+📦 Bulk Supply
+</div>
 
+<div class="export-point">
+📋 Export Documentation
+</div>
 
-            <div class="export-detail">
+<div class="export-point">
+🚢 Shipping Coordination
+</div>
 
-                <strong>
-                    Lead Time
-                </strong>
+</div>
 
-                <span>
-                    15 Days
-                </span>
+</div>
 
-            </div>
 
+<div class="export-image">
 
-            <div class="export-detail">
+<img
+src="IMG-20260722-WA0014.jpg"
+alt="OLANES GLOBAL EXPORT Charcoal Export Supply"
+>
 
-                <strong>
-                    Supply Type
-                </strong>
+</div>
 
-                <span>
-                    Wholesale & Export
-                </span>
 
-            </div>
+</div>
 
+</div>
 
-            <div class="export-detail">
+</section>
 
-                <strong>
-                    Shipping
-                </strong>
 
-                <span>
-                    By Agreement
-                </span>
+<!-- =========================================================
+     CTA
+========================================================= -->
 
-            </div>
+<section class="cta-section">
 
-        </div>
+<div class="section-container">
 
-    </section>
+<div class="cta-content">
 
+<span class="section-label">
+Start Your Order
+</span>
 
+<h2>
+Looking for Premium Hardwood Lump Charcoal?
+</h2>
 
-    <!-- QUALITY -->
+<p>
 
-    <section class="quality-section">
+Tell us your required quantity, packaging preference,
+destination, and other specifications. Our team will
+review your inquiry and discuss the next steps with you.
 
-        <h2>
-            Quality & Buyer Requirements
-        </h2>
+</p>
 
-        <p>
-            We work with buyers to discuss product
-            specifications, packaging requirements,
-            order quantities, and shipping arrangements
-            before confirming an order.
-        </p>
 
-        <p>
-            Additional product specifications and quality
-            information can be provided to serious buyers
-            upon request.
-        </p>
+<div class="cta-buttons">
 
-        <a
-            href="index.html#quote"
-            class="button primary-button"
-        >
-            Discuss Your Requirements
-        </a>
+<a
+href="index.html#quote"
+class="primary-button"
+>
+Request a Product Quote
+</a>
 
-    </section>
 
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20would%20like%20to%20request%20a%20quotation%20for%20Premium%20Hardwood%20Lump%20Charcoal."
+class="secondary-button"
+target="_blank"
+rel="noopener"
+>
+💬 WhatsApp Inquiry
+</a>
 
+</div>
 
-    <!-- CONTACT CTA -->
+</div>
 
-    <section class="contact-section" id="contact">
+</div>
 
-        <h2>
-            Ready to Discuss Your Order?
-        </h2>
+</section>
 
-        <p>
-            Contact OLANES GLOBAL EXPORT LTD to discuss
-            your charcoal requirements, packaging,
-            quantity, and international shipping needs.
-        </p>
 
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
-        <div class="contact-details">
+<section class="contact-section">
 
+<div class="section-container">
 
-            <div class="contact-item">
+<div class="section-heading">
 
-                <strong>
-                    Phone / WhatsApp
-                </strong>
+<span class="section-label">
+Contact OLANES
+</span>
 
-                <a href="tel:+2347065160991">
-                    +234 706 516 0991
-                </a>
+<h2>
+Let's Discuss Your Charcoal Requirements
+</h2>
 
-            </div>
+<p>
 
+Whether you are an importer, wholesaler,
+distributor, barbecue supplier, or commercial buyer,
+we welcome your inquiry.
 
-            <div class="contact-item">
+</p>
 
-                <strong>
-                    Email
-                </strong>
+</div>
 
-                <a href="mailto:olanesglobalexportltd@gmail.com">
-                    olanesglobalexportltd@gmail.com
-                </a>
 
-            </div>
+<div class="contact-grid">
 
 
-            <div class="contact-item">
+<div class="contact-card">
 
-                <strong>
-                    Location
-                </strong>
+<div class="contact-card-icon">
+📱
+</div>
 
-                <span>
-                    Osogbo, Osun State, Nigeria
-                </span>
+<h3>
+Phone / WhatsApp
+</h3>
 
-            </div>
+<p>
++234 706 516 0991
+</p>
 
+</div>
 
-        </div>
 
+<div class="contact-card">
 
-        <div class="hero-buttons">
+<div class="contact-card-icon">
+📧
+</div>
 
+<h3>
+Email
+</h3>
 
-            <a
-                href="index.html#quote"
-                class="button primary-button"
-            >
-                Request a Quote
-            </a>
+<p>
+olanesglobalexportltd@gmail.com
+</p>
 
+</div>
 
-            <a
-                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Premium%20Hardwood%20Lump%20Charcoal."
-                class="button whatsapp-button"
-                target="_blank"
-            >
-                💬 Chat on WhatsApp
-            </a>
 
+<div class="contact-card">
 
-            <a
-                href="mailto:olanesglobalexportltd@gmail.com"
-                class="button secondary-button"
-            >
-                ✉️ Send an Email
-            </a>
+<div class="contact-card-icon">
+📍
+</div>
 
+<h3>
+Location
+</h3>
 
-        </div>
+<p>
 
-    </section>
+Boluwatife Community,
+Ayekale, Ota Efun,
+Osogbo, Osun State,
+Nigeria
 
+</p>
 
-</main>
+</div>
 
 
+</div>
 
-<!-- ==============================
+
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Premium%20Hardwood%20Lump%20Charcoal."
+class="whatsapp-button"
+target="_blank"
+rel="noopener"
+>
+
+💬 Chat With Us on WhatsApp
+
+</a>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
      FOOTER
-============================== -->
+========================================================= -->
 
 <footer>
 
-    <img
-        src="IMG-20260522-WA0001(1).jpg"
-        alt="OLANES GLOBAL EXPORT LTD Logo"
-        class="footer-logo"
-    >
+<div class="footer-grid">
 
-    <h3>
-        OLANES GLOBAL EXPORT LTD
-    </h3>
 
-    <p>
-        Nigerian Agricultural & Natural Product Exporters
-    </p>
+<div class="footer-brand">
 
-    <p>
-        Boluwatife Community, Ayekale, Ota Efun,
-        Osogbo, Osun State, Nigeria
-    </p>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-    <p>
-        © 2026 OLANES GLOBAL EXPORT LTD.
-        All rights reserved.
-    </p>
+<h3>
+OLANES GLOBAL EXPORT LTD
+</h3>
+
+<p>
+
+Connecting quality Nigerian agricultural commodities,
+charcoal, and natural products with international markets.
+
+</p>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Quick Links
+</h4>
+
+<a href="index.html">
+Home
+</a>
+
+<a href="index.html#about">
+About Us
+</a>
+
+<a href="index.html#products">
+Our Products
+</a>
+
+<a href="index.html#services">
+Our Services
+</a>
+
+<a href="index.html#process">
+Export Process
+</a>
+
+<a href="index.html#quote">
+Request a Quote
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Contact
+</h4>
+
+<p>
++234 706 516 0991
+</p>
+
+<p>
+olanesglobalexportltd@gmail.com
+</p>
+
+<p>
+Osogbo, Osun State,
+Nigeria
+</p>
+
+<br>
+
+<a href="index.html#contact">
+Contact Our Team →
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 OLANES GLOBAL EXPORT LTD.
+All rights reserved.
+
+</div>
 
 </footer>
 
 
-
-<!-- ==============================
-     IMAGE GALLERY SCRIPT
-============================== -->
+<!-- =========================================================
+     MOBILE MENU JAVASCRIPT
+========================================================= -->
 
 <script>
 
-    function changeImage(imageSource) {
+const menuToggle =
+    document.getElementById("menuToggle");
 
-        document.getElementById(
-            "mainProductImage"
-        ).src = imageSource;
+const navLinks =
+    document.getElementById("navLinks");
+
+
+/* OPEN / CLOSE MENU */
+
+menuToggle.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        navLinks.classList.toggle("active");
+
+        menuToggle.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
 
     }
+);
+
+
+/* CLOSE MENU AFTER CLICKING LINK */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+    );
+
+});
+
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest("nav")
+        ) {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+
+    }
+);
 
 </script>
 
 
 </body>
-</html>
+
+    </html>
