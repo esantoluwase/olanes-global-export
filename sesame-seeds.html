@@ -3,576 +3,2150 @@
 
 <head>
 
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Premium Nigerian Sesame Seeds | OLANES GLOBAL EXPORT LTD
-    </title>
-
-    <meta
-        name="description"
-        content="OLANES GLOBAL EXPORT LTD supplies quality Nigerian sesame seeds for wholesale, commercial, food processing, and international export markets."
-    >
-
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7f5;
-            color: #222;
-            line-height: 1.7;
-        }
-
-
-        /* =========================
-           NAVIGATION
-        ========================= */
-
-        nav {
-            background: #ffffff;
-            padding: 14px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-        }
-
-        .nav-logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            color: #063b2a;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .nav-logo img {
-            width: 52px;
-            height: 52px;
-            object-fit: contain;
-            border-radius: 50%;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 25px;
-        }
-
-        .nav-links a {
-            color: #063b2a;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #c79a21;
-        }
-
-
-        /* =========================
-           HERO
-        ========================= */
-
-        .hero {
-            min-height: 580px;
-
-            background:
-                linear-gradient(
-                    rgba(3, 45, 31, 0.75),
-                    rgba(3, 45, 31, 0.75)
-                ),
-                url("IMG-20260725-WA0036.jpg");
-
-            background-size: cover;
-            background-position: center;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            text-align: center;
-            color: white;
-
-            padding: 70px 20px;
-        }
-
-        .hero-content {
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 58px;
-            line-height: 1.2;
-            margin-bottom: 22px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #f0f5f2;
-        }
-
-
-        /* =========================
-           BUTTONS
-        ========================= */
-
-        .button {
-            display: inline-block;
-            padding: 14px 27px;
-            margin: 5px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        .quote-button {
-            background: #c79a21;
-            color: white;
-        }
-
-        .quote-button:hover {
-            background: #a77f16;
-            transform: translateY(-2px);
-        }
-
-        .whatsapp-button {
-            background: #25D366;
-            color: white;
-        }
-
-        .whatsapp-button:hover {
-            background: #1da851;
-            transform: translateY(-2px);
-        }
-
-        .email-button {
-            background: white;
-            color: #063b2a;
-        }
-
-        .email-button:hover {
-            background: #eeeeee;
-        }
-
-
-        /* =========================
-           MAIN CONTAINER
-        ========================= */
-
-        .container {
-            max-width: 1150px;
-            margin: auto;
-            padding: 75px 25px;
-        }
-
-
-        /* =========================
-           PRODUCT INTRODUCTION
-        ========================= */
-
-        .product-intro {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 55px;
-            align-items: center;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 520px;
-            object-fit: cover;
-            border-radius: 15px;
-
-            box-shadow:
-                0 12px 35px
-                rgba(0,0,0,0.15);
-        }
-
-        .product-content h2 {
-            color: #063b2a;
-            font-size: 40px;
-            line-height: 1.3;
-            margin-bottom: 20px;
-        }
-
-        .product-content p {
-            color: #555;
-            margin-bottom: 18px;
-        }
-
-
-        /* =========================
-           PRODUCT HIGHLIGHTS
-        ========================= */
-
-        .highlights {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 25px;
-        }
-
-        .highlight {
-            background: white;
-            padding: 18px;
-            border-left: 4px solid #c79a21;
-            border-radius: 7px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
-        }
-
-        .highlight strong {
-            display: block;
-            color: #063b2a;
-            margin-bottom: 5px;
-        }
-
-
-        /* =========================
-           SECTION TITLE
-        ========================= */
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .section-title h2 {
-            color: #063b2a;
-            font-size: 36px;
-            margin-bottom: 10px;
-        }
-
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           IMAGE GALLERY
-        ========================= */
-
-        .gallery-section {
-            margin-top: 85px;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-
-        .gallery-card {
-            background: white;
-            padding: 12px;
-            border-radius: 14px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-        }
-
-        .gallery-card img {
-            width: 100%;
-            height: 430px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: block;
-        }
-
-
-        /* =========================
-           PRODUCT INFORMATION
-        ========================= */
-
-        .info-section {
-            margin-top: 85px;
-        }
-
-        .specs {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 18px;
-        }
-
-        .spec {
-            background: white;
-            padding: 22px;
-            border-radius: 8px;
-            border-left: 4px solid #c79a21;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .spec strong {
-            display: block;
-            color: #063b2a;
-            margin-bottom: 5px;
-        }
-
-
-        /* =========================
-           PACKAGING
-        ========================= */
-
-        .packaging-text {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 30px;
-            color: #555;
-        }
-
-        .packaging {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
-        }
-
-        .package {
-            background: white;
-            padding: 28px 15px;
-            text-align: center;
-            border-radius: 10px;
-            color: #063b2a;
-            font-weight: bold;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
-            border-bottom: 4px solid #c79a21;
-        }
-
-
-        /* =========================
-           EXPORT SUPPLY
-        ========================= */
-
-        .supply-box {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-        }
-
-        .supply-box p {
-            color: #555;
-            margin-bottom: 18px;
-        }
-
-
-        /* =========================
-           QUALITY
-        ========================= */
-
-        .quality-section {
-            background: #063b2a;
-            color: white;
-            padding: 55px 40px;
-            border-radius: 15px;
-            margin-top: 85px;
-        }
-
-        .quality-section h2 {
-            font-size: 34px;
-            margin-bottom: 18px;
-        }
-
-        .quality-section p {
-            color: #dce8e2;
-            margin-bottom: 15px;
-        }
-
-
-        /* =========================
-           CALL TO ACTION
-        ========================= */
-
-        .cta {
-            margin-top: 85px;
-
-            background:
-                linear-gradient(
-                    rgba(3,45,31,0.95),
-                    rgba(3,45,31,0.95)
-                );
-
-            color: white;
-            text-align: center;
-            padding: 65px 25px;
-            border-radius: 15px;
-        }
-
-        .cta h2 {
-            font-size: 38px;
-            margin-bottom: 15px;
-        }
-
-        .cta p {
-            max-width: 750px;
-            margin: 0 auto 25px;
-            color: #dce8e2;
-        }
-
-
-        /* =========================
-           CONTACT
-        ========================= */
-
-        .contact {
-            margin-top: 85px;
-            background: white;
-            padding: 45px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
-        }
-
-        .contact h2 {
-            color: #063b2a;
-            font-size: 34px;
-            margin-bottom: 20px;
-        }
-
-        .contact p {
-            color: #555;
-            margin-bottom: 12px;
-        }
-
-        .contact strong {
-            color: #063b2a;
-        }
-
-        .contact a {
-            color: #063b2a;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================= */
-
-        footer {
-            background: #04251b;
-            color: white;
-            text-align: center;
-            padding: 45px 20px;
-            margin-top: 85px;
-        }
-
-        footer img {
-            width: 75px;
-            height: 75px;
-            object-fit: contain;
-            background: white;
-            padding: 5px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        footer p {
-            color: #c8d3ce;
-            margin: 5px;
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================= */
-
-        @media (max-width: 850px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            .product-intro {
-                grid-template-columns: 1fr;
-            }
-
-            .product-image img {
-                height: 450px;
-            }
-
-            .gallery {
-                grid-template-columns: 1fr;
-            }
-
-            .specs {
-                grid-template-columns: 1fr;
-            }
-
-            .packaging {
-                grid-template-columns: 1fr 1fr;
-            }
-
-        }
-
-
-        @media (max-width: 550px) {
-
-            .hero {
-                min-height: 520px;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .product-content h2 {
-                font-size: 30px;
-            }
-
-            .highlights {
-                grid-template-columns: 1fr;
-            }
-
-            .packaging {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-card img {
-                height: 350px;
-            }
-
-            .quality-section {
-                padding: 35px 25px;
-            }
-
-            .contact {
-                padding: 30px 25px;
-            }
-
-            .cta h2 {
-                font-size: 30px;
-            }
-
-        }
-
-    </style>
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>
+Sesame Seeds | OLANES GLOBAL EXPORT LTD
+</title>
+
+<meta
+name="description"
+content="Premium Nigerian sesame seeds supplied by OLANES GLOBAL EXPORT LTD for international buyers, wholesalers, distributors, and food processing markets."
+>
+
+<meta
+name="keywords"
+content="Nigerian sesame seeds, sesame seed exporter Nigeria, sesame seeds wholesale, sesame seeds export, Nigerian agricultural products"
+>
+
+<meta
+name="theme-color"
+content="#063b2a"
+>
+
+
+<style>
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    line-height: 1.7;
+
+    background:
+        #f7f8f6;
+
+    color:
+        #1e2823;
+
+    overflow-x:
+        hidden;
+}
+
+a {
+    text-decoration:
+        none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family:
+        inherit;
+}
+
+img {
+    max-width:
+        100%;
+
+    display:
+        block;
+}
+
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root {
+
+    --green-dark:
+        #063b2a;
+
+    --green:
+        #0b5a40;
+
+    --green-light:
+        #eaf3ee;
+
+    --gold:
+        #c79a21;
+
+    --gold-light:
+        #e9c866;
+
+    --white:
+        #ffffff;
+
+    --text:
+        #1e2823;
+
+    --muted:
+        #68736d;
+
+    --light-bg:
+        #f7f8f6;
+
+    --border:
+        #e2e8e3;
+
+    --shadow:
+        0 15px 45px
+        rgba(0,0,0,0.08);
+
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+
+    from {
+        opacity:
+            0;
+
+        transform:
+            translateY(25px);
+    }
+
+    to {
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+    }
+
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity:
+            0;
+    }
+
+    to {
+        opacity:
+            1;
+    }
+
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.top-bar {
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--green-dark),
+            #084b35
+        );
+
+    color:
+        white;
+
+    padding:
+        9px 5%;
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    align-items:
+        center;
+
+    font-size:
+        13px;
+
+}
+
+.top-bar span {
+    opacity:
+        0.9;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+nav {
+
+    position:
+        sticky;
+
+    top:
+        0;
+
+    z-index:
+        9999;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+}
+
+.nav-container {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding:
+        11px 25px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+}
+
+.nav-logo {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    color:
+        var(--green-dark);
+
+}
+
+.nav-logo img {
+
+    width:
+        52px;
+
+    height:
+        52px;
+
+    object-fit:
+        contain;
+
+}
+
+.nav-logo-text {
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+    font-size:
+        16px;
+
+    line-height:
+        1.2;
+
+}
+
+.nav-logo-text span {
+
+    color:
+        var(--gold);
+
+    display:
+        block;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        1.5px;
+
+    margin-top:
+        4px;
+
+}
+
+.nav-links {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+}
+
+.nav-links a {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        14px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.nav-links a:hover {
+
+    color:
+        var(--gold);
+
+}
+
+.nav-cta {
+
+    background:
+        var(--green-dark);
+
+    color:
+        white !important;
+
+    padding:
+        10px 18px;
+
+    border-radius:
+        5px;
+
+}
+
+.nav-cta:hover {
+
+    background:
+        var(--gold);
+
+}
+
+
+/* =========================================================
+   HAMBURGER MENU
+========================================================= */
+
+.menu-toggle {
+
+    display:
+        none;
+
+    width:
+        45px;
+
+    height:
+        45px;
+
+    padding:
+        9px;
+
+    background:
+        transparent;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        6px;
+
+    cursor:
+        pointer;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        5px;
+
+}
+
+.menu-toggle span {
+
+    width:
+        24px;
+
+    height:
+        2px;
+
+    background:
+        var(--green-dark);
+
+    border-radius:
+        3px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.menu-toggle.active
+span:nth-child(1) {
+
+    transform:
+        translateY(7px)
+        rotate(45deg);
+
+}
+
+.menu-toggle.active
+span:nth-child(2) {
+
+    opacity:
+        0;
+
+}
+
+.menu-toggle.active
+span:nth-child(3) {
+
+    transform:
+        translateY(-7px)
+        rotate(-45deg);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.product-hero {
+
+    min-height:
+        600px;
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(3,34,24,0.95),
+            rgba(3,34,24,0.78),
+            rgba(3,34,24,0.30)
+        ),
+
+        url("IMG-20260725-WA0036.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+}
+
+.product-hero-content {
+
+    max-width:
+        1250px;
+
+    width:
+        100%;
+
+    margin:
+        auto;
+
+    padding:
+        100px 25px;
+
+    color:
+        white;
+
+    animation:
+        fadeUp
+        0.9s
+        ease
+        both;
+
+}
+
+.hero-label {
+
+    display:
+        inline-block;
+
+    color:
+        var(--gold-light);
+
+    font-weight:
+        bold;
+
+    letter-spacing:
+        2px;
+
+    text-transform:
+        uppercase;
+
+    font-size:
+        13px;
+
+    margin-bottom:
+        18px;
+
+}
+
+.product-hero h1 {
+
+    font-size:
+        clamp(42px,6vw,72px);
+
+    line-height:
+        1.06;
+
+    max-width:
+        800px;
+
+    margin-bottom:
+        25px;
+
+}
+
+.product-hero h1 span {
+
+    color:
+        var(--gold-light);
+
+}
+
+.product-hero p {
+
+    max-width:
+        680px;
+
+    font-size:
+        18px;
+
+    color:
+        rgba(255,255,255,0.88);
+
+    margin-bottom:
+        35px;
+
+}
+
+.hero-buttons {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+}
+
+.hero-primary,
+.hero-secondary {
+
+    padding:
+        15px 28px;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s ease;
+
+}
+
+.hero-primary {
+
+    background:
+        var(--gold);
+
+    color:
+        white;
+
+}
+
+.hero-primary:hover {
+
+    background:
+        var(--gold-light);
+
+    color:
+        var(--green-dark);
+
+    transform:
+        translateY(-3px);
+
+}
+
+.hero-secondary {
+
+    border:
+        1px solid
+        rgba(255,255,255,0.7);
+
+    color:
+        white;
+
+}
+
+.hero-secondary:hover {
+
+    background:
+        white;
+
+    color:
+        var(--green-dark);
+
+}
+
+
+/* =========================================================
+   PRODUCT INTRODUCTION
+========================================================= */
+
+section {
+
+    padding:
+        90px 25px;
+
+}
+
+.section-container {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+}
+
+.section-label {
+
+    color:
+        var(--gold);
+
+    font-weight:
+        bold;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        2px;
+
+    font-size:
+        12px;
+
+    display:
+        block;
+
+    margin-bottom:
+        12px;
+
+}
+
+.section-heading {
+
+    max-width:
+        750px;
+
+    margin-bottom:
+        50px;
+
+}
+
+.section-heading h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        18px;
+
+}
+
+.section-heading p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        16px;
+
+}
+
+
+/* =========================================================
+   PRODUCT OVERVIEW
+========================================================= */
+
+.overview-section {
+
+    background:
+        white;
+
+}
+
+.overview-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+.overview-image {
+
+    position:
+        relative;
+
+}
+
+.overview-image img {
+
+    width:
+        100%;
+
+    height:
+        520px;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.image-badge {
+
+    position:
+        absolute;
+
+    bottom:
+        25px;
+
+    left:
+        25px;
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+    padding:
+        22px;
+
+    border-radius:
+        8px;
+
+    box-shadow:
+        0 12px
+        30px
+        rgba(0,0,0,0.2);
+
+}
+
+.image-badge strong {
+
+    display:
+        block;
+
+    color:
+        var(--gold-light);
+
+    font-size:
+        20px;
+
+    margin-bottom:
+        4px;
+
+}
+
+.overview-content h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        40px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.overview-content p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        20px;
+
+}
+
+.check-list {
+
+    margin-top:
+        25px;
+
+}
+
+.check-item {
+
+    display:
+        flex;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        13px;
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+}
+
+.check {
+
+    color:
+        var(--gold);
+
+    font-size:
+        20px;
+
+}
+
+
+/* =========================================================
+   PRODUCT HIGHLIGHTS
+========================================================= */
+
+.highlights-section {
+
+    background:
+        var(--light-bg);
+
+}
+
+.highlights-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:
+        20px;
+
+}
+
+.highlight-card {
+
+    background:
+        white;
+
+    padding:
+        30px 25px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        8px;
+
+    transition:
+        0.3s ease;
+
+}
+
+.highlight-card:hover {
+
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        var(--shadow);
+
+}
+
+.highlight-icon {
+
+    width:
+        52px;
+
+    height:
+        52px;
+
+    border-radius:
+        50%;
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        23px;
+
+    margin-bottom:
+        20px;
+
+}
+
+.highlight-card h3 {
+
+    color:
+        var(--green-dark);
+
+    margin-bottom:
+        10px;
+
+    font-size:
+        18px;
+
+}
+
+.highlight-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   PRODUCT SPECIFICATIONS
+========================================================= */
+
+.spec-section {
+
+    background:
+        white;
+
+}
+
+.spec-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        60px;
+
+    align-items:
+        start;
+
+}
+
+.spec-intro h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        38px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.spec-intro p {
+
+    color:
+        var(--muted);
+
+    margin-bottom:
+        20px;
+
+}
+
+.spec-table {
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        8px;
+
+    overflow:
+        hidden;
+
+}
+
+.spec-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+}
+
+.spec-row:last-child {
+
+    border-bottom:
+        none;
+
+}
+
+.spec-row div {
+
+    padding:
+        16px;
+
+}
+
+.spec-row div:first-child {
+
+    background:
+        var(--green-light);
+
+    color:
+        var(--green-dark);
+
+    font-weight:
+        bold;
+
+}
+
+.spec-row div:last-child {
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================================
+   PACKAGING
+========================================================= */
+
+.packaging-section {
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+}
+
+.packaging-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+
+}
+
+.packaging-content h2 {
+
+    font-size:
+        40px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.packaging-content p {
+
+    color:
+        rgba(255,255,255,0.72);
+
+    margin-bottom:
+        25px;
+
+}
+
+.packaging-list {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        15px;
+
+}
+
+.packaging-item {
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    padding:
+        18px;
+
+    border-radius:
+        6px;
+
+    color:
+        white;
+
+    font-weight:
+        bold;
+
+}
+
+.packaging-image img {
+
+    width:
+        100%;
+
+    height:
+        480px;
+
+    object-fit:
+        cover;
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        0 20px
+        50px
+        rgba(0,0,0,0.25);
+
+}
+
+
+/* =========================================================
+   EXPORT INFORMATION
+========================================================= */
+
+.export-section {
+
+    background:
+        var(--light-bg);
+
+}
+
+.export-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:
+        20px;
+
+}
+
+.export-card {
+
+    background:
+        white;
+
+    padding:
+        30px;
+
+    border-radius:
+        8px;
+
+    border:
+        1px solid
+        var(--border);
+
+}
+
+.export-card h3 {
+
+    color:
+        var(--green-dark);
+
+    margin-bottom:
+        12px;
+
+}
+
+.export-card p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        14px;
+
+}
+
+
+/* =========================================================
+   EXPORT PROCESS
+========================================================= */
+
+.process-section {
+
+    background:
+        white;
+
+}
+
+.process-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(6,1fr);
+
+    gap:
+        15px;
+
+}
+
+.process-step {
+
+    text-align:
+        center;
+
+}
+
+.process-number {
+
+    width:
+        55px;
+
+    height:
+        55px;
+
+    margin:
+        auto
+        auto
+        18px;
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+    border-radius:
+        50%;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-weight:
+        bold;
+
+    font-size:
+        18px;
+
+    border:
+        4px solid
+        var(--green-light);
+
+}
+
+.process-step h3 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        15px;
+
+    margin-bottom:
+        8px;
+
+}
+
+.process-step p {
+
+    color:
+        var(--muted);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   QUOTE SECTION
+========================================================= */
+
+.quote-section {
+
+    background:
+
+        linear-gradient(
+            rgba(6,59,42,0.96),
+            rgba(6,59,42,0.96)
+        ),
+
+        url("IMG-20260725-WA0036.jpg");
+
+    background-size:
+        cover;
+
+    background-position:
+        center;
+
+}
+
+.quote-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        0.8fr 1.2fr;
+
+    gap:
+        70px;
+
+    align-items:
+        start;
+
+}
+
+.quote-info {
+
+    color:
+        white;
+
+}
+
+.quote-info h2 {
+
+    font-size:
+        42px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        20px;
+
+}
+
+.quote-info p {
+
+    color:
+        rgba(255,255,255,0.7);
+
+    margin-bottom:
+        30px;
+
+}
+
+.quote-contact {
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.2);
+
+    padding-top:
+        20px;
+
+}
+
+.quote-contact div {
+
+    margin-bottom:
+        15px;
+
+}
+
+.quote-form-box {
+
+    background:
+        white;
+
+    padding:
+        35px;
+
+    border-radius:
+        10px;
+
+    box-shadow:
+        0 20px
+        50px
+        rgba(0,0,0,0.2);
+
+}
+
+.quote-form {
+
+    display:
+        grid;
+
+    gap:
+        14px;
+
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+
+    width:
+        100%;
+
+    padding:
+        14px;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        5px;
+
+    font-size:
+        14px;
+
+    outline:
+        none;
+
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+
+    border-color:
+        var(--green);
+
+}
+
+.quote-form textarea {
+
+    min-height:
+        120px;
+
+    resize:
+        vertical;
+
+}
+
+.quote-button {
+
+    padding:
+        15px;
+
+    border:
+        none;
+
+    background:
+        var(--green-dark);
+
+    color:
+        white;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    font-size:
+        15px;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.3s;
+
+}
+
+.quote-button:hover {
+
+    background:
+        var(--gold);
+
+}
+
+
+/* =========================================================
+   WHATSAPP CTA
+========================================================= */
+
+.whatsapp-section {
+
+    background:
+        white;
+
+    text-align:
+        center;
+
+}
+
+.whatsapp-section h2 {
+
+    color:
+        var(--green-dark);
+
+    font-size:
+        38px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.whatsapp-section p {
+
+    color:
+        var(--muted);
+
+    max-width:
+        650px;
+
+    margin:
+        auto;
+
+}
+
+.whatsapp-button {
+
+    display:
+        inline-block;
+
+    margin-top:
+        30px;
+
+    padding:
+        14px 30px;
+
+    background:
+        #25D366;
+
+    color:
+        white;
+
+    border-radius:
+        5px;
+
+    font-weight:
+        bold;
+
+    transition:
+        0.3s;
+
+}
+
+.whatsapp-button:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px
+        20px
+        rgba(37,211,102,0.25);
+
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background:
+        #031c14;
+
+    color:
+        white;
+
+    padding:
+        60px 25px 25px;
+
+}
+
+.footer-grid {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
+    gap:
+        50px;
+
+    padding-bottom:
+        40px;
+
+}
+
+.footer-brand img {
+
+    width:
+        75px;
+
+    margin-bottom:
+        15px;
+
+}
+
+.footer-brand h3 {
+
+    margin-bottom:
+        12px;
+
+}
+
+.footer-brand p,
+.footer-column p {
+
+    color:
+        rgba(255,255,255,0.6);
+
+    font-size:
+        14px;
+
+}
+
+.footer-column h4 {
+
+    color:
+        var(--gold-light);
+
+    margin-bottom:
+        18px;
+
+}
+
+.footer-column a {
+
+    display:
+        block;
+
+    color:
+        rgba(255,255,255,0.65);
+
+    font-size:
+        14px;
+
+    margin-bottom:
+        9px;
+
+}
+
+.footer-column a:hover {
+
+    color:
+        white;
+
+}
+
+.footer-bottom {
+
+    max-width:
+        1250px;
+
+    margin:
+        auto;
+
+    padding-top:
+        25px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.1);
+
+    text-align:
+        center;
+
+    color:
+        rgba(255,255,255,0.5);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width:1000px) {
+
+    .nav-links {
+
+        gap:
+            12px;
+
+    }
+
+    .highlights-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(3,1fr);
+
+        row-gap:
+            35px;
+
+    }
+
+    .export-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width:750px) {
+
+    .top-bar {
+
+        display:
+            none;
+
+    }
+
+    .nav-container {
+
+        padding:
+            10px 15px;
+
+        position:
+            relative;
+
+    }
+
+    .menu-toggle {
+
+        display:
+            flex;
+
+    }
+
+    .nav-links {
+
+        display:
+            flex;
+
+        position:
+            absolute;
+
+        top:
+            100%;
+
+        left:
+            0;
+
+        right:
+            0;
+
+        background:
+            rgba(255,255,255,0.98);
+
+        backdrop-filter:
+            blur(10px);
+
+        flex-direction:
+            column;
+
+        align-items:
+            stretch;
+
+        gap:
+            0;
+
+        padding:
+            10px 20px 20px;
+
+        border-top:
+            1px solid
+            var(--border);
+
+        box-shadow:
+            0 12px
+            25px
+            rgba(0,0,0,0.1);
+
+        opacity:
+            0;
+
+        visibility:
+            hidden;
+
+        transform:
+            translateY(-10px);
+
+        transition:
+            0.3s ease;
+
+    }
+
+    .nav-links.active {
+
+        opacity:
+            1;
+
+        visibility:
+            visible;
+
+        transform:
+            translateY(0);
+
+    }
+
+    .nav-links a {
+
+        display:
+            block;
+
+        padding:
+            14px 5px;
+
+        border-bottom:
+            1px solid
+            var(--border);
+
+    }
+
+    .nav-links .nav-cta {
+
+        margin-top:
+            12px;
+
+        text-align:
+            center;
+
+    }
+
+    .nav-logo-text {
+
+        font-size:
+            13px;
+
+    }
+
+    .product-hero {
+
+        min-height:
+            600px;
+
+    }
+
+    .product-hero-content {
+
+        padding:
+            70px 20px;
+
+    }
+
+    .product-hero p {
+
+        font-size:
+            16px;
+
+    }
+
+    .overview-grid,
+    .spec-grid,
+    .packaging-grid,
+    .quote-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            40px;
+
+    }
+
+    .overview-image img,
+    .packaging-image img {
+
+        height:
+            380px;
+
+    }
+
+    .highlights-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            35px;
+
+    }
+
+    .packaging-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    section {
+
+        padding:
+            65px 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width:450px) {
+
+    .nav-logo img {
+
+        width:
+            45px;
+
+        height:
+            45px;
+
+    }
+
+    .nav-logo-text {
+
+        font-size:
+            12px;
+
+    }
+
+    .nav-logo-text span {
+
+        font-size:
+            8px;
+
+    }
+
+    .product-hero h1 {
+
+        font-size:
+            38px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction:
+            column;
+
+    }
+
+    .hero-primary,
+    .hero-secondary {
+
+        text-align:
+            center;
+
+    }
+
+    .process-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+    .quote-form-box {
+
+        padding:
+            22px;
+
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -580,734 +2154,1353 @@
 <body>
 
 
-<!-- =========================
+<!-- =========================================================
+     TOP BAR
+========================================================= -->
+
+<div class="top-bar">
+
+<span>
+Nigerian Agricultural & Natural Product Exporters
+</span>
+
+<span>
+📱 +234 706 516 0991
+</span>
+
+</div>
+
+
+<!-- =========================================================
      NAVIGATION
-========================= -->
+========================================================= -->
 
 <nav>
 
-    <a
-        href="index.html"
-        class="nav-logo"
-    >
-
-        <img
-            src="IMG-20260522-WA0001(1).jpg"
-            alt="OLANES GLOBAL EXPORT LTD Logo"
-        >
-
-        OLANES GLOBAL EXPORT LTD
-
-    </a>
+<div class="nav-container">
 
 
-    <div class="nav-links">
+<a
+href="index.html"
+class="nav-logo"
+>
 
-        <a href="index.html">
-            Home
-        </a>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-        <a href="index.html#products">
-            Products
-        </a>
+<div class="nav-logo-text">
 
-        <a href="index.html#services">
-            Services
-        </a>
+OLANES GLOBAL EXPORT LTD
 
-        <a href="index.html#process">
-            Export Process
-        </a>
+<span>
+GLOBAL COMMODITY EXPORT
+</span>
 
-        <a href="index.html#quote">
-            Request a Quote
-        </a>
+</div>
 
-        <a href="#contact">
-            Contact
-        </a>
+</a>
 
-    </div>
+
+<div
+class="nav-links"
+id="navLinks"
+>
+
+<a href="index.html#about">
+About
+</a>
+
+<a href="index.html#products">
+Products
+</a>
+
+<a href="index.html#services">
+Services
+</a>
+
+<a href="index.html#process">
+Export Process
+</a>
+
+<a href="index.html#contact">
+Contact
+</a>
+
+<a
+href="index.html#quote"
+class="nav-cta"
+>
+Request a Quote
+</a>
+
+</div>
+
+
+<button
+class="menu-toggle"
+id="menuToggle"
+aria-label="Open navigation menu"
+aria-expanded="false"
+>
+
+<span></span>
+<span></span>
+<span></span>
+
+</button>
+
+
+</div>
 
 </nav>
 
 
-
-<!-- =========================
+<!-- =========================================================
      HERO
-========================= -->
+========================================================= -->
 
-<section class="hero">
+<header class="product-hero">
 
-    <div class="hero-content">
+<div class="product-hero-content">
 
-        <h1>
-            Premium Nigerian Sesame Seeds
-        </h1>
+<span class="hero-label">
+Nigerian Agricultural Commodity
+</span>
 
-        <p>
-            Quality Nigerian sesame seeds available
-            for wholesale, commercial, food processing,
-            and international export markets.
-        </p>
+<h1>
+
+Premium
+<span>
+Sesame Seeds
+</span>
+from Nigeria
+
+</h1>
+
+<p>
+
+Quality Nigerian sesame seeds supplied for
+wholesale, commercial, food processing, and
+international commodity markets.
+
+</p>
+
+<div class="hero-buttons">
+
+<a
+href="#overview"
+class="hero-primary"
+>
+Explore Product
+</a>
+
+<a
+href="#quote"
+class="hero-secondary"
+>
+Request a Quote
+</a>
+
+</div>
+
+</div>
+
+</header>
 
 
-        <a
-            href="index.html#quote"
-            class="button quote-button"
-        >
-            Request a Quote
-        </a>
+<!-- =========================================================
+     PRODUCT OVERVIEW
+========================================================= -->
+
+<section
+id="overview"
+class="overview-section"
+>
+
+<div class="section-container">
+
+<div class="overview-grid">
 
 
-        <a
-            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Sesame%20Seeds."
-            class="button whatsapp-button"
-            target="_blank"
-        >
-            💬 WhatsApp Us
-        </a>
+<div class="overview-image">
 
-    </div>
+<img
+src="IMG-20260725-WA0036.jpg"
+alt="Premium Nigerian Sesame Seeds"
+>
+
+<div class="image-badge">
+
+<strong>
+Bulk Supply
+</strong>
+
+<span>
+Available for wholesale and
+international export inquiries.
+</span>
+
+</div>
+
+</div>
+
+
+<div class="overview-content">
+
+<span class="section-label">
+Product Overview
+</span>
+
+<h2>
+Quality Sesame Seeds for Global Markets
+</h2>
+
+<p>
+
+OLANES GLOBAL EXPORT LTD supplies Nigerian
+sesame seeds to buyers seeking reliable
+agricultural commodities for wholesale,
+commercial, food processing, and international
+markets.
+
+</p>
+
+<p>
+
+Our sesame seeds are sourced and prepared
+according to agreed buyer requirements,
+with attention to product quality, packaging,
+quantity, and destination.
+
+</p>
+
+<div class="check-list">
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Nigerian origin
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Wholesale and bulk supply
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+International buyer inquiries welcome
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Packaging arranged according to agreement
+
+</div>
+
+
+<div class="check-item">
+
+<span class="check">
+✓
+</span>
+
+Export coordination available
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
+<!-- =========================================================
+     PRODUCT HIGHLIGHTS
+========================================================= -->
 
-<!-- =========================
-     MAIN CONTENT
-========================= -->
+<section
+class="highlights-section"
+>
 
-<main class="container">
+<div class="section-container">
 
+<div class="section-heading">
 
-    <!-- PRODUCT INTRODUCTION -->
+<span class="section-label">
+Why Choose Our Sesame Seeds
+</span>
 
-    <section class="product-intro">
+<h2>
+Prepared for Wholesale & International Supply
+</h2>
 
+<p>
 
-        <div class="product-image">
+We work with buyers to coordinate product
+requirements and export arrangements according
+to agreed specifications and commercial terms.
 
-            <img
-                src="IMG-20260725-WA0036.jpg"
-                alt="Premium Nigerian Sesame Seeds"
-            >
+</p>
 
-        </div>
+</div>
 
 
-        <div class="product-content">
+<div class="highlights-grid">
 
-            <h2>
-                Nigerian Sesame Seeds for Export
-            </h2>
 
-            <p>
-                OLANES GLOBAL EXPORT LTD supplies quality
-                Nigerian sesame seeds for wholesale,
-                commercial, food processing, and
-                international markets.
-            </p>
+<div class="highlight-card">
 
-            <p>
-                Our sesame seeds are available for bulk
-                supply and can be prepared according to
-                agreed buyer requirements, packaging needs,
-                and order specifications.
-            </p>
+<div class="highlight-icon">
+🌱
+</div>
 
-            <p>
-                We work with international buyers,
-                wholesalers, distributors, processors,
-                and long-term business partners.
-            </p>
+<h3>
+Nigerian Origin
+</h3>
 
+<p>
 
-            <div class="highlights">
+Sourced from Nigeria's agricultural supply
+network for commercial and export markets.
 
+</p>
 
-                <div class="highlight">
+</div>
 
-                    <strong>
-                        Country of Origin
-                    </strong>
 
-                    Nigeria
+<div class="highlight-card">
 
-                </div>
+<div class="highlight-icon">
+📦
+</div>
 
+<h3>
+Bulk Availability
+</h3>
 
-                <div class="highlight">
+<p>
 
-                    <strong>
-                        Product
-                    </strong>
+Suitable for wholesale orders and commercial
+quantity requirements.
 
-                    Sesame Seeds
+</p>
 
-                </div>
+</div>
 
 
-                <div class="highlight">
+<div class="highlight-card">
 
-                    <strong>
-                        Supply Type
-                    </strong>
+<div class="highlight-icon">
+🔎
+</div>
 
-                    Wholesale & Export
+<h3>
+Quality-Focused Sourcing
+</h3>
 
-                </div>
+<p>
 
+Product sourcing is coordinated with attention
+to agreed buyer specifications and requirements.
 
-                <div class="highlight">
+</p>
 
-                    <strong>
-                        Market
-                    </strong>
+</div>
 
-                    International Buyers
 
-                </div>
+<div class="highlight-card">
 
+<div class="highlight-icon">
+🌍
+</div>
 
-            </div>
+<h3>
+Export Ready
+</h3>
 
-        </div>
+<p>
 
-    </section>
+We coordinate packaging, documentation,
+logistics, and shipping arrangements as required.
 
+</p>
 
+</div>
 
-    <!-- =========================
-         IMAGE GALLERY
-    ========================= -->
 
-    <section class="gallery-section">
+</div>
 
+</div>
 
-        <div class="section-title">
+</section>
 
-            <h2>
-                Our Sesame Seeds
-            </h2>
 
-            <p>
-                View our Nigerian sesame seeds available
-                for wholesale and export supply.
-            </p>
+<!-- =========================================================
+     PRODUCT SPECIFICATIONS
+========================================================= -->
 
-        </div>
+<section
+class="spec-section"
+>
 
+<div class="section-container">
 
-        <div class="gallery">
+<div class="spec-grid">
 
 
-            <div class="gallery-card">
+<div class="spec-intro">
 
-                <img
-                    src="IMG-20260725-WA0036.jpg"
-                    alt="Premium Nigerian Sesame Seeds"
-                >
+<span class="section-label">
+Product Information
+</span>
 
-            </div>
+<h2>
+Sesame Seed Specifications
+</h2>
 
+<p>
 
-            <div class="gallery-card">
+The final specifications, cleaning requirements,
+packaging, and quality parameters can be agreed
+with the buyer before order confirmation.
 
-                <img
-                    src="IMG-20260725-WA0042.jpg"
-                    alt="Nigerian Sesame Seeds for Export"
-                >
+</p>
 
-            </div>
+<p>
 
+For current availability, pricing, and specific
+quality requirements, contact our export team
+with your quantity and destination.
 
-        </div>
+</p>
 
-    </section>
+</div>
 
 
+<div class="spec-table">
 
-    <!-- =========================
-         PRODUCT INFORMATION
-    ========================= -->
 
-    <section class="info-section">
+<div class="spec-row">
 
+<div>
+Product
+</div>
 
-        <div class="section-title">
+<div>
+Sesame Seeds
+</div>
 
-            <h2>
-                Product Information
-            </h2>
+</div>
 
-            <p>
-                Product specifications can be discussed
-                and confirmed according to buyer requirements
-                and agreed order specifications.
-            </p>
 
-        </div>
+<div class="spec-row">
 
+<div>
+Country of Origin
+</div>
 
-        <div class="specs">
+<div>
+Nigeria
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Product
-                </strong>
+<div class="spec-row">
 
-                Premium Nigerian Sesame Seeds
+<div>
+Product Type
+</div>
 
-            </div>
+<div>
+Agricultural Commodity
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Country of Origin
-                </strong>
+<div class="spec-row">
 
-                Nigeria
+<div>
+Supply Type
+</div>
 
-            </div>
+<div>
+Wholesale / Bulk
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Product Type
-                </strong>
+<div class="spec-row">
 
-                Sesame Seeds
+<div>
+Packaging
+</div>
 
-            </div>
+<div>
+As agreed with buyer
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Supply
-                </strong>
+<div class="spec-row">
 
-                Wholesale and Bulk Supply
+<div>
+Minimum Order
+</div>
 
-            </div>
+<div>
+Subject to buyer requirements
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Export Market
-                </strong>
+<div class="spec-row">
 
-                International Markets
+<div>
+Destination
+</div>
 
-            </div>
+<div>
+International Markets
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Packaging
-                </strong>
+<div class="spec-row">
 
-                Available according to buyer requirements
+<div>
+Quality Requirements
+</div>
 
-            </div>
+<div>
+According to agreed specification
+</div>
 
+</div>
 
-            <div class="spec">
 
-                <strong>
-                    Minimum Order Quantity
-                </strong>
+</div>
 
-                Subject to mutual agreement
+</div>
 
-            </div>
+</div>
 
+</section>
 
-            <div class="spec">
 
-                <strong>
-                    Supply Lead Time
-                </strong>
+<!-- =========================================================
+     PACKAGING
+========================================================= -->
 
-                To be confirmed based on order quantity
+<section
+class="packaging-section"
+>
 
-            </div>
+<div class="section-container">
 
+<div class="packaging-grid">
 
-        </div>
 
-    </section>
+<div class="packaging-content">
 
+<span class="section-label">
+Packaging & Supply
+</span>
 
+<h2>
+Flexible Packaging for Different Buyer Needs
+</h2>
 
-    <!-- =========================
-         PACKAGING
-    ========================= -->
+<p>
 
-    <section class="info-section">
+Packaging options can be discussed according
+to order size, destination, handling requirements,
+and buyer preference.
 
+</p>
 
-        <div class="section-title">
+<div class="packaging-list">
 
-            <h2>
-                Packaging Options
-            </h2>
 
-        </div>
+<div class="packaging-item">
+📦 Bulk Export Bags
+</div>
 
+<div class="packaging-item">
+📦 Woven Bags
+</div>
 
-        <p class="packaging-text">
+<div class="packaging-item">
+📦 Custom Packaging
+</div>
 
-            Packaging can be arranged according to buyer
-            requirements, destination market, product
-            specifications, and agreed order quantities.
+<div class="packaging-item">
+📦 Buyer-Specified Packaging
+</div>
 
-        </p>
 
+</div>
 
-        <div class="packaging">
+</div>
 
 
-            <div class="package">
+<div class="packaging-image">
 
-                Bulk Packaging
+<img
+src="IMG-20260725-WA0036.jpg"
+alt="Nigerian Sesame Seeds Packaging"
+>
 
-            </div>
+</div>
 
 
-            <div class="package">
+</div>
 
-                Wholesale Packaging
+</div>
 
-            </div>
+</section>
 
 
-            <div class="package">
+<!-- =========================================================
+     EXPORT INFORMATION
+========================================================= -->
 
-                Custom Buyer Packaging
+<section
+class="export-section"
+>
 
-            </div>
+<div class="section-container">
 
+<div class="section-heading">
 
-            <div class="package">
+<span class="section-label">
+International Supply
+</span>
 
-                Export Packaging
+<h2>
+Supporting Buyers from Inquiry to Shipment
+</h2>
 
-            </div>
+<p>
 
+OLANES GLOBAL EXPORT LTD works with buyers
+to coordinate the key stages involved in
+commercial commodity supply.
 
-        </div>
+</p>
 
-    </section>
+</div>
 
 
+<div class="export-grid">
 
-    <!-- =========================
-         BULK & EXPORT SUPPLY
-    ========================= -->
 
-    <section class="info-section">
+<div class="export-card">
 
+<h3>
+🌱 Product Sourcing
+</h3>
 
-        <div class="section-title">
+<p>
 
-            <h2>
-                Bulk & Export Supply
-            </h2>
+We coordinate sourcing based on the buyer's
+required product, quantity, specifications,
+and commercial requirements.
 
-        </div>
+</p>
 
+</div>
 
-        <div class="supply-box">
 
-            <p>
+<div class="export-card">
 
-                OLANES GLOBAL EXPORT LTD is available
-                to discuss bulk Nigerian sesame seed
-                supply for international buyers,
-                wholesalers, processors, distributors,
-                and commercial customers.
+<h3>
+📋 Documentation
+</h3>
 
-            </p>
+<p>
 
+Required export documentation and related
+processes are coordinated according to
+the agreed shipment arrangement.
 
-            <p>
+</p>
 
-                We work with buyers to understand their
-                required quantity, product specifications,
-                packaging preferences, destination,
-                and shipping requirements.
+</div>
 
-            </p>
 
+<div class="export-card">
 
-            <p>
+<h3>
+🚢 Shipping Coordination
+</h3>
 
-                Export documentation, shipping arrangements,
-                and delivery terms can be discussed according
-                to the buyer's destination and agreed
-                international trade terms.
+<p>
 
-            </p>
+Logistics and shipping arrangements can be
+coordinated according to the agreed trade
+terms and destination.
 
-        </div>
+</p>
 
-    </section>
+</div>
 
 
+</div>
 
-    <!-- =========================
-         QUALITY
-    ========================= -->
+</div>
 
-    <section class="quality-section">
+</section>
 
 
-        <h2>
-            Quality & Buyer Requirements
-        </h2>
+<!-- =========================================================
+     EXPORT PROCESS
+========================================================= -->
 
+<section
+class="process-section"
+>
 
-        <p>
+<div class="section-container">
 
-            We work with buyers to discuss product
-            specifications, quality requirements,
-            packaging, order quantities, and shipping
-            arrangements before confirming an order.
+<div class="section-heading">
 
-        </p>
+<span class="section-label">
+How We Work
+</span>
 
+<h2>
+Our Sesame Seed Export Process
+</h2>
 
-        <p>
+<p>
 
-            Additional product information and quality
-            details can be provided to serious buyers
-            upon request.
+A structured process designed to keep
+communication clear from inquiry through shipment.
 
-        </p>
+</p>
 
+</div>
 
-        <p>
 
-            Product specifications and commercial terms
-            are confirmed between OLANES GLOBAL EXPORT LTD
-            and the buyer before final order processing.
+<div class="process-grid">
 
-        </p>
 
-    </section>
+<div class="process-step">
 
+<div class="process-number">
+01
+</div>
 
+<h3>
+Buyer Inquiry
+</h3>
 
-    <!-- =========================
-         CALL TO ACTION
-    ========================= -->
+<p>
+Send us your quantity and destination.
+</p>
 
-    <section class="cta">
+</div>
 
 
-        <h2>
-            Interested in Our Sesame Seeds?
-        </h2>
+<div class="process-step">
 
+<div class="process-number">
+02
+</div>
 
-        <p>
+<h3>
+Quotation
+</h3>
 
-            Contact OLANES GLOBAL EXPORT LTD to discuss
-            your required quantity, packaging,
-            specifications, and international shipping
-            requirements.
+<p>
+We discuss pricing, packaging, and terms.
+</p>
 
-        </p>
+</div>
 
 
-        <a
-            href="index.html#quote"
-            class="button quote-button"
-        >
-            Request a Quote
-        </a>
+<div class="process-step">
 
+<div class="process-number">
+03
+</div>
 
-        <a
-            href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Sesame%20Seeds."
-            class="button whatsapp-button"
-            target="_blank"
-        >
-            💬 Chat on WhatsApp
-        </a>
+<h3>
+Confirmation
+</h3>
 
+<p>
+Order specifications are confirmed.
+</p>
 
-        <a
-            href="mailto:olanesglobalexportltd@gmail.com"
-            class="button email-button"
-        >
-            ✉️ Send an Email
-        </a>
+</div>
 
-    </section>
 
+<div class="process-step">
 
+<div class="process-number">
+04
+</div>
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+<h3>
+Preparation
+</h3>
 
-    <section
-        class="contact"
-        id="contact"
-    >
+<p>
+Product is prepared according to agreement.
+</p>
 
+</div>
 
-        <h2>
-            Contact OLANES GLOBAL EXPORT LTD
-        </h2>
 
+<div class="process-step">
 
-        <p>
+<div class="process-number">
+05
+</div>
 
-            We welcome inquiries from international
-            buyers, wholesalers, distributors,
-            processors, and business partners.
+<h3>
+Documentation
+</h3>
 
-        </p>
+<p>
+Required export documentation is coordinated.
+</p>
 
+</div>
 
-        <br>
 
+<div class="process-step">
 
-        <p>
+<div class="process-number">
+06
+</div>
 
-            <strong>
-                Address:
-            </strong>
+<h3>
+Shipment
+</h3>
 
-            <br>
+<p>
+Shipping arrangements are coordinated.
+</p>
 
-            Boluwatife Community, Ayekale, Ota Efun,
-            Osogbo, Osun State, Nigeria
+</div>
 
-        </p>
 
+</div>
 
-        <p>
+</div>
 
-            <strong>
-                Phone / WhatsApp:
-            </strong>
+</section>
 
-            <br>
 
-            +234 706 516 0991
+<!-- =========================================================
+     REQUEST A QUOTE
+========================================================= -->
 
-        </p>
+<section
+id="quote"
+class="quote-section"
+>
 
+<div class="section-container">
 
-        <p>
+<div class="quote-grid">
 
-            <strong>
-                Email:
-            </strong>
 
-            <br>
+<div class="quote-info">
 
-            <a
-                href="mailto:olanesglobalexportltd@gmail.com"
-            >
+<span class="section-label">
+Start a Conversation
+</span>
 
-                olanesglobalexportltd@gmail.com
+<h2>
+Request a Sesame Seed Quotation
+</h2>
 
-            </a>
+<p>
 
-        </p>
+Tell us your required quantity, destination,
+packaging preference, and any specific quality
+requirements. Our team will review your inquiry
+and respond accordingly.
 
+</p>
 
-        <div class="buttons">
+<div class="quote-contact">
 
+<div>
 
-            <a
-                href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20Nigerian%20Sesame%20Seeds."
-                class="button whatsapp-button"
-                target="_blank"
-            >
+📱
+<strong>
+WhatsApp / Phone
+</strong>
 
-                💬 Chat on WhatsApp
+<br>
 
-            </a>
++234 706 516 0991
 
+</div>
 
-            <a
-                href="mailto:olanesglobalexportltd@gmail.com"
-                class="button quote-button"
-            >
 
-                ✉️ Send an Email
+<div>
 
-            </a>
+📧
+<strong>
+Email
+</strong>
 
+<br>
 
-        </div>
+olanesglobalexportltd@gmail.com
 
-    </section>
+</div>
 
 
-</main>
+<div>
 
+📍
+<strong>
+Location
+</strong>
 
+<br>
 
-<!-- =========================
+Osogbo, Osun State, Nigeria
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="quote-form-box">
+
+
+<form
+class="quote-form"
+action="https://formsubmit.co/olanesglobalexportltd@gmail.com"
+method="POST"
+>
+
+
+<input
+type="hidden"
+name="_next"
+value="https://esantoluwase.github.io/olanes-global-export/sesame-seeds.html#quote"
+>
+
+
+<input
+type="hidden"
+name="_subject"
+value="New Sesame Seeds Quotation Request - OLANES GLOBAL EXPORT LTD"
+>
+
+
+<input
+type="hidden"
+name="_captcha"
+value="false"
+>
+
+
+<input
+type="hidden"
+name="_template"
+value="table"
+>
+
+
+<input
+type="text"
+name="name"
+placeholder="Full Name"
+required
+>
+
+
+<input
+type="text"
+name="company"
+placeholder="Company Name"
+>
+
+
+<input
+type="email"
+name="email"
+placeholder="Email Address"
+required
+>
+
+
+<input
+type="text"
+name="country"
+placeholder="Country"
+required
+>
+
+
+<input
+type="text"
+name="quantity"
+placeholder="Required Quantity"
+required
+>
+
+
+<input
+type="text"
+name="destination"
+placeholder="Destination / Port"
+>
+
+
+<select
+name="packaging"
+>
+
+<option value="">
+Preferred Packaging
+</option>
+
+<option>
+Bulk Export Bags
+</option>
+
+<option>
+Woven Bags
+</option>
+
+<option>
+Custom Packaging
+</option>
+
+<option>
+Buyer-Specified Packaging
+</option>
+
+</select>
+
+
+<textarea
+name="message"
+placeholder="Tell us about your sesame seed requirements, quality specifications, packaging preferences, and other details."
+></textarea>
+
+
+<button
+type="submit"
+class="quote-button"
+>
+
+Submit Sesame Seed Inquiry
+
+</button>
+
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     WHATSAPP CTA
+========================================================= -->
+
+<section
+class="whatsapp-section"
+>
+
+<div class="section-container">
+
+<span class="section-label">
+Direct Inquiry
+</span>
+
+<h2>
+Need Sesame Seeds in Bulk?
+</h2>
+
+<p>
+
+Contact OLANES GLOBAL EXPORT LTD directly
+to discuss your quantity, destination,
+packaging, and export requirements.
+
+</p>
+
+<a
+href="https://wa.me/2347065160991?text=Hello%20OLANES%20GLOBAL%20EXPORT%20LTD,%20I%20am%20interested%20in%20your%20sesame%20seeds."
+class="whatsapp-button"
+target="_blank"
+rel="noopener"
+>
+
+💬 Chat With Us on WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
      FOOTER
-========================= -->
+========================================================= -->
 
 <footer>
 
-
-    <img
-        src="IMG-20260522-WA0001(1).jpg"
-        alt="OLANES GLOBAL EXPORT LTD Logo"
-    >
+<div class="footer-grid">
 
 
-    <p>
+<div class="footer-brand">
 
-        <strong>
-            OLANES GLOBAL EXPORT LTD
-        </strong>
+<img
+src="IMG-20260522-WA0001(1).jpg"
+alt="OLANES GLOBAL EXPORT LTD Logo"
+>
 
-    </p>
+<h3>
+OLANES GLOBAL EXPORT LTD
+</h3>
 
+<p>
 
-    <p>
+Connecting quality Nigerian agricultural commodities,
+charcoal, and natural products with international markets.
 
-        Nigerian Agricultural & Natural Product Exporters
+</p>
 
-    </p>
-
-
-    <p>
-
-        Boluwatife Community, Ayekale, Ota Efun,
-        Osogbo, Osun State, Nigeria
-
-    </p>
+</div>
 
 
-    <p>
+<div class="footer-column">
 
-        © 2026 OLANES GLOBAL EXPORT LTD.
-        All rights reserved.
+<h4>
+Quick Links
+</h4>
 
-    </p>
+<a href="index.html#about">
+About Us
+</a>
 
+<a href="index.html#products">
+Our Products
+</a>
+
+<a href="index.html#services">
+Our Services
+</a>
+
+<a href="index.html#process">
+Export Process
+</a>
+
+<a href="index.html#quote">
+Request a Quote
+</a>
+
+</div>
+
+
+<div class="footer-column">
+
+<h4>
+Product Links
+</h4>
+
+<a href="charcoal.html">
+Hardwood Charcoal
+</a>
+
+<a href="cashew.html">
+Cashew Nuts
+</a>
+
+<a href="hibiscus.html">
+Hibiscus Flower
+</a>
+
+<a href="palm-oil.html">
+Palm Oil
+</a>
+
+<a href="sesame-seeds.html">
+Sesame Seeds
+</a>
+
+<a href="index.html#contact">
+Contact Our Team →
+</a>
+
+</div>
+
+
+</div>
+
+
+<div class="footer-bottom">
+
+© 2026 OLANES GLOBAL EXPORT LTD.
+All rights reserved.
+
+</div>
 
 </footer>
+
+
+<!-- =========================================================
+     MOBILE MENU JAVASCRIPT
+========================================================= -->
+
+<script>
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navLinks =
+    document.getElementById("navLinks");
+
+
+/* OPEN / CLOSE MENU */
+
+menuToggle.addEventListener(
+    "click",
+    function(event) {
+
+        event.stopPropagation();
+
+        navLinks.classList.toggle("active");
+
+        menuToggle.classList.toggle("active");
+
+        const isOpen =
+            navLinks.classList.contains("active");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+        );
+
+    }
+);
+
+
+/* CLOSE MENU AFTER CLICKING LINK */
+
+document
+.querySelectorAll(".nav-links a")
+.forEach(function(link) {
+
+    link.addEventListener(
+        "click",
+        function() {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+    );
+
+});
+
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener(
+    "click",
+    function(event) {
+
+        if (
+            !event.target.closest("nav")
+        ) {
+
+            navLinks.classList.remove("active");
+
+            menuToggle.classList.remove("active");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+        }
+
+    }
+);
+
+</script>
 
 
 </body>
